@@ -1,0 +1,41 @@
+## Matéria-Prima: Andesito, Basalto/Basalto Polido, Calcita, Diorito, Espeleotema, Granito, Pedra Negra, Tufo
+## Tipos: Cinzelados, Ladrilhos, Rachados, Tijolos. Lisos
+
+## Tijolos e Ladrilhos
+andesite_bricks
+andesite_tiles
+calcite_bricks
+calcite_tiles
+diorite_bricks
+diorite_tiles
+
+## Cinzelados
+chiseled_andesite
+chiseled_andesite_bricks
+chiseled_calcite
+chiseled_calcite_bricks
+chiseled_diorite
+chiseled_diorite_bricks
+chiseled_granite
+chiseled_granite_bricks
+chiseled_polished_basalt
+
+## Rachados
+cracked_andesite_bricks
+cracked_andesite_tiles
+cracked_calcite_bricks
+cracked_calcite_tiles
+cracked_diorite_bricks
+cracked_diorite_tiles
+cracked_granite_bricks
+cracked_granite_tiles
+cracked_polished_basalt_bricks
+cracked_polished_basalt_tiles
+
+## Lisos
+smooth_andesite
+- smooth_calcite
+smooth_diorite
+smooth_granite
+
+
