@@ -40,7 +40,7 @@ Each listed block is shown with the variants provided in‑game:
 
 - Added Charcoal Block
 
-### Added — Uncrafting Recipes
+### Recipes
 - Minecart with Chest
 - Minecart with Hopper
 - Minecart with TNT
