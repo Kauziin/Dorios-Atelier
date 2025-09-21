@@ -1,7 +1,7 @@
 # Changelog
 
 Releases:\
-[v3.2](#Unreleased-|-v32)
+[v3.2](#v32)
 
 ## Unreleased | v3.2
 
