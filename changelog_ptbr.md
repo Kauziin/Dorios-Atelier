@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-Este changelog documenta as principais adições visíveis no workspace e como elas aparecem in‑game. As entradas abaixo descrevem os blocos (nomes amigáveis) e, ao final, a lista consolidada dos identificadores técnicos incluídos.
+Este changelog documenta as principais adições in‑game usando o add-on.
 
 ### Visão Geral
 - Novas variantes de blocos foram adicionadas para vários tipos de pedras.
