@@ -1,6 +1,9 @@
 # Changelog
 
-## Unreleased - v3.2
+Releases:\
+[v3.2](#Unreleased-|-v32)
+
+## Unreleased | v3.2
 
 This changelog documents the main additions visible in the game.
 ### Overview
