@@ -40,11 +40,12 @@ Este changelog documenta as principais adições visíveis no workspace e como e
 
 - Adicionado Bloco de Carvão Vegetal
 
-### Adicionado — Receitas de Desfabricação
-- Carrinho de Mina com Baú
-- Carrinho de Mina com Funil
-- Carrinho de Mina com TNT
-- Conversão: Pistão Grudento → Normal
+### Receitas
+- Desfazer
+    - Carrinho de Mina com Baú
+    - Carrinho de Mina com Funil
+    - Carrinho de Mina com TNT
+    - Pistão Grudento
 
 ---
 
