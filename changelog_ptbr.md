@@ -1,4 +1,4 @@
-# Changelog
+# Notas de Atualização
 
 ## [Unreleased]
 
@@ -10,32 +10,33 @@ Este changelog documenta as principais adições visíveis no workspace e como e
 
 ### Blocos
 Cada bloco listado é apresentado com as variantes disponibilizadas in‑game:
-- Andesito
-    - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles, Smooth
 
-- Basalto
-    - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles, Smooth
+    - Andesito
+        - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles, Smooth
 
-- Basalto (Polido)
-    - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles
+    - Basalto
+        - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles, Smooth
 
-- Blackstone (Polido)
-    - Tiles, Chiseled Bricks, Cracked Tiles, Smooth
+    - Basalto (Polido)
+        - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles
 
-- Calcita
-    - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles
+    - Blackstone (Polido)
+        - Tiles, Chiseled Bricks, Cracked Tiles, Smooth
 
-- Diorito
-    - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles, Smooth
+    - Calcita
+        - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles
 
-- Bloco de Espeleotema
-    - Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles
+    - Diorito
+        - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles, Smooth
+    
+    - Bloco de Espeleotema
+        - Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles
 
-- Granito
-    - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles, Smooth
+    - Granito
+        - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles, Smooth
 
-- Tufo
-    - Cracked Bricks, Cracked Tiles, Smooth
+    - Tufo
+        - Cracked Bricks, Cracked Tiles, Smooth
 
 - Adicionado Bloco de Carvão Vegetal
 
