@@ -1,15 +1,14 @@
 # Changelog
 
-## [Unreleased]
+## Unreleased - v3.2
 
-This changelog documents the main additions visible in the workspace and how they appear in‑game. The entries below describe the blocks (friendly names) and, at the end, a consolidated list of the technical identifiers included.
-
+This changelog documents the main additions visible in the game.
 ### Overview
-- New block variants were added for several base materials, with "Bricks", "Tiles", "Chiseled", "Cracked" and "Smooth" versions where applicable.
-- New items and uncrafting recipes were also added.
+- New block variants were added for several types of stones.
+- New items and uncrafting recipes were added.
 
 ### Blocks
-Each listed block is shown with the variants provided in‑game:
+- Each block in this list received the following variants:
 
     - Andesite
         - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles, Smooth
@@ -44,7 +43,9 @@ Each listed block is shown with the variants provided in‑game:
 - Minecart with Chest
 - Minecart with Hopper
 - Minecart with TNT
-- Conversion: Sticky → Normal (convert sticky blocks back to normal)
+- Sticky Piston → Piston
+> [!NOTE] 
+> _The slime ball is lost in the process_.
 
 ---
 

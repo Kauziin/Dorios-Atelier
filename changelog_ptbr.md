@@ -1,6 +1,6 @@
 # Notas de Atualização
 
-## [Unreleased]
+## Unreleased - v3.2
 
 Este changelog documenta as principais adições in‑game usando o add-on.
 
@@ -46,6 +46,8 @@ Este changelog documenta as principais adições in‑game usando o add-on.
     - Carrinho de Mina com Funil
     - Carrinho de Mina com TNT
     - Pistão Grudento
+> [!NOTE] 
+> _A bola de slime é perdida no processo_.
 
 ---
 
