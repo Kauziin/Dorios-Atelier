@@ -5,38 +5,38 @@
 Este changelog documenta as principais adições visíveis no workspace e como elas aparecem in‑game. As entradas abaixo descrevem os blocos (nomes amigáveis) e, ao final, a lista consolidada dos identificadores técnicos incluídos.
 
 ### Visão Geral
-- Novas variantes de blocos foram adicionadas para várias matérias‑primas, com versões “Bricks”, “Tiles”, “Chiseled”, “Cracked” e “Smooth” quando aplicável.
+- Novas variantes de blocos foram adicionadas para várias matérias‑primas, com versões “Tijolos”, “Ladrilhos”, “Cinzelados”, “Cracked” e “Lisos” quando aplicável.
 - Novos itens e receitas de desfabricação também foram incluídos.
 
 ### Blocos
 Cada bloco listado é apresentado com as variantes disponibilizadas in‑game:
 
     - Andesito
-        - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles, Smooth
+        - Tijolos, Ladrilhos, Cinzelados, Tijolos Cinzelados, Tijolos Rachados, Ladrilhos Rachados, Lisos
 
     - Basalto
-        - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles, Smooth
+        - Tijolos, Ladrilhos, Cinzelados, Tijolos Cinzelados, Tijolos Rachados, Ladrilhos Rachados, Lisos
 
     - Basalto (Polido)
-        - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles
+        - Tijolos, Ladrilhos, Cinzelados, Tijolos Cinzelados, Tijolos Rachados, Ladrilhos Rachados
 
     - Blackstone (Polido)
-        - Tiles, Chiseled Bricks, Cracked Tiles, Smooth
+        - Ladrilhos, Tijolos Cinzelados, Ladrilhos Rachados, Lisos
 
     - Calcita
-        - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles
+        - Tijolos, Ladrilhos, Cinzelados, Tijolos Cinzelados, Tijolos Rachados, Ladrilhos Rachados
 
     - Diorito
-        - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles, Smooth
+        - Tijolos, Ladrilhos, Cinzelados, Tijolos Cinzelados, Tijolos Rachados, Ladrilhos Rachados, Lisos
     
     - Bloco de Espeleotema
-        - Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles
+        - Cinzelados, Tijolos Cinzelados, Tijolos Rachados, Ladrilhos Rachados
 
     - Granito
-        - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles, Smooth
+        - Tijolos, Ladrilhos, Cinzelados, Tijolos Cinzelados, Tijolos Rachados, Ladrilhos Rachados, Lisos
 
     - Tufo
-        - Cracked Bricks, Cracked Tiles, Smooth
+        - Tijolos Rachados, Ladrilhos Rachados, Lisos
 
 - Adicionado Bloco de Carvão Vegetal
 
@@ -52,29 +52,29 @@ Cada bloco listado é apresentado com as variantes disponibilizadas in‑game:
 Lista consolidada de arquivos/identificadores adicionados ao workspace, agrupados por matéria‑prima.
 
 - Andesite:
-    - `andesite_bricks.json`, `andesite_tiles.json`, `chiseled_andesite.json`, `chiseled_andesite_bricks.json`, `cracked_andesite_bricks.json`, `cracked_andesite_tiles.json`, `smooth_andesite.json`
+    - `andesite_Tijolos.json`, `andesite_Ladrilhos.json`, `Cinzelados_andesite.json`, `Cinzelados_andesite_Tijolos.json`, `cracked_andesite_Tijolos.json`, `cracked_andesite_Ladrilhos.json`, `Lisos_andesite.json`
 
 - Basalt / Polished Basalt:
-    - `basalt_bricks.json`, `basalt_tiles.json`, `chiseled_basalt.json`, `chiseled_basalt_bricks.json`, `cracked_basalt_bricks.json`, `cracked_basalt_tiles.json`, `smooth_basalt.json`
-    - `polished_basalt_bricks.json`, `polished_basalt_tiles.json`, `chiseled_polished_basalt.json`, `chiseled_polished_basalt_bricks.json`, `chiseled_polished_basalt_tiles.json`, `cracked_polished_basalt_bricks.json`, `cracked_polished_basalt_tiles.json`, `smooth_polished_basalt.json`
+    - `basalt_Tijolos.json`, `basalt_Ladrilhos.json`, `Cinzelados_basalt.json`, `Cinzelados_basalt_Tijolos.json`, `cracked_basalt_Tijolos.json`, `cracked_basalt_Ladrilhos.json`, `Lisos_basalt.json`
+    - `polished_basalt_Tijolos.json`, `polished_basalt_Ladrilhos.json`, `Cinzelados_polished_basalt.json`, `Cinzelados_polished_basalt_Tijolos.json`, `Cinzelados_polished_basalt_Ladrilhos.json`, `cracked_polished_basalt_Tijolos.json`, `cracked_polished_basalt_Ladrilhos.json`, `Lisos_polished_basalt.json`
 
 - Blackstone:
-    - `blackstone_bricks.json`, `blackstone_tiles.json`, `chiseled_blackstone.json`, `chiseled_blackstone_bricks.json`, `cracked_blackstone_bricks.json`, `cracked_blackstone_tiles.json`, `smooth_blackstone.json`
+    - `blackstone_Tijolos.json`, `blackstone_Ladrilhos.json`, `Cinzelados_blackstone.json`, `Cinzelados_blackstone_Tijolos.json`, `cracked_blackstone_Tijolos.json`, `cracked_blackstone_Ladrilhos.json`, `Lisos_blackstone.json`
 
 - Calcite:
-    - `calcite_bricks.json`, `calcite_tiles.json`, `chiseled_calcite.json`, `chiseled_calcite_bricks.json`, `cracked_calcite_bricks.json`, `cracked_calcite_tiles.json`, `smooth_calcite.json`
+    - `calcite_Tijolos.json`, `calcite_Ladrilhos.json`, `Cinzelados_calcite.json`, `Cinzelados_calcite_Tijolos.json`, `cracked_calcite_Tijolos.json`, `cracked_calcite_Ladrilhos.json`, `Lisos_calcite.json`
 
 - Diorite:
-    - `diorite_bricks.json`, `diorite_tiles.json`, `chiseled_diorite.json`, `chiseled_diorite_bricks.json`, `cracked_diorite_bricks.json`, `cracked_diorite_tiles.json`, `smooth_diorite.json`
+    - `diorite_Tijolos.json`, `diorite_Ladrilhos.json`, `Cinzelados_diorite.json`, `Cinzelados_diorite_Tijolos.json`, `cracked_diorite_Tijolos.json`, `cracked_diorite_Ladrilhos.json`, `Lisos_diorite.json`
 
 - Dripstone Block:
-    - `dripstone_block_bricks.json`, `dripstone_block_tiles.json`, `chiseled_dripstone_block.json`, `chiseled_dripstone_block_bricks.json`, `cracked_dripstone_block_bricks.json`, `cracked_dripstone_block_tiles.json`, `smooth_dripstone_block.json`
+    - `dripstone_block_Tijolos.json`, `dripstone_block_Ladrilhos.json`, `Cinzelados_dripstone_block.json`, `Cinzelados_dripstone_block_Tijolos.json`, `cracked_dripstone_block_Tijolos.json`, `cracked_dripstone_block_Ladrilhos.json`, `Lisos_dripstone_block.json`
 
 - Granite:
-    - `granite_bricks.json`, `granite_tiles.json`, `chiseled_granite.json`, `chiseled_granite_bricks.json`, `cracked_granite_bricks.json`, `cracked_granite_tiles.json`, `smooth_granite.json`
+    - `granite_Tijolos.json`, `granite_Ladrilhos.json`, `Cinzelados_granite.json`, `Cinzelados_granite_Tijolos.json`, `cracked_granite_Tijolos.json`, `cracked_granite_Ladrilhos.json`, `Lisos_granite.json`
 
 - Tuff:
-    - `tuff_bricks.json`, `tuff_tiles.json`, `chiseled_tuff.json`, `chiseled_tuff_bricks.json`, `cracked_tuff_bricks.json`, `cracked_tuff_tiles.json`, `smooth_tuff.json`
+    - `tuff_Tijolos.json`, `tuff_Ladrilhos.json`, `Cinzelados_tuff.json`, `Cinzelados_tuff_Tijolos.json`, `cracked_tuff_Tijolos.json`, `cracked_tuff_Ladrilhos.json`, `Lisos_tuff.json`
 
 - Itens:
     - `charcoal_block.json`
