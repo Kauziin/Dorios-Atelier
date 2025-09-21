@@ -10,6 +10,7 @@ This changelog documents the main additions visible in the workspace and how the
 
 ### Blocks
 Each listed block is shown with the variants provided in‑game:
+
     - Andesite
         - Bricks, Tiles, Chiseled, Chiseled Bricks, Cracked Bricks, Cracked Tiles, Smooth
 
