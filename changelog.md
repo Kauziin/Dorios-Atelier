@@ -48,10 +48,10 @@ This changelog documents the main additions visible in the game.
 
 ### Recipes
 - Uncrafting:
- - Minecart with Chest
- - Minecart with Hopper
- - Minecart with TNT
- - Sticky Piston
+    - Minecart with Chest
+    - Minecart with Hopper
+    - Minecart with TNT
+    - Sticky Piston
 > [!NOTE] 
 > _The slime ball is lost in the process_.
 
