@@ -7,7 +7,7 @@ Planned:\
 [Chiselling Update 1.0](#)
 
 ### Chiselling Update
-### <sub>v1.0</sub>
+### <sup>v1.0</sup>
 
 This changelog documents the main additions visible in the game.
 ### Overview
