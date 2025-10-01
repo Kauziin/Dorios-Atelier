@@ -44,7 +44,10 @@ This changelog documents the main additions visible in the game.
     - Tuff
         - Cracked Bricks, Cracked Tiles, Smooth
 
-- Added Charcoal Block
+> - Added Charcoal Block //
+
+> [!NOTE]
+> This block, as well as its compressed variants, are already Implemented on UtilityCraft 3.2
 
 ### Recipes
 - Uncrafting:
