@@ -55,8 +55,7 @@ This changelog documents the main additions visible in the game.
     - Minecart with Hopper
     - Minecart with TNT
     - Sticky Piston
-> [!NOTE] 
-> _The slime ball is lost in the process_.
+> [!NOTE] _The slime ball is lost in the process_.
 
 ---
 
