@@ -75,6 +75,7 @@ Encantamentos voltados à organização, construção intuitiva e fluxo criativo
 
 - **Build Reach:** Aumenta alcance de colocação de blocos.
 - **Precision Place:** Alinha blocos com base na face de visão.
+- **Rangefinder:** Mostra continuamente a distância entre o jogador e o bloco em sua frente.
 - **Silken Touch:** Colhe blocos raros como grama alta ou cogumelos.
 - **Surface Snap:** Facilita o alinhamento de blocos em superfícies.
 - **Trail Blazer:** Deixa rastros visuais úteis para marcação de caminho.
