@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "utilitycraft:craft_calcite_bricks"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {"item": "utilitycraft:polished_calcite"},
+      {"item": "utilitycraft:polished_calcite"},
+      {"item": "utilitycraft:polished_calcite"},
+      {"item": "utilitycraft:polished_calcite"}
+    ],
+    "result": { "item": "utilitycraft:calcite_bricks", "count": 4 }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "utilitycraft:craft_basalt_tiles"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {"item": "utilitycraft:basalt_bricks"},
+      {"item": "utilitycraft:basalt_bricks"},
+      {"item": "utilitycraft:basalt_bricks"},
+      {"item": "utilitycraft:basalt_bricks"}
+    ],
+    "result": { "item": "utilitycraft:basalt_tiles", "count": 4 }
+  }
+}

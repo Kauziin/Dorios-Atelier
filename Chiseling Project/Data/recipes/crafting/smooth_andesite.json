@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "utilitycraft:craft_smooth_andesite"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {"item": "minecraft:andesite"},
+      {"item": "minecraft:andesite"},
+      {"item": "minecraft:andesite"},
+      {"item": "minecraft:andesite"}
+    ],
+    "result": { "item": "utilitycraft:smooth_andesite", "count": 4 }
+  }
+}

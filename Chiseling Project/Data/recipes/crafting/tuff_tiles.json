@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "utilitycraft:craft_tuff_tiles"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {"item": "utilitycraft:tuff_bricks"},
+      {"item": "utilitycraft:tuff_bricks"},
+      {"item": "utilitycraft:tuff_bricks"},
+      {"item": "utilitycraft:tuff_bricks"}
+    ],
+    "result": { "item": "utilitycraft:tuff_tiles", "count": 4 }
+  }
+}

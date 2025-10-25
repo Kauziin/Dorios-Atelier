@@ -1,0 +1,197 @@
+{
+  "resource_pack_name": "twm",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "twm_andesite_bricks": {
+      "textures": "textures/blocks/andesite_bricks"
+    },
+    "twm_andesite_tiles": {
+      "textures": "textures/blocks/andesite_tiles"
+    },
+    "twm_basalt_bricks": {
+      "textures": "textures/blocks/basalt_bricks"
+    },
+    "twm_basalt_tiles": {
+      "textures": "textures/blocks/basalt_tiles"
+    },
+    "twm_blackstone_tiles": {
+      "textures": "textures/blocks/blackstone_tiles"
+    },
+    "twm_calcite_bricks": {
+      "textures": "textures/blocks/calcite_bricks"
+    },
+    "twm_calcite_tiles": {
+      "textures": "textures/blocks/calcite_tiles"
+    },
+    "twm_chiseled_andesite_bricks_sides": {
+      "textures": "textures/blocks/chiseled_andesite_bricks_sides"
+    },
+    "twm_chiseled_andesite_bricks_top": {
+      "textures": "textures/blocks/chiseled_andesite_bricks_top"
+    },
+    "twm_chiseled_andesite_sides": {
+      "textures": "textures/blocks/chiseled_andesite_sides"
+    },
+    "twm_chiseled_andesite_top": {
+      "textures": "textures/blocks/chiseled_andesite_top"
+    },
+    "twm_chiseled_basalt_bricks_2": {
+      "textures": "textures/blocks/Chiseled_basalt_bricks_2"
+    },
+    "twm_chiseled_basalt_sides": {
+      "textures": "textures/blocks/chiseled_basalt_sides"
+    },
+    "twm_chiseled_basalt_top": {
+      "textures": "textures/blocks/chiseled_basalt_top"
+    },
+    "twm_chiseled_blackstone_sides": {
+      "textures": "textures/blocks/chiseled_blackstone_sides"
+    },
+    "twm_chiseled_blackstone_top": {
+      "textures": "textures/blocks/chiseled_blackstone_top"
+    },
+    "twm_chiseled_calcite_bricks_sides": {
+      "textures": "textures/blocks/chiseled_calcite_bricks_sides"
+    },
+    "twm_chiseled_calcite_bricks_top": {
+      "textures": "textures/blocks/chiseled_calcite_bricks_top"
+    },
+    "twm_chiseled_calcite_sides": {
+      "textures": "textures/blocks/chiseled_calcite_sides"
+    },
+    "twm_chiseled_calcite_top": {
+      "textures": "textures/blocks/chiseled_calcite_top"
+    },
+    "twm_chiseled_diorite_bricks_sides": {
+      "textures": "textures/blocks/chiseled_diorite_bricks_sides"
+    },
+    "twm_chiseled_diorite_bricks_top": {
+      "textures": "textures/blocks/chiseled_diorite_bricks_top"
+    },
+    "twm_chiseled_diorite_sides": {
+      "textures": "textures/blocks/chiseled_diorite_sides"
+    },
+    "twm_chiseled_diorite_top": {
+      "textures": "textures/blocks/chiseled_diorite_top"
+    },
+    "twm_chiseled_dripstone_bricks_sides": {
+      "textures": "textures/blocks/chiseled_dripstone_bricks_sides"
+    },
+    "twm_chiseled_dripstone_bricks_top": {
+      "textures": "textures/blocks/chiseled_dripstone_bricks_top"
+    },
+    "twm_chiseled_dripstone_sides": {
+      "textures": "textures/blocks/chiseled_dripstone_sides"
+    },
+    "twm_chiseled_dripstone_top": {
+      "textures": "textures/blocks/chiseled_dripstone_top"
+    },
+    "twm_chiseled_granite_bricks_sides": {
+      "textures": "textures/blocks/chiseled_granite_bricks_sides"
+    },
+    "twm_chiseled_granite_bricks_top": {
+      "textures": "textures/blocks/chiseled_granite_bricks_top"
+    },
+    "twm_chiseled_granite_sides": {
+      "textures": "textures/blocks/chiseled_granite_sides"
+    },
+    "twm_chiseled_granite_top": {
+      "textures": "textures/blocks/chiseled_granite_top"
+    },
+    "twm_cracked_andesite_bricks": {
+      "textures": "textures/blocks/cracked_andesite_bricks"
+    },
+    "twm_cracked_andesite_tiles": {
+      "textures": "textures/blocks/cracked_andesite_tiles"
+    },
+    "twm_cracked_basalt_bricks": {
+      "textures": "textures/blocks/cracked_basalt_bricks"
+    },
+    "twm_cracked_basalt_tiles": {
+      "textures": "textures/blocks/cracked_basalt_tiles"
+    },
+    "twm_cracked_blackstone_tiles": {
+      "textures": "textures/blocks/cracked_blackstone_tiles"
+    },
+    "twm_cracked_calcite_bricks": {
+      "textures": "textures/blocks/cracked_calcite_bricks"
+    },
+    "twm_cracked_calcite_tiles": {
+      "textures": "textures/blocks/cracked_calcite_tiles"
+    },
+    "twm_cracked_diorite_bricks": {
+      "textures": "textures/blocks/cracked_diorite_bricks"
+    },
+    "twm_cracked_diorite_tiles": {
+      "textures": "textures/blocks/cracked_diorite_tiles"
+    },
+    "twm_cracked_dripstone_bricks": {
+      "textures": "textures/blocks/cracked_dripstone_bricks"
+    },
+    "twm_cracked_dripstone_tiles": {
+      "textures": "textures/blocks/cracked_dripstone_tiles"
+    },
+    "twm_cracked_granite_bricks": {
+      "textures": "textures/blocks/cracked_granite_bricks"
+    },
+    "twm_cracked_granite_tiles": {
+      "textures": "textures/blocks/cracked_granite_tiles"
+    },
+    "twm_cracked_tuff_bricks": {
+      "textures": "textures/blocks/cracked_tuff_bricks"
+    },
+    "twm_cracked_tuff_tiles": {
+      "textures": "textures/blocks/cracked_tuff_tiles"
+    },
+    "twm_diorite_bricks": {
+      "textures": "textures/blocks/diorite_bricks"
+    },
+    "twm_diorite_tiles": {
+      "textures": "textures/blocks/diorite_tiles"
+    },
+    "twm_dripstone_bricks": {
+      "textures": "textures/blocks/dripstone_bricks"
+    },
+    "twm_dripstone_tiles": {
+      "textures": "textures/blocks/dripstone_tiles"
+    },
+    "twm_granite_bricks": {
+      "textures": "textures/blocks/granite_bricks"
+    },
+    "twm_granite_tiles": {
+      "textures": "textures/blocks/granite_tiles"
+    },
+    "twm_polished_calcite": {
+      "textures": "textures/blocks/polished_calcite"
+    },
+    "twm_polished_dripstone": {
+      "textures": "textures/blocks/polished_dripstone"
+    },
+    "twm_smooth_andesite": {
+      "textures": "textures/blocks/smooth_andesite"
+    },
+    "twm_smooth_blackstone": {
+      "textures": "textures/blocks/smooth_blackstone"
+    },
+    "twm_smooth_calcite": {
+      "textures": "textures/blocks/smooth_calcite"
+    },
+    "twm_smooth_diorite": {
+      "textures": "textures/blocks/smooth_diorite"
+    },
+    "twm_smooth_dripstone": {
+      "textures": "textures/blocks/smooth_dripstone"
+    },
+    "twm_smooth_granite": {
+      "textures": "textures/blocks/smooth_granite"
+    },
+    "twm_smooth_tuff": {
+      "textures": "textures/blocks/smooth_tuff"
+    },
+    "twm_tuff_tiles": {
+      "textures": "textures/blocks/tuff_tiles"
+    }
+  }
+}

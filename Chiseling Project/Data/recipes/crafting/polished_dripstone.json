@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "utilitycraft:craft_polished_dripstone"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {"item": "utilitycraft:smooth_dripstone"},
+      {"item": "utilitycraft:smooth_dripstone"},
+      {"item": "utilitycraft:smooth_dripstone"},
+      {"item": "utilitycraft:smooth_dripstone"}
+    ],
+    "result": { "item": "utilitycraft:polished_dripstone", "count": 4 }
+  }
+}

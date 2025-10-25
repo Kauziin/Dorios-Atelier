@@ -4,71 +4,75 @@
 ## Tijolos e Ladrilhos
 andesite_bricks
 andesite_tiles
-+ basalt_bricks
-+ basalt_tiles
-+ blackstone_bricks
-+ blackstone_tiles
+basalt_bricks
+basalt_tiles
+blackstone_bricks
+blackstone_tiles
 calcite_bricks
 calcite_tiles
 diorite_bricks
 diorite_tiles
-+ dripstone_block_bricks
-+ dripstone_block_tiles
-+ granite_bricks
-+ granite_tiles
-+ polished_basalt_bricks
-+ polished_basalt_tiles
-+ tuff_bricks
-+ tuff_tiles
+dripstone_bricks
+dripstone_tiles
+granite_bricks
+granite_tiles
+polished_basalt_bricks
+polished_basalt_tiles
+tuff_bricks
+tuff_tiles
 
 ## Cinzelados
 chiseled_andesite
 chiseled_andesite_bricks
-+ chiseled_basalt
-+ chiseled_basalt_bricks
-+ chiseled_blackstone
-+ chiseled_blackstone_bricks
+chiseled_basalt
+chiseled_basalt_bricks
+chiseled_blackstone
+chiseled_blackstone_bricks
 chiseled_calcite
 chiseled_calcite_bricks
-+ chiseled_dripstone_block
-+ chiseled_dripstone_block_bricks
+chiseled_dripstone
+chiseled_dripstone_bricks
 chiseled_diorite
 chiseled_diorite_bricks
 chiseled_granite
 chiseled_granite_bricks
 chiseled_polished_basalt
-+ chiseled_polished_basalt_bricks
-+ chiseled_polished_basalt_tiles
-+ chiseled_tuff
-+ chiseled_tuff_bricks
+chiseled_polished_basalt_bricks
+chiseled_polished_basalt_tiles
+chiseled_tuff
+chiseled_tuff_bricks
 
 ## Rachados
 cracked_andesite_bricks
 cracked_andesite_tiles
-+ cracked_basalt_bricks
-+ cracked_basalt_tiles
-+ cracked_blackstone_bricks
-+ cracked_blackstone_tiles
+cracked_basalt_bricks
+cracked_basalt_tiles
+cracked_blackstone_bricks
+cracked_blackstone_tiles
 cracked_calcite_bricks
 cracked_calcite_tiles
 cracked_diorite_bricks
 cracked_diorite_tiles
-+ cracked_dripstone_block_bricks
-+ cracked_dripstone_block_tiles
+cracked_dripstone_bricks
+cracked_dripstone_tiles
 cracked_granite_bricks
 cracked_granite_tiles
 cracked_polished_basalt_bricks
 cracked_polished_basalt_tiles
-+ cracked_tuff_bricks
-+ cracked_tuff_tiles
+cracked_tuff_bricks
+cracked_tuff_tiles
 
 ## Lisos
 smooth_andesite
-+ smooth_basalt
-+ smooth_blackstone
-- smooth_calcite
+smooth_basalt
+smooth_blackstone
+smooth_calcite
 smooth_diorite
-+ smooth_dripstone_block
+smooth_dripstone
 smooth_granite
-+ smooth_polished_basalt
-+ smooth_tuff
+smooth_polished_basalt
+smooth_tuff
+
+## Polidos
+polished_calcite
+polished_dripstone

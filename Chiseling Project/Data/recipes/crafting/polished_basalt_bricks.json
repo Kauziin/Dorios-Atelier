@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "utilitycraft:craft_polished_basalt_bricks"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {"item": "utilitycraft:smooth_polished_basalt"},
+      {"item": "utilitycraft:smooth_polished_basalt"},
+      {"item": "utilitycraft:smooth_polished_basalt"},
+      {"item": "utilitycraft:smooth_polished_basalt"}
+    ],
+    "result": { "item": "utilitycraft:polished_basalt_bricks", "count": 4 }
+  }
+}

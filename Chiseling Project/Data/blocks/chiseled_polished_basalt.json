@@ -2,16 +2,16 @@
 	"format_version": "1.21.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "twm:chiseled_polished_basalt",
+			"identifier": "utilitycraft:chiseled_polished_basalt",
 			"menu_category": {
 				"category": "construction"
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.twm_block",
+			"minecraft:geometry": "geometry.utilitycraft_block",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "twm_chiseled_polished_basalt",
+					"texture": "utilitycraft_chiseled_polished_basalt",
 					"render_method": "opaque"
 				}
 			},

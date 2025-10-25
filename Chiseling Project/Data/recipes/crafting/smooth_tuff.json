@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "utilitycraft:craft_smooth_tuff"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {"item": "minecraft:tuff"},
+      {"item": "minecraft:tuff"},
+      {"item": "minecraft:tuff"},
+      {"item": "minecraft:tuff"}
+    ],
+    "result": { "item": "utilitycraft:smooth_tuff", "count": 4 }
+  }
+}

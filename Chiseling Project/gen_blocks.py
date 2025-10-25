@@ -1,10 +1,12 @@
+from pathlib import Path
+
 from jinja2 import Environment, FileSystemLoader
-import os
 
 # Configurações
-TEMPLATE_DIR = ""
-OUTPUT_DIR = "Data/blocks"
-TXT_FILE = "blocks.txt"  # cada linha contém o nome de um bloco
+BASE_DIR = Path(__file__).resolve().parent
+TEMPLATE_DIR = BASE_DIR
+OUTPUT_DIR = BASE_DIR / "Data" / "blocks"
+TXT_FILE = BASE_DIR / "blocks.txt"  # cada linha contém o nome de um bloco
 
 # Mapeamento de categorias -> valores
 CATEGORY_VALUES = {
@@ -24,27 +26,35 @@ def get_value_from_name(name: str) -> float | None:
 
 
 # Carrega o template
-env = Environment(loader=FileSystemLoader(TEMPLATE_DIR))
+env = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)))
 template = env.get_template("blocks.json.j2")
 
-# Garante que a pasta de saída existe
-os.makedirs(OUTPUT_DIR, exist_ok=True)
-total = 0
-# Lê nomes do arquivo .txt
-with open(TXT_FILE, "r", encoding="utf-8") as f:
-    block_names = [
-        line.strip()
-        for line in f
-        if line.strip() and not line.strip().startswith("##") and not line.strip().startswith("-")
-    ]
+def load_block_names(source: Path) -> list[str]:
+    """Read block identifiers, normalizing markers and avoiding duplicates."""
+    seen: set[str] = set()
+    blocks: list[str] = []
+    for raw_line in source.read_text(encoding="utf-8").splitlines():
+        stripped = raw_line.strip()
+        if not stripped or stripped.startswith("##"):
+            continue
 
-# Gera arquivos com base no template
+        normalized = stripped.lstrip("+- ").split("#", 1)[0].strip().lower()
+        if not normalized or normalized in seen:
+            continue
+
+        seen.add(normalized)
+        blocks.append(normalized)
+
+    return blocks
+
+
+block_names = load_block_names(TXT_FILE)
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
 for name in block_names:
-    total = total+1
     value = get_value_from_name(name)
     output = template.render(name=name, value=value)
-    output_path = os.path.join(OUTPUT_DIR, f"{name}.json")
-    with open(output_path, "w", encoding="utf-8") as out_file:
-        out_file.write(output)
+    output_path = OUTPUT_DIR / f"{name}.json"
+    output_path.write_text(output, encoding="utf-8")
 
-print(total, "blocos gerados com sucesso.")
+print(len(block_names), "blocos gerados com sucesso.")

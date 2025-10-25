@@ -2,16 +2,16 @@
 	"format_version": "1.21.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "twm:cracked_granite_bricks",
+			"identifier": "utilitycraft:cracked_granite_bricks",
 			"menu_category": {
 				"category": "construction"
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.twm_block",
+			"minecraft:geometry": "geometry.utilitycraft_block",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "twm_cracked_granite_bricks",
+					"texture": "utilitycraft_cracked_granite_bricks",
 					"render_method": "opaque"
 				}
 			},

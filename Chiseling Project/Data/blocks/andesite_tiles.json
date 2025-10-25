@@ -2,16 +2,16 @@
 	"format_version": "1.21.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "twm:andesite_tiles",
+			"identifier": "utilitycraft:andesite_tiles",
 			"menu_category": {
 				"category": "construction"
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.twm_block",
+			"minecraft:geometry": "geometry.utilitycraft_block",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "twm_andesite_tiles",
+					"texture": "utilitycraft_andesite_tiles",
 					"render_method": "opaque"
 				}
 			},

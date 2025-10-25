@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "utilitycraft:craft_granite_tiles"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {"item": "utilitycraft:granite_bricks"},
+      {"item": "utilitycraft:granite_bricks"},
+      {"item": "utilitycraft:granite_bricks"},
+      {"item": "utilitycraft:granite_bricks"}
+    ],
+    "result": { "item": "utilitycraft:granite_tiles", "count": 4 }
+  }
+}

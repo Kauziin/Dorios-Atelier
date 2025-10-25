@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "utilitycraft:craft_diorite_tiles"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {"item": "utilitycraft:diorite_bricks"},
+      {"item": "utilitycraft:diorite_bricks"},
+      {"item": "utilitycraft:diorite_bricks"},
+      {"item": "utilitycraft:diorite_bricks"}
+    ],
+    "result": { "item": "utilitycraft:diorite_tiles", "count": 4 }
+  }
+}

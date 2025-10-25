@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "utilitycraft:craft_andesite_bricks"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {"item": "utilitycraft:smooth_andesite"},
+      {"item": "utilitycraft:smooth_andesite"},
+      {"item": "utilitycraft:smooth_andesite"},
+      {"item": "utilitycraft:smooth_andesite"}
+    ],
+    "result": { "item": "utilitycraft:andesite_bricks", "count": 4 }
+  }
+}
