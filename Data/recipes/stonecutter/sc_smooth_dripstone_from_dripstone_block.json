@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_smooth_dripstone_from_dripstone_block"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "minecraft:dripstone_block"
+    },
+    "result": {
+      "item": "utilitycraft:smooth_dripstone",
+      "count": 1
+    }
+  }
+}

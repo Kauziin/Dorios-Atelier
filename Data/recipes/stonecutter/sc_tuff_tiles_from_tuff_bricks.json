@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_tuff_tiles_from_tuff_bricks"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "utilitycraft:tuff_bricks"
+    },
+    "result": {
+      "item": "utilitycraft:tuff_tiles",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_andesite_bricks_from_smooth_andesite"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "utilitycraft:smooth_andesite"
+    },
+    "result": {
+      "item": "utilitycraft:andesite_bricks",
+      "count": 1
+    }
+  }
+}

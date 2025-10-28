@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_granite_bricks_from_smooth_granite"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "utilitycraft:smooth_granite"
+    },
+    "result": {
+      "item": "utilitycraft:granite_bricks",
+      "count": 1
+    }
+  }
+}

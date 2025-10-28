@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_smooth_tuff_from_tuff"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "minecraft:tuff"
+    },
+    "result": {
+      "item": "utilitycraft:smooth_tuff",
+      "count": 1
+    }
+  }
+}

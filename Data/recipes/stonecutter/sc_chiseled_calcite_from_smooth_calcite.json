@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_chiseled_calcite_from_smooth_calcite"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "utilitycraft:smooth_calcite"
+    },
+    "result": {
+      "item": "utilitycraft:chiseled_calcite",
+      "count": 1
+    }
+  }
+}

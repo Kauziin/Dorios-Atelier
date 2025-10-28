@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_calcite_tiles_from_calcite_bricks"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "utilitycraft:calcite_bricks"
+    },
+    "result": {
+      "item": "utilitycraft:calcite_tiles",
+      "count": 1
+    }
+  }
+}

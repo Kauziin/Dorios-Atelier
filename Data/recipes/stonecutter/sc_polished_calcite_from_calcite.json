@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_polished_calcite_from_calcite"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "minecraft:calcite"
+    },
+    "result": {
+      "item": "utilitycraft:polished_calcite",
+      "count": 1
+    }
+  }
+}

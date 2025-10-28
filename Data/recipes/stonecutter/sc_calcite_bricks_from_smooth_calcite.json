@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_calcite_bricks_from_smooth_calcite"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "utilitycraft:smooth_calcite"
+    },
+    "result": {
+      "item": "utilitycraft:calcite_bricks",
+      "count": 1
+    }
+  }
+}

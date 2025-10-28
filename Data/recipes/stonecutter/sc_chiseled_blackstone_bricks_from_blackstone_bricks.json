@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_chiseled_blackstone_bricks_from_blackstone_bricks"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "utilitycraft:blackstone_bricks"
+    },
+    "result": {
+      "item": "utilitycraft:chiseled_blackstone_bricks",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_chiseled_diorite_bricks_from_diorite_bricks"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "utilitycraft:diorite_bricks"
+    },
+    "result": {
+      "item": "utilitycraft:chiseled_diorite_bricks",
+      "count": 1
+    }
+  }
+}

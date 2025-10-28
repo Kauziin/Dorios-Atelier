@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_smooth_polished_basalt_from_polished_basalt"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "minecraft:polished_basalt"
+    },
+    "result": {
+      "item": "utilitycraft:smooth_polished_basalt",
+      "count": 1
+    }
+  }
+}

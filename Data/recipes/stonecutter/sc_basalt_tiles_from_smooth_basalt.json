@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_basalt_tiles_from_smooth_basalt"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "utilitycraft:smooth_basalt"
+    },
+    "result": {
+      "item": "utilitycraft:basalt_tiles",
+      "count": 1
+    }
+  }
+}

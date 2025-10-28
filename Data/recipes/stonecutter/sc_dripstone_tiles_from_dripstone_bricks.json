@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_dripstone_tiles_from_dripstone_bricks"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "utilitycraft:dripstone_bricks"
+    },
+    "result": {
+      "item": "utilitycraft:dripstone_tiles",
+      "count": 1
+    }
+  }
+}

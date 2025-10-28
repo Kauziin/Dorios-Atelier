@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_smooth_diorite_from_diorite"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "minecraft:diorite"
+    },
+    "result": {
+      "item": "utilitycraft:smooth_diorite",
+      "count": 1
+    }
+  }
+}

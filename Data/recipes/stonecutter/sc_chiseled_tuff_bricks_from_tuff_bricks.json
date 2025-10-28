@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_chiseled_tuff_bricks_from_tuff_bricks"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "utilitycraft:tuff_bricks"
+    },
+    "result": {
+      "item": "utilitycraft:chiseled_tuff_bricks",
+      "count": 1
+    }
+  }
+}

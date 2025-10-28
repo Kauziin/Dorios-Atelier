@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_chiseled_dripstone_from_smooth_dripstone"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "utilitycraft:smooth_dripstone"
+    },
+    "result": {
+      "item": "utilitycraft:chiseled_dripstone",
+      "count": 1
+    }
+  }
+}

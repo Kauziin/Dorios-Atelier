@@ -1,0 +1,43 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Dorios' Atelier",
+	"namespace": "utilitycraft",
+	"authors": [
+		"Dorios Studios"
+	],
+	"targetVersion": "1.21.0",
+	"description": "Version 1.0 \n§6Dorios Studios",
+	"experimentalGameplay": {
+		"holidayCreatorFeatures": false,
+		"upcomingCreatorFeatures": false,
+		"enableGameTestFramework": false,
+		"educationEdition": false
+	},
+	"bdsProject": true,
+	"packs": {
+		"behaviorPack": "./Data",
+		"resourcePack": "./Assets"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Dorios' Atelier"
+				}
+			]
+		]
+	}
+}

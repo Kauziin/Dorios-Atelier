@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_stonecutter": {
+    "description": {
+      "identifier": "utilitycraft:sc_chiseled_polished_basalt_tiles_from_polished_basalt_bricks"
+    },
+    "tags": ["stonecutter"],
+    "ingredient": {
+      "item": "utilitycraft:polished_basalt_bricks"
+    },
+    "result": {
+      "item": "utilitycraft:chiseled_polished_basalt_tiles",
+      "count": 1
+    }
+  }
+}
