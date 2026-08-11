@@ -2,14 +2,14 @@
     "format_version": "1.20.80",
     "minecraft:recipe_furnace": {
         "description": {
-            "identifier": "utilitycraft:smelt_cracked_basalt_bricks"
+            "identifier": "dorios_atelier:smelt_cracked_basalt_bricks"
         },
         "tags": [
             "furnace",
             "blast_furnace"
         ],
-        "input": "utilitycraft:basalt_bricks",
-        "output": "utilitycraft:cracked_basalt_bricks",
+        "input": "dorios_atelier:basalt_bricks",
+        "output": "dorios_atelier:cracked_basalt_bricks",
         "cookingtime": 200,
         "experience": 0.1
     }

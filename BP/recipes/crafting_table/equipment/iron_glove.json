@@ -2,14 +2,14 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:craft_iron_glove"
+            "identifier": "dorios_atelier:craft_iron_glove"
         },
         "tags": [
             "crafting_table"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:copper_glove"
+                "item": "dorios_atelier:copper_glove"
             },
             {
                 "item": "minecraft:iron_ingot",
@@ -17,11 +17,11 @@
             }
         ],
         "result": {
-            "item": "utilitycraft:iron_glove"
+            "item": "dorios_atelier:iron_glove"
         },
         "unlock": [
             {
-                "item": "utilitycraft:copper_glove"
+                "item": "dorios_atelier:copper_glove"
             }
         ]
     }

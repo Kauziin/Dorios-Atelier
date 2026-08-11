@@ -2,11 +2,11 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_stripped_spruce_wood_from_sanded_spruce_wood"
+            "identifier": "dorios_atelier:sc_stripped_spruce_wood_from_sanded_spruce_wood"
         },
         "tags": ["stonecutter"],
-        "ingredients": [{ "item": "utilitycraft:sanded_spruce_wood" }],
+        "ingredients": [{ "item": "dorios_atelier:sanded_spruce_wood" }],
         "result": { "item": "minecraft:stripped_spruce_wood", "count": 1 },
-        "unlock": [{ "item": "utilitycraft:sanded_spruce_wood" }]
+        "unlock": [{ "item": "dorios_atelier:sanded_spruce_wood" }]
     }
 }

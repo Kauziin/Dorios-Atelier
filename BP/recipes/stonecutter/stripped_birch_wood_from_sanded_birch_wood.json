@@ -2,11 +2,11 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_stripped_birch_wood_from_sanded_birch_wood"
+            "identifier": "dorios_atelier:sc_stripped_birch_wood_from_sanded_birch_wood"
         },
         "tags": ["stonecutter"],
-        "ingredients": [{ "item": "utilitycraft:sanded_birch_wood" }],
+        "ingredients": [{ "item": "dorios_atelier:sanded_birch_wood" }],
         "result": { "item": "minecraft:stripped_birch_wood", "count": 1 },
-        "unlock": [{ "item": "utilitycraft:sanded_birch_wood" }]
+        "unlock": [{ "item": "dorios_atelier:sanded_birch_wood" }]
     }
 }

@@ -2,24 +2,24 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:craft_chiseled_blackstone"
+            "identifier": "dorios_atelier:craft_chiseled_blackstone"
         },
         "tags": [
             "crafting_table"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:blackstone_tiles",
+                "item": "dorios_atelier:blackstone_tiles",
                 "count": 4
             }
         ],
         "result": {
-            "item": "utilitycraft:chiseled_blackstone",
+            "item": "dorios_atelier:chiseled_blackstone",
             "count": 4
         },
         "unlock": [
             {
-                "item": "utilitycraft:blackstone_tiles"
+                "item": "dorios_atelier:blackstone_tiles"
             }
         ]
     }

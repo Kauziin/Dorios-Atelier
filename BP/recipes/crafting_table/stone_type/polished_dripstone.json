@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:craft_polished_dripstone"
+            "identifier": "dorios_atelier:craft_polished_dripstone"
         },
         "tags": [
             "crafting_table"
@@ -14,7 +14,7 @@
             }
         ],
         "result": {
-            "item": "utilitycraft:polished_dripstone",
+            "item": "dorios_atelier:polished_dripstone",
             "count": 4
         },
         "unlock": [

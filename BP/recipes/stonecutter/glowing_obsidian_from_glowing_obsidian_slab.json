@@ -2,26 +2,26 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_glowing_obsidian_from_glowing_obsidian_slab"
+            "identifier": "dorios_atelier:sc_glowing_obsidian_from_glowing_obsidian_slab"
         },
         "tags": [
             "stonecutter"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:glowing_obsidian_slab"
+                "item": "dorios_atelier:glowing_obsidian_slab"
             },
             {
-                "item": "utilitycraft:glowing_obsidian_slab"
+                "item": "dorios_atelier:glowing_obsidian_slab"
             }
         ],
         "result": {
-            "item": "utilitycraft:glowing_obsidian",
+            "item": "dorios_atelier:glowing_obsidian",
             "count": 1
         },
         "unlock": [
             {
-                "item": "utilitycraft:glowing_obsidian_slab"
+                "item": "dorios_atelier:glowing_obsidian_slab"
             }
         ]
     }

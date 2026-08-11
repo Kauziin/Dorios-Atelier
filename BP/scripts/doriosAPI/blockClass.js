@@ -54,7 +54,7 @@ const BlockHandler = {
             north: "south", south: "north",
             east: "west", west: "east"
         };
-        const facing = this.permutation.getState('minecraft:facing_direction') ?? opposite[this.permutation.getState('utilitycraft:axis')];
+        const facing = this.permutation.getState('minecraft:facing_direction') ?? opposite[this.permutation.getState('dorios_atelier:axis')];
         const offset = facingOffsets[facing];
 
         if (!offset) return null;

@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "utilitycraft:craft_obsidian_pillar"
+            "identifier": "dorios_atelier:craft_obsidian_pillar"
         },
         "tags": [
             "crafting_table"
@@ -13,16 +13,16 @@
         ],
         "key": {
             "#": {
-                "item": "utilitycraft:polished_obsidian"
+                "item": "dorios_atelier:polished_obsidian"
             }
         },
         "result": {
-            "item": "utilitycraft:obsidian_pillar",
+            "item": "dorios_atelier:obsidian_pillar",
             "count": 2
         },
         "unlock": [
             {
-                "item": "utilitycraft:polished_obsidian"
+                "item": "dorios_atelier:polished_obsidian"
             }
         ]
     }

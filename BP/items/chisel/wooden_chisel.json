@@ -2,7 +2,7 @@
   "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
-      "identifier": "utilitycraft:wooden_chisel",
+      "identifier": "dorios_atelier:wooden_chisel",
       "menu_category": {
         "category": "equipment"
       }
@@ -12,7 +12,7 @@
       "minecraft:hand_equipped": true,
       "minecraft:icon": "utilitycraft_wooden_chisel"
       ,
-      "utilitycraft:chisel": {},
+      "dorios_atelier:chisel": {},
       "minecraft:durability": {
         "max_durability": 59
       }

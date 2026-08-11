@@ -2,7 +2,7 @@
     "format_version": "1.21.100",
     "minecraft:block": {
         "description": {
-            "identifier": "utilitycraft:blackstone_tiles",
+            "identifier": "dorios_atelier:blackstone_tiles",
             "menu_category": {
                 "category": "construction"
             }

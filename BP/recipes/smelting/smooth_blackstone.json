@@ -2,14 +2,14 @@
     "format_version": "1.20.80",
     "minecraft:recipe_furnace": {
         "description": {
-            "identifier": "utilitycraft:smelt_smooth_blackstone"
+            "identifier": "dorios_atelier:smelt_smooth_blackstone"
         },
         "tags": [
             "furnace",
             "blast_furnace"
         ],
         "input": "minecraft:blackstone",
-        "output": "utilitycraft:smooth_blackstone",
+        "output": "dorios_atelier:smooth_blackstone",
         "cookingtime": 200,
         "experience": 0.1
     }

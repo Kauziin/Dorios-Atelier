@@ -2,24 +2,24 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:craft_chiseled_granite"
+            "identifier": "dorios_atelier:craft_chiseled_granite"
         },
         "tags": [
             "crafting_table"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:granite_tiles",
+                "item": "dorios_atelier:granite_tiles",
                 "count": 4
             }
         ],
         "result": {
-            "item": "utilitycraft:chiseled_granite",
+            "item": "dorios_atelier:chiseled_granite",
             "count": 4
         },
         "unlock": [
             {
-                "item": "utilitycraft:granite_tiles"
+                "item": "dorios_atelier:granite_tiles"
             }
         ]
     }

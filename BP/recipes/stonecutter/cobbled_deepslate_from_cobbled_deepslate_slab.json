@@ -2,17 +2,17 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_cobbled_deepslate_from_cobbled_deepslate_slab"
+            "identifier": "dorios_atelier:sc_cobbled_deepslate_from_cobbled_deepslate_slab"
         },
         "tags": [
             "stonecutter"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:cobbled_deepslate_slab"
+                "item": "dorios_atelier:cobbled_deepslate_slab"
             },
             {
-                "item": "utilitycraft:cobbled_deepslate_slab"
+                "item": "dorios_atelier:cobbled_deepslate_slab"
             }
         ],
         "result": {
@@ -21,7 +21,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:cobbled_deepslate_slab"
+                "item": "dorios_atelier:cobbled_deepslate_slab"
             }
         ]
     }

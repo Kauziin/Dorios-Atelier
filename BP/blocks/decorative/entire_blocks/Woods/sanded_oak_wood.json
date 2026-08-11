@@ -2,10 +2,10 @@
     "format_version": "1.21.100",
     "minecraft:block": {
         "description": {
-            "identifier": "utilitycraft:sanded_oak_wood",
+            "identifier": "dorios_atelier:sanded_oak_wood",
             "menu_category": {
                 "category": "construction",
-                "group": "dorios:itemGroup.name.sandedWood"
+                "group": "dorios_atelier:itemGroup.name.sandedWood"
             }
         },
         "components": {

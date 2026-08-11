@@ -2,24 +2,24 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:craft_carved_basalt"
+            "identifier": "dorios_atelier:craft_carved_basalt"
         },
         "tags": [
             "crafting_table"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:chiseled_basalt",
+                "item": "dorios_atelier:chiseled_basalt",
                 "count": 4
             }
         ],
         "result": {
-            "item": "utilitycraft:carved_basalt",
+            "item": "dorios_atelier:carved_basalt",
             "count": 4
         },
         "unlock": [
             {
-                "item": "utilitycraft:chiseled_basalt"
+                "item": "dorios_atelier:chiseled_basalt"
             }
         ]
     }

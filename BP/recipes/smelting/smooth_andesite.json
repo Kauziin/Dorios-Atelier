@@ -2,14 +2,14 @@
     "format_version": "1.20.80",
     "minecraft:recipe_furnace": {
         "description": {
-            "identifier": "utilitycraft:smelt_smooth_andesite"
+            "identifier": "dorios_atelier:smelt_smooth_andesite"
         },
         "tags": [
             "furnace",
             "blast_furnace"
         ],
         "input": "minecraft:andesite",
-        "output": "utilitycraft:smooth_andesite",
+        "output": "dorios_atelier:smooth_andesite",
         "cookingtime": 200,
         "experience": 0.1
     }

@@ -2,7 +2,7 @@
     "format_version": "1.26.0",
     "minecraft:block": {
         "description": {
-            "identifier": "utilitycraft:andesite_tiles_slab",
+            "identifier": "dorios_atelier:andesite_tiles_slab",
             "menu_category": {
                 "category": "construction",
                 "group": "minecraft:itemGroup.name.slab"
@@ -16,7 +16,7 @@
         "components": {
             "minecraft:geometry": {
                 "identifier": "geometry.dorios_atelier_slabs",
-                "culling": "utilitycraft:culling.andesite_tiles_slab"
+                "culling": "dorios_atelier:culling.andesite_tiles_slab"
             },
             "minecraft:material_instances": {
                 "*": {

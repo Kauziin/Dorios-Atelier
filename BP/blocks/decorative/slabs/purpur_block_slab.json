@@ -2,7 +2,7 @@
     "format_version": "1.26.0",
     "minecraft:block": {
         "description": {
-            "identifier": "utilitycraft:purpur_block_slab",
+            "identifier": "dorios_atelier:purpur_block_slab",
             "menu_category": {
                 "category": "construction",
                 "group": "minecraft:itemGroup.name.slab"
@@ -18,7 +18,7 @@
         "components": {
             "minecraft:geometry": {
                 "identifier": "geometry.dorios_atelier_slabs",
-                "culling": "utilitycraft:culling.purpur_block_slab"
+                "culling": "dorios_atelier:culling.purpur_block_slab"
             },
             "minecraft:material_instances": {
                 "*": {

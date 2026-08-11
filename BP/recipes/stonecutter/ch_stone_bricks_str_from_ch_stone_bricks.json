@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "dorios_atelier:sc_chiseled_stone_bricks_stairs_from_chiseled_stone_bricks"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:chiseled_stone_bricks"
+            }
+        ],
+        "result": {
+            "item": "dorios_atelier:chiseled_stone_bricks_stairs",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "minecraft:chiseled_stone_bricks"
+            }
+        ]
+    }
+}

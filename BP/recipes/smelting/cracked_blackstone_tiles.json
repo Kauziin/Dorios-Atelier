@@ -2,14 +2,14 @@
     "format_version": "1.20.80",
     "minecraft:recipe_furnace": {
         "description": {
-            "identifier": "utilitycraft:smelt_cracked_blackstone_tiles"
+            "identifier": "dorios_atelier:smelt_cracked_blackstone_tiles"
         },
         "tags": [
             "furnace",
             "blast_furnace"
         ],
-        "input": "utilitycraft:blackstone_tiles",
-        "output": "utilitycraft:cracked_blackstone_tiles",
+        "input": "dorios_atelier:blackstone_tiles",
+        "output": "dorios_atelier:cracked_blackstone_tiles",
         "cookingtime": 200,
         "experience": 0.1
     }

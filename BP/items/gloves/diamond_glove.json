@@ -2,7 +2,7 @@
   "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
-      "identifier": "utilitycraft:diamond_glove",
+      "identifier": "dorios_atelier:diamond_glove",
       "menu_category": {
         "category": "equipment"
       }
@@ -11,14 +11,14 @@
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:icon": "utilitycraft_diamond_glove",
-      "utilitycraft:glove": { 
+      "dorios_atelier:glove": { 
         "max_distance": 24 
       },
       "minecraft:allow_off_hand": true,
       "tag:minecraft:transformable_items": {},
       "minecraft:tags": {
         "tags": [
-          "utilitycraft:is_glove"
+          "dorios_atelier:is_glove"
         ]
       }
     }

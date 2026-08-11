@@ -2,24 +2,24 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:craft_chiseled_andesite_bricks"
+            "identifier": "dorios_atelier:craft_chiseled_andesite_bricks"
         },
         "tags": [
             "crafting_table"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:chiseled_andesite",
+                "item": "dorios_atelier:chiseled_andesite",
                 "count": 4
             }
         ],
         "result": {
-            "item": "utilitycraft:chiseled_andesite_bricks",
+            "item": "dorios_atelier:chiseled_andesite_bricks",
             "count": 4
         },
         "unlock": [
             {
-                "item": "utilitycraft:chiseled_andesite"
+                "item": "dorios_atelier:chiseled_andesite"
             }
         ]
     }

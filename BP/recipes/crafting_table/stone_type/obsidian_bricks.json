@@ -2,24 +2,24 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:craft_obsidian_bricks"
+            "identifier": "dorios_atelier:craft_obsidian_bricks"
         },
         "tags": [
             "crafting_table"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:polished_obsidian",
+                "item": "dorios_atelier:polished_obsidian",
                 "count": 4
             }
         ],
         "result": {
-            "item": "utilitycraft:obsidian_bricks",
+            "item": "dorios_atelier:obsidian_bricks",
             "count": 4
         },
         "unlock": [
             {
-                "item": "utilitycraft:polished_obsidian"
+                "item": "dorios_atelier:polished_obsidian"
             }
         ]
     }

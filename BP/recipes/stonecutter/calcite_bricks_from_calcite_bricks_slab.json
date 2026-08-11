@@ -2,26 +2,26 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_calcite_bricks_from_calcite_bricks_slab"
+            "identifier": "dorios_atelier:sc_calcite_bricks_from_calcite_bricks_slab"
         },
         "tags": [
             "stonecutter"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:calcite_bricks_slab"
+                "item": "dorios_atelier:calcite_bricks_slab"
             },
             {
-                "item": "utilitycraft:calcite_bricks_slab"
+                "item": "dorios_atelier:calcite_bricks_slab"
             }
         ],
         "result": {
-            "item": "utilitycraft:calcite_bricks",
+            "item": "dorios_atelier:calcite_bricks",
             "count": 1
         },
         "unlock": [
             {
-                "item": "utilitycraft:calcite_bricks_slab"
+                "item": "dorios_atelier:calcite_bricks_slab"
             }
         ]
     }

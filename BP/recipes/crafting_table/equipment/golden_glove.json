@@ -2,14 +2,14 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:craft_golden_glove"
+            "identifier": "dorios_atelier:craft_golden_glove"
         },
         "tags": [
             "crafting_table"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:iron_glove"
+                "item": "dorios_atelier:iron_glove"
             },
             {
                 "item": "minecraft:gold_ingot",
@@ -17,11 +17,11 @@
             }
         ],
         "result": {
-            "item": "utilitycraft:golden_glove"
+            "item": "dorios_atelier:golden_glove"
         },
         "unlock": [
             {
-                "item": "utilitycraft:iron_glove"
+                "item": "dorios_atelier:iron_glove"
             }
         ]
     }

@@ -1,0 +1,35 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "dorios_atelier:yellow_stained_glass",
+            "menu_category": {
+                "category": "construction"
+            }
+        },
+        "components": {
+            "minecraft:geometry": {
+                "identifier": "minecraft:geometry.full_block",
+                "culling": "dorios_atelier:custom_glass"
+            },
+            "minecraft:light_dampening": 0,
+            "minecraft:light_emission": 0,
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "dorios_atelier_yellow_stained_glass",
+                    "ambient_occlusion": 0.9,
+                    "face_dimming": true,
+                    "render_method": "blend"
+                }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.18
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.5
+            },
+            "minecraft:loot": "loot_tables/empty.json",
+            "tag:dorios_atelier:breakable_by_cutter": {}
+        }
+    }
+}

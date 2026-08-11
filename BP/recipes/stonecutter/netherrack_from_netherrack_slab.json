@@ -2,17 +2,17 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_netherrack_from_netherrack_slab"
+            "identifier": "dorios_atelier:sc_netherrack_from_netherrack_slab"
         },
         "tags": [
             "stonecutter"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:netherrack_slab"
+                "item": "dorios_atelier:netherrack_slab"
             },
             {
-                "item": "utilitycraft:netherrack_slab"
+                "item": "dorios_atelier:netherrack_slab"
             }
         ],
         "result": {
@@ -21,7 +21,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:netherrack_slab"
+                "item": "dorios_atelier:netherrack_slab"
             }
         ]
     }

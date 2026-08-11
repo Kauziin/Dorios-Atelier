@@ -2,25 +2,25 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:craft_netherite_glove"
+            "identifier": "dorios_atelier:craft_netherite_glove"
         },
         "tags": [
             "crafting_table"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:diamond_glove"
+                "item": "dorios_atelier:diamond_glove"
             },
             {
                 "item": "minecraft:netherite_ingot"
             }
         ],
         "result": {
-            "item": "utilitycraft:netherite_glove"
+            "item": "dorios_atelier:netherite_glove"
         },
         "unlock": [
             {
-                "item": "utilitycraft:diamond_glove"
+                "item": "dorios_atelier:diamond_glove"
             }
         ]
     }

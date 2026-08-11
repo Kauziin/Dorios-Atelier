@@ -2,7 +2,7 @@
     "format_version": "1.21.100",
     "minecraft:block": {
         "description": {
-            "identifier": "utilitycraft:polished_dripstone",
+            "identifier": "dorios_atelier:polished_dripstone",
             "menu_category": {
                 "category": "construction"
             }

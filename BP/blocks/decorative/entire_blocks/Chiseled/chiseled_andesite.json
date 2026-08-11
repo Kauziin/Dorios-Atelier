@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:block": {
         "description": {
-            "identifier": "utilitycraft:chiseled_andesite",
+            "identifier": "dorios_atelier:chiseled_andesite",
             "menu_category": {
                 "category": "construction"
             }

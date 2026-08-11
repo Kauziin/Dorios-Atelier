@@ -2,17 +2,17 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_tuff_from_tuff_slab"
+            "identifier": "dorios_atelier:sc_tuff_from_tuff_slab"
         },
         "tags": [
             "stonecutter"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:tuff_slab"
+                "item": "dorios_atelier:tuff_slab"
             },
             {
-                "item": "utilitycraft:tuff_slab"
+                "item": "dorios_atelier:tuff_slab"
             }
         ],
         "result": {
@@ -21,7 +21,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:tuff_slab"
+                "item": "dorios_atelier:tuff_slab"
             }
         ]
     }

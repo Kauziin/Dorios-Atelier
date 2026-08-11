@@ -2,7 +2,7 @@
     "format_version": "1.26.0",
     "minecraft:block": {
         "description": {
-            "identifier": "utilitycraft:granite_slab",
+            "identifier": "dorios_atelier:granite_slab",
             "menu_category": {
                 "category": "construction",
                 "group": "minecraft:itemGroup.name.slab"
@@ -18,7 +18,7 @@
         "components": {
             "minecraft:geometry": {
                 "identifier": "geometry.dorios_atelier_slabs",
-                "culling": "utilitycraft:culling.granite_slab"
+                "culling": "dorios_atelier:culling.granite_slab"
             },
             "minecraft:material_instances": {
                 "*": {

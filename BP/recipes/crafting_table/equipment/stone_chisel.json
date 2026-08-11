@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "utilitycraft:craft_stone_chisel"
+            "identifier": "dorios_atelier:craft_stone_chisel"
         },
         "tags": [
             "crafting_table"
@@ -24,7 +24,7 @@
             }
         },
         "result": {
-            "item": "utilitycraft:stone_chisel"
+            "item": "dorios_atelier:stone_chisel"
         },
         "unlock": [
             {

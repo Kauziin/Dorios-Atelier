@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:block": {
         "description": {
-            "identifier": "utilitycraft:chiseled_calcite_bricks",
+            "identifier": "dorios_atelier:chiseled_calcite_bricks",
             "menu_category": {
                 "category": "construction"
             }

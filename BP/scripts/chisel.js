@@ -1,10 +1,13 @@
 // chisel.js
 import { system, world } from "@minecraft/server";
 import { MATERIAL_CYCLES, BLOCK_ALIAS } from "./variants.js";
+import { readToolLockFromItem, registerToolLockResolver } from "./tool_lock_memory.js";
+import { playToolMaterialSound, soundConfig } from "./sound_config.js";
 
-const CHISEL_COMPONENT_ID = "utilitycraft:chisel";
-const CHISEL_BREAK_SOUND = "random.break";
+const TOOL_NAMESPACES = ["dorios_atelier", "utilitycraft"];
+const CHISEL_COMPONENT_IDS = TOOL_NAMESPACES.map((namespace) => `${namespace}:chisel`);
 const CHISEL_ID_SUFFIX = "_chisel";
+const CHISEL_LOCK_KIND = "chisel";
 
 const NAME_TOKEN_CACHE = new Map();
 const NAME_TO_IDS = new Map();
@@ -166,10 +169,67 @@ function buildCandidatesForState(stateInfo, originalNamespace) {
   sameName?.forEach((id) => push(id));
 
   push(`${originalNamespace}:${stripped}`);
-  push(`minecraft:${stripped}`);
+  push(`dorios_atelier:${stripped}`);
   push(`utilitycraft:${stripped}`);
+  push(`minecraft:${stripped}`);
 
   return candidatesForState;
+}
+
+function buildCandidatesForLock(blockTypeId, lockTargetId) {
+  const seen = new Set();
+  const candidates = [];
+  const push = (id) => {
+    if (id && !seen.has(id)) {
+      seen.add(id);
+      candidates.push(id);
+    }
+  };
+
+  const currentNamespace = (blockTypeId && blockTypeId.split && blockTypeId.split(":")[0]) || "minecraft";
+  const lockName = stripNamespace(lockTargetId);
+
+  push(lockTargetId);
+  for (const ns of getCompatibleNamespaces(currentNamespace)) {
+    push(`${ns}:${lockName}`);
+  }
+
+  return candidates;
+}
+
+function formatVariantLabel(variant) {
+  if (!variant || variant === "base" || variant === "default") return "Base";
+  return variant
+    .split("_")
+    .filter(Boolean)
+    .map((token) => token.charAt(0).toUpperCase() + token.slice(1))
+    .join(" ");
+}
+
+function tryApplyLockedVariant(block, lock) {
+  if (!lock?.variant) return false;
+
+  const currentEntry = findEntryForBlockId(block.typeId) || BLOCK_LOOKUP.get(resolveAlias(block.typeId));
+  if (!currentEntry) return false;
+
+  const cycle = CYCLES[currentEntry.cycleIndex];
+  const targetIndex = cycle.idxByVariant.get(lock.variant);
+  if (targetIndex === undefined) return false;
+
+  const targetState = cycle.states[targetIndex];
+  const currentNamespace = (block.typeId && block.typeId.split && block.typeId.split(":")[0]) || "minecraft";
+  const candidates = buildCandidatesForState(targetState, currentNamespace);
+  for (const candidate of candidates) {
+    if (candidate === block.typeId) return false;
+    try {
+      block.setType(candidate);
+      return true;
+    } catch (_) {
+      continue;
+    }
+  }
+
+  return false;
 }
 
 function getSelectedSlotIndex(player) {
@@ -257,7 +317,7 @@ function damageHeldChisel(player, eventItemStack) {
       const broke = typeof max === "number" && max > 0 && next >= max;
       if (broke) {
         try {
-          player.playSound?.(CHISEL_BREAK_SOUND);
+          player.playSound?.(soundConfig.toolBreakEventByKind.chisel);
         } catch (_) {}
       }
       container.setItem(slot, broke ? undefined : stack);
@@ -268,34 +328,54 @@ function damageHeldChisel(player, eventItemStack) {
 }
 
 /* registro do componente customizado */
+registerToolLockResolver(CHISEL_LOCK_KIND, viewedBlock => {
+  const viewedEntry = findEntryForBlockId(viewedBlock?.typeId);
+  if (!viewedEntry) return undefined;
+
+  const cycle = CYCLES[viewedEntry.cycleIndex];
+  const stateInfo = cycle.states[viewedEntry.stateIndex];
+  const variant = stateInfo?.variant ?? "base";
+  return {
+    kind: CHISEL_LOCK_KIND,
+    variant,
+    state: variant,
+    label: formatVariantLabel(variant)
+  };
+});
+
 system.beforeEvents.startup.subscribe((initEvent) => {
-  initEvent.itemComponentRegistry.registerCustomComponent(CHISEL_COMPONENT_ID, {
+  const handlers = {
     onUseOn(event) {
       try {
         const { block, source, itemStack } = event;
         if (!block || !source || !itemStack) return;
+        const lock = readToolLockFromItem(itemStack, CHISEL_LOCK_KIND);
 
-        const applied = tryApplyNextVariant(block);
+        const applied = lock ? tryApplyLockedVariant(block, lock) : tryApplyNextVariant(block);
         if (!applied) return;
 
-        try {
-          const dim = block.dimension;
-          if (dim && typeof dim.playSound === "function") {
-            dim.playSound("block.stonecutter.use", block.location, { volume: 1, pitch: 1 });
-          } else if (typeof source.playSound === "function") {
-            source.playSound("block.stonecutter.use");
-          }
-        } catch (_) {}
+        playToolMaterialSound(block, source, soundConfig.toolUseFallbackEventByKind.chisel);
 
         damageHeldChisel(source, itemStack);
       } catch (_) {}
     },
-  });
+  };
+
+  for (const componentId of CHISEL_COMPONENT_IDS) {
+    try {
+      initEvent.itemComponentRegistry.registerCustomComponent(componentId, handlers);
+    } catch (_) {}
+  }
 });
 
 world?.beforeEvents?.itemComponentBeforeDurabilityDamage?.subscribe?.((event) => {
   const stack = event?.itemStack;
-  if (!stack?.typeId || !stack.typeId.startsWith("utilitycraft:") || !stack.typeId.endsWith(CHISEL_ID_SUFFIX)) {
+  if (!stack?.typeId || !stack.typeId.endsWith(CHISEL_ID_SUFFIX)) {
+    return;
+  }
+
+  const hasKnownNamespace = TOOL_NAMESPACES.some((namespace) => stack.typeId.startsWith(`${namespace}:`));
+  if (!hasKnownNamespace) {
     return;
   }
   event.cancel = true;

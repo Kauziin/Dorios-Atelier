@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "dorios_atelier:sc_packed_mud_stairs_from_packed_mud"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:packed_mud"
+            }
+        ],
+        "result": {
+            "item": "dorios_atelier:packed_mud_stairs",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "minecraft:packed_mud"
+            }
+        ]
+    }
+}

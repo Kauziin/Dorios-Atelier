@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "utilitycraft:craft_golden_chisel"
+            "identifier": "dorios_atelier:craft_golden_chisel"
         },
         "tags": [
             "crafting_table"
@@ -24,7 +24,7 @@
             }
         },
         "result": {
-            "item": "utilitycraft:golden_chisel"
+            "item": "dorios_atelier:golden_chisel"
         },
         "unlock": [
             {

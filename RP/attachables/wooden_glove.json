@@ -2,7 +2,7 @@
     "format_version": "1.10.0",
     "minecraft:attachable": {
         "description": {
-            "identifier": "utilitycraft:wooden_glove",
+            "identifier": "dorios_atelier:wooden_glove",
             "render_controllers": ["controller.render.utilitycraft_glove"],
             "materials": {
                 "default": "entity_alphatest",
@@ -22,7 +22,7 @@
             "scripts": {
                 "animate": [
                     {
-                        "invisible": "c.is_first_person && q.is_item_equipped('main_hand') && !q.equipped_item_any_tag('slot.weapon.mainhand', 'utilitycraft:is_glove')"
+                        "invisible": "c.is_first_person && q.is_item_equipped('main_hand') && !q.equipped_item_any_tag('slot.weapon.mainhand', 'dorios_atelier:is_glove')"
                     }
                 ],
                 "pre_animation": [

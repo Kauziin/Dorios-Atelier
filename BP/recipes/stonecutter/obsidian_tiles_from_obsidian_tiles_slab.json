@@ -2,26 +2,26 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_obsidian_tiles_from_obsidian_tiles_slab"
+            "identifier": "dorios_atelier:sc_obsidian_tiles_from_obsidian_tiles_slab"
         },
         "tags": [
             "stonecutter"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:obsidian_tiles_slab"
+                "item": "dorios_atelier:obsidian_tiles_slab"
             },
             {
-                "item": "utilitycraft:obsidian_tiles_slab"
+                "item": "dorios_atelier:obsidian_tiles_slab"
             }
         ],
         "result": {
-            "item": "utilitycraft:obsidian_tiles",
+            "item": "dorios_atelier:obsidian_tiles",
             "count": 1
         },
         "unlock": [
             {
-                "item": "utilitycraft:obsidian_tiles_slab"
+                "item": "dorios_atelier:obsidian_tiles_slab"
             }
         ]
     }

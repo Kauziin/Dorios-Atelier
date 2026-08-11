@@ -2,7 +2,7 @@
   "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
-      "identifier": "utilitycraft:copper_glove",
+      "identifier": "dorios_atelier:copper_glove",
       "menu_category": {
         "category": "equipment"
       }
@@ -11,13 +11,13 @@
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:icon": "utilitycraft_copper_glove",
-      "utilitycraft:glove": {
+      "dorios_atelier:glove": {
         "max_distance": 12
       },
       "minecraft:allow_off_hand": true,
       "minecraft:tags": {
         "tags": [
-          "utilitycraft:is_glove"
+          "dorios_atelier:is_glove"
         ]
       }
     }

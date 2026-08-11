@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "dorios_atelier:sc_prismarine_three_steps_stairs_from_prismarine"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:prismarine"
+            }
+        ],
+        "result": {
+            "item": "dorios_atelier:prismarine_three_steps_stairs",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "minecraft:prismarine"
+            }
+        ]
+    }
+}

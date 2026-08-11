@@ -2,23 +2,23 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_dripstone_bricks_slab_from_dripstone_bricks"
+            "identifier": "dorios_atelier:sc_dripstone_bricks_slab_from_dripstone_bricks"
         },
         "tags": [
             "stonecutter"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:dripstone_bricks"
+                "item": "dorios_atelier:dripstone_bricks"
             }
         ],
         "result": {
-            "item": "utilitycraft:dripstone_bricks_slab",
+            "item": "dorios_atelier:dripstone_bricks_slab",
             "count": 2
         },
         "unlock": [
             {
-                "item": "utilitycraft:dripstone_bricks"
+                "item": "dorios_atelier:dripstone_bricks"
             }
         ]
     }

@@ -2,13 +2,13 @@
     "format_version": "1.20.80",
     "minecraft:recipe_furnace": {
         "description": {
-            "identifier": "utilitycraft:smelt_cracked_andesite_bricks"
+            "identifier": "dorios_atelier:smelt_cracked_andesite_bricks"
         },
         "tags": [
             "furnace",
             "blast_furnace"
         ],
-        "input": "utilitycraft:andesite_bricks",
-        "output": "utilitycraft:cracked_andesite_bricks"
+        "input": "dorios_atelier:andesite_bricks",
+        "output": "dorios_atelier:cracked_andesite_bricks"
     }
 }

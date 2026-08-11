@@ -2,7 +2,7 @@
     "format_version": "1.21.80",
     "minecraft:block_culling_rules": {
         "description": {
-            "identifier": "utilitycraft:culling.glowing_obsidian_slab"
+            "identifier": "dorios_atelier:culling.glowing_obsidian_slab"
         },
         "rules": [
             {

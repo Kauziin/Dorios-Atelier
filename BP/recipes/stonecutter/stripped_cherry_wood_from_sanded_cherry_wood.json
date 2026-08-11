@@ -2,11 +2,11 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_stripped_cherry_wood_from_sanded_cherry_wood"
+            "identifier": "dorios_atelier:sc_stripped_cherry_wood_from_sanded_cherry_wood"
         },
         "tags": ["stonecutter"],
-        "ingredients": [{ "item": "utilitycraft:sanded_cherry_wood" }],
+        "ingredients": [{ "item": "dorios_atelier:sanded_cherry_wood" }],
         "result": { "item": "minecraft:stripped_cherry_wood", "count": 1 },
-        "unlock": [{ "item": "utilitycraft:sanded_cherry_wood" }]
+        "unlock": [{ "item": "dorios_atelier:sanded_cherry_wood" }]
     }
 }

@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "utilitycraft:craft_iron_chisel"
+            "identifier": "dorios_atelier:craft_iron_chisel"
         },
         "tags": [
             "crafting_table"
@@ -24,7 +24,7 @@
             }
         },
         "result": {
-            "item": "utilitycraft:iron_chisel"
+            "item": "dorios_atelier:iron_chisel"
         },
         "unlock": [
             {

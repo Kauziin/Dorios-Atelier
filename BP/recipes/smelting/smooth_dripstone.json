@@ -2,14 +2,14 @@
     "format_version": "1.20.80",
     "minecraft:recipe_furnace": {
         "description": {
-            "identifier": "utilitycraft:smelt_smooth_dripstone"
+            "identifier": "dorios_atelier:smelt_smooth_dripstone"
         },
         "tags": [
             "furnace",
             "blast_furnace"
         ],
         "input": "minecraft:dripstone_block",
-        "output": "utilitycraft:smooth_dripstone",
+        "output": "dorios_atelier:smooth_dripstone",
         "cookingtime": 200,
         "experience": 0.1
     }

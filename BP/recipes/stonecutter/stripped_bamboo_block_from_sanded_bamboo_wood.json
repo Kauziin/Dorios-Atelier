@@ -2,11 +2,11 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_stripped_bamboo_block_from_sanded_bamboo_wood"
+            "identifier": "dorios_atelier:sc_stripped_bamboo_block_from_sanded_bamboo_wood"
         },
         "tags": ["stonecutter"],
-        "ingredients": [{ "item": "utilitycraft:sanded_bamboo_wood" }],
+        "ingredients": [{ "item": "dorios_atelier:sanded_bamboo_wood" }],
         "result": { "item": "minecraft:stripped_bamboo_block", "count": 1 },
-        "unlock": [{ "item": "utilitycraft:sanded_bamboo_wood" }]
+        "unlock": [{ "item": "dorios_atelier:sanded_bamboo_wood" }]
     }
 }

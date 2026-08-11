@@ -2,7 +2,7 @@
     "format_version": "1.21.100",
     "minecraft:block": {
         "description": {
-            "identifier": "utilitycraft:cracked_andesite_bricks",
+            "identifier": "dorios_atelier:cracked_andesite_bricks",
             "menu_category": {
                 "category": "construction"
             }

@@ -1,13 +1,18 @@
 import { BlockPermutation, world } from '@minecraft/server'
 
+const TOOL_NAMESPACES = ['dorios_atelier', 'utilitycraft']
+
+const gloveIdsByTier = tier =>
+	TOOL_NAMESPACES.map(namespace => `${namespace}:${tier}_glove`)
+
 const GLOVE_OFFHAND_IDS = new Set([
-	'utilitycraft:wooden_glove',
-	'utilitycraft:stone_glove',
-	'utilitycraft:iron_glove',
-	'utilitycraft:copper_glove',
-	'utilitycraft:golden_glove',
-	'utilitycraft:diamond_glove',
-	'utilitycraft:netherite_glove'
+	...gloveIdsByTier('wooden'),
+	...gloveIdsByTier('stone'),
+	...gloveIdsByTier('iron'),
+	...gloveIdsByTier('copper'),
+	...gloveIdsByTier('golden'),
+	...gloveIdsByTier('diamond'),
+	...gloveIdsByTier('netherite')
 ])
 
 const FACE_OFFSETS = {
@@ -22,13 +27,15 @@ const FACE_OFFSETS = {
 const MIN_RANGE = 5
 
 const GLOVE_MAX_DISTANCE = new Map([
-	['utilitycraft:wooden_glove', 8],
-	['utilitycraft:stone_glove', 10],
-	['utilitycraft:copper_glove', 12],
-	['utilitycraft:iron_glove', 16],
-	['utilitycraft:golden_glove', 20],
-	['utilitycraft:diamond_glove', 24],
-	['utilitycraft:netherite_glove', 32]
+	...TOOL_NAMESPACES.flatMap(namespace => ([
+		[`${namespace}:wooden_glove`, 8],
+		[`${namespace}:stone_glove`, 10],
+		[`${namespace}:copper_glove`, 12],
+		[`${namespace}:iron_glove`, 16],
+		[`${namespace}:golden_glove`, 20],
+		[`${namespace}:diamond_glove`, 24],
+		[`${namespace}:netherite_glove`, 32]
+	]))
 ])
 
 const GLOVE_PLACE_SOUND = 'item.armor.equip_leather'
@@ -121,8 +128,6 @@ const LOCAL_REPLACEABLE_MAP = new Map([
 ])
 
 const LOCAL_REPLACEABLE_BLOCKS = new Set([...LOCAL_REPLACEABLE_MAP.values()].flat())
-const PATCHED_ITEM_USE_SIGNALS = new WeakSet()
-
 const hasReplaceableComponent = block => {
 	try {
 		return Boolean(block?.getComponent?.('minecraft:replaceable'))
@@ -145,7 +150,12 @@ const breakBlockWithDrops = block => {
 	}
 }
 
-const tryHandleReplaceablePlacement = event => {
+const distanceBetween = (a, b) =>
+	DoriosAPI?.math?.distanceBetween
+		? DoriosAPI.math.distanceBetween(a, b)
+		: Math.hypot(a.x - b.x, a.y - b.y, a.z - b.z)
+
+const handleGlovePlacement = event => {
 	const { source: player, itemStack } = event ?? {}
 	if (!player || player.typeId !== 'minecraft:player' || !itemStack) return false
 
@@ -169,25 +179,26 @@ const tryHandleReplaceablePlacement = event => {
 	}
 
 	const targetBlock = hit.block.dimension.getBlock(targetPos)
-	if (!targetBlock || targetBlock.typeId === itemStack.typeId) return true
-	if (!shouldDropBeforePlace(targetBlock)) return false
+	if (!targetBlock || targetBlock.typeId === itemStack.typeId) return false
 
 	let permutation
 	try {
 		permutation = BlockPermutation.resolve(itemStack.typeId)
 	} catch {
-		return true
+		return false
 	}
 
-	if (!breakBlockWithDrops(targetBlock)) return true
+    if (shouldDropBeforePlace(targetBlock)) {
+		if (!breakBlockWithDrops(targetBlock)) return false
+    }
 
 	const placementBlock = hit.block.dimension.getBlock(targetPos)
-	if (!placementBlock) return true
+	if (!placementBlock) return false
 
 	try {
 		placementBlock.setPermutation(permutation)
 	} catch {
-		return true
+		return false
 	}
 
 	try {
@@ -206,85 +217,6 @@ const tryHandleReplaceablePlacement = event => {
 	return true
 }
 
-const patchItemUseSubscribe = () => {
-	const itemUseSignal = world.afterEvents?.itemUse
-	if (!itemUseSignal?.subscribe || PATCHED_ITEM_USE_SIGNALS.has(itemUseSignal)) return
-
-	const originalSubscribe = itemUseSignal.subscribe.bind(itemUseSignal)
-	itemUseSignal.subscribe = callback =>
-		originalSubscribe(event => {
-			if (tryHandleReplaceablePlacement(event)) return
-			callback(event)
-		})
-
-	PATCHED_ITEM_USE_SIGNALS.add(itemUseSignal)
-}
-
-patchItemUseSubscribe()
-
-{
-}
-
-const distanceBetween = (a, b) =>
-	DoriosAPI?.math?.distanceBetween
-		? DoriosAPI.math.distanceBetween(a, b)
-		: Math.hypot(a.x - b.x, a.y - b.y, a.z - b.z)
-
 world.afterEvents.itemUse.subscribe(event => {
-	const { source: player, itemStack } = event
-	if (!player || player.typeId !== 'minecraft:player' || !itemStack) return
-
-	const offhand = player.getEquipment?.('Offhand') ?? player.getComponent?.('equippable')?.getEquipment('Offhand')
-	if (!offhand || !GLOVE_OFFHAND_IDS.has(offhand.typeId)) return
-
-	const maxDistance = GLOVE_MAX_DISTANCE.get(offhand.typeId) ?? 8
-	const hit = player.getBlockFromViewDirection({ maxDistance })
-	if (!hit?.block) return
-
-	const offset = FACE_OFFSETS[hit.face]
-	if (!offset) return
-
-	const distance = distanceBetween(player.location, hit.block.location)
-	if (distance < MIN_RANGE || distance > maxDistance) return
-
-	let permutation
-	try {
-		permutation = BlockPermutation.resolve(itemStack.typeId)
-	} catch {
-		return
-	}
-
-	const targetPos = {
-		x: hit.block.location.x + offset.x,
-		y: hit.block.location.y + offset.y,
-		z: hit.block.location.z + offset.z
-	}
-
-	const targetBlock = hit.block.dimension.getBlock(targetPos)
-	if (!targetBlock || targetBlock.typeId === itemStack.typeId) return
-
-	try {
-		targetBlock.setPermutation(permutation)
-	} catch {
-		return
-	}
-
-	try {
-		const location = {
-			x: targetPos.x + 0.5,
-			y: targetPos.y + 0.5,
-			z: targetPos.z + 0.5
-		}
-		targetBlock.dimension?.playSound?.(GLOVE_PLACE_SOUND, location, { volume: 0.7, pitch: 1 })
-	} catch {
-		try {
-			player.playSound?.(GLOVE_PLACE_SOUND)
-		} catch {}
-	}
-
-	const gameMode = player.getGameMode?.()
-	const isCreative = player.isInCreative?.() ?? (typeof gameMode === 'string' && gameMode.toLowerCase() === 'creative')
-	if (isCreative) return
-
-	consumeItem(player, itemStack.typeId)
+	handleGlovePlacement(event)
 })

@@ -2,11 +2,11 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_andesite_tiles_from_bricks"
+            "identifier": "dorios_atelier:sc_andesite_tiles_from_bricks"
         },
         "tags": ["stonecutter"],
-        "ingredients": [{ "item": "utilitycraft:andesite_bricks" }],
-        "result": { "item": "utilitycraft:andesite_tiles", "count": 1 },
-        "unlock": [{ "item": "utilitycraft:andesite_bricks" }]
+        "ingredients": [{ "item": "dorios_atelier:andesite_bricks" }],
+        "result": { "item": "dorios_atelier:andesite_tiles", "count": 1 },
+        "unlock": [{ "item": "dorios_atelier:andesite_bricks" }]
     }
 }

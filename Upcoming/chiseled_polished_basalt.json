@@ -2,7 +2,7 @@
 	"format_version": "1.21.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "utilitycraft:chiseled_polished_basalt",
+			"identifier": "dorios_atelier:chiseled_polished_basalt",
 			"menu_category": {
 				"category": "construction",
                 "group": "minecraft:itemGroup.name.stoneBrick"

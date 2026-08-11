@@ -2,17 +2,17 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_prismarine_bricks_from_prismarine_bricks_slab"
+            "identifier": "dorios_atelier:sc_prismarine_bricks_from_prismarine_bricks_slab"
         },
         "tags": [
             "stonecutter"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:prismarine_bricks_slab"
+                "item": "dorios_atelier:prismarine_bricks_slab"
             },
             {
-                "item": "utilitycraft:prismarine_bricks_slab"
+                "item": "dorios_atelier:prismarine_bricks_slab"
             }
         ],
         "result": {
@@ -21,7 +21,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:prismarine_bricks_slab"
+                "item": "dorios_atelier:prismarine_bricks_slab"
             }
         ]
     }

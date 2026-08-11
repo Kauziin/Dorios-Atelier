@@ -2,14 +2,14 @@
     "format_version": "1.20.80",
     "minecraft:recipe_furnace": {
         "description": {
-            "identifier": "utilitycraft:smelt_cracked_granite_bricks"
+            "identifier": "dorios_atelier:smelt_cracked_granite_bricks"
         },
         "tags": [
             "furnace",
             "blast_furnace"
         ],
-        "input": "utilitycraft:granite_bricks",
-        "output": "utilitycraft:cracked_granite_bricks",
+        "input": "dorios_atelier:granite_bricks",
+        "output": "dorios_atelier:cracked_granite_bricks",
         "cookingtime": 200,
         "experience": 0.1
     }

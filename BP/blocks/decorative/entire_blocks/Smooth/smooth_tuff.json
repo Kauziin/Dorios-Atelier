@@ -2,7 +2,7 @@
     "format_version": "1.21.100",
     "minecraft:block": {
         "description": {
-            "identifier": "utilitycraft:smooth_tuff",
+            "identifier": "dorios_atelier:smooth_tuff",
             "menu_category": {
                 "category": "construction"
             }

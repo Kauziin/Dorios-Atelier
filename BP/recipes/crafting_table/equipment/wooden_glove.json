@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "utilitycraft:craft_wooden_glove"
+            "identifier": "dorios_atelier:craft_wooden_glove"
         },
         "tags": [
             "crafting_table"
@@ -24,7 +24,7 @@
             " S "
         ],
         "result": {
-            "item": "utilitycraft:wooden_glove"
+            "item": "dorios_atelier:wooden_glove"
         },
         "unlock": [
             {

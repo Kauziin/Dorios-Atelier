@@ -2,7 +2,7 @@
     "format_version": "1.21.80",
     "minecraft:block_culling_rules": {
         "description": {
-            "identifier": "utilitycraft:culling.andesite_tiles_slab"
+            "identifier": "dorios_atelier:culling.andesite_tiles_slab"
         },
         "rules": [
             {

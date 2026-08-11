@@ -2,11 +2,11 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_glowing_obsidian_from_tiles"
+            "identifier": "dorios_atelier:sc_glowing_obsidian_from_tiles"
         },
         "tags": ["stonecutter"],
-        "ingredients": [{ "item": "utilitycraft:obsidian_tiles" }],
-        "result": { "item": "utilitycraft:glowing_obsidian", "count": 1 },
-        "unlock": [{ "item": "utilitycraft:obsidian_tiles" }]
+        "ingredients": [{ "item": "dorios_atelier:obsidian_tiles" }],
+        "result": { "item": "dorios_atelier:glowing_obsidian", "count": 1 },
+        "unlock": [{ "item": "dorios_atelier:obsidian_tiles" }]
     }
 }

@@ -60,7 +60,7 @@ globalThis.DoriosAPI = {
          * 
          * Automatically prefixes the component identifier with the namespace `"utilitycraft"`.
          *
-         * @param {string} id Identifier for the component (e.g., "machine" → "utilitycraft:machine").
+         * @param {string} id Identifier for the component (e.g., "machine" → "dorios_atelier:machine").
          * @param {BlockCustomComponent} handlers Lifecycle callbacks for the block.
          */
         blockComponent(id, handlers) {
@@ -81,7 +81,7 @@ globalThis.DoriosAPI = {
          * 
          * Automatically prefixes the component identifier with the namespace `"utilitycraft"`.
          *
-         * @param {string} id Identifier for the component (e.g., "weapon" → "utilitycraft:weapon").
+         * @param {string} id Identifier for the component (e.g., "weapon" → "dorios_atelier:weapon").
          * @param {ItemCustomComponent} handlers Lifecycle callbacks for the item.
          */
         itemComponent(id, handlers) {

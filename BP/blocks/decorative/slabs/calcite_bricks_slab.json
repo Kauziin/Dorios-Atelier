@@ -2,7 +2,7 @@
     "format_version": "1.26.0",
     "minecraft:block": {
         "description": {
-            "identifier": "utilitycraft:calcite_bricks_slab",
+            "identifier": "dorios_atelier:calcite_bricks_slab",
             "menu_category": {
                 "category": "construction",
                 "group": "minecraft:itemGroup.name.slab"
@@ -18,7 +18,7 @@
         "components": {
             "minecraft:geometry": {
                 "identifier": "geometry.dorios_atelier_slabs",
-                "culling": "utilitycraft:culling.calcite_bricks_slab"
+                "culling": "dorios_atelier:culling.calcite_bricks_slab"
             },
             "minecraft:material_instances": {
                 "*": {

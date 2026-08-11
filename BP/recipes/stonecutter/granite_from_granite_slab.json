@@ -2,17 +2,17 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_granite_from_granite_slab"
+            "identifier": "dorios_atelier:sc_granite_from_granite_slab"
         },
         "tags": [
             "stonecutter"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:granite_slab"
+                "item": "dorios_atelier:granite_slab"
             },
             {
-                "item": "utilitycraft:granite_slab"
+                "item": "dorios_atelier:granite_slab"
             }
         ],
         "result": {
@@ -21,7 +21,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:granite_slab"
+                "item": "dorios_atelier:granite_slab"
             }
         ]
     }

@@ -2,7 +2,7 @@
     "format_version": "1.26.0",
     "minecraft:block": {
         "description": {
-            "identifier": "utilitycraft:cracked_diorite_tiles_slab",
+            "identifier": "dorios_atelier:cracked_diorite_tiles_slab",
             "menu_category": {
                 "category": "construction",
                 "group": "minecraft:itemGroup.name.slab"
@@ -18,7 +18,7 @@
         "components": {
             "minecraft:geometry": {
                 "identifier": "geometry.dorios_atelier_slabs",
-                "culling": "utilitycraft:culling.cracked_diorite_tiles_slab"
+                "culling": "dorios_atelier:culling.cracked_diorite_tiles_slab"
             },
             "minecraft:material_instances": {
                 "*": {
@@ -55,7 +55,7 @@
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 1.4
             },
-            "minecraft:light_dampening": 0,
+            "minecraft:light_dampening": 15,
             "minecraft:light_emission": 0,
             "tag:minecraft:is_pickaxe_item_destructible": {},
             "tag:minecraft:stone_tier_destructible": {},

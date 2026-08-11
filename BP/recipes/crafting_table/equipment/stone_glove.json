@@ -2,14 +2,14 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:craft_stone_glove"
+            "identifier": "dorios_atelier:craft_stone_glove"
         },
         "tags": [
             "crafting_table"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:wooden_glove"
+                "item": "dorios_atelier:wooden_glove"
             },
             {
                 "item": "minecraft:cobblestone",
@@ -17,11 +17,11 @@
             }
         ],
         "result": {
-            "item": "utilitycraft:stone_glove"
+            "item": "dorios_atelier:stone_glove"
         },
         "unlock": [
             {
-                "item": "utilitycraft:wooden_glove"
+                "item": "dorios_atelier:wooden_glove"
             }
         ]
     }

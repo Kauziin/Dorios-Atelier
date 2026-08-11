@@ -2,14 +2,14 @@
     "format_version": "1.20.80",
     "minecraft:recipe_furnace": {
         "description": {
-            "identifier": "utilitycraft:smelt_smooth_granite"
+            "identifier": "dorios_atelier:smelt_smooth_granite"
         },
         "tags": [
             "furnace",
             "blast_furnace"
         ],
         "input": "minecraft:granite",
-        "output": "utilitycraft:smooth_granite",
+        "output": "dorios_atelier:smooth_granite",
         "cookingtime": 200,
         "experience": 0.1
     }

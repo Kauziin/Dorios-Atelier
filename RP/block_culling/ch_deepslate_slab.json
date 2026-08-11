@@ -1,0 +1,18 @@
+{
+    "format_version": "1.21.80",
+    "minecraft:block_culling_rules": {
+        "description": {
+            "identifier": "dorios_atelier:culling.chiseled_deepslate_slab"
+        },
+        "rules": [
+            {
+                "direction": "down",
+                "geometry_part": {
+                    "bone": "bb_main",
+                    "cube": 0,
+                    "face": "down"
+                }
+            }
+        ]
+    }
+}

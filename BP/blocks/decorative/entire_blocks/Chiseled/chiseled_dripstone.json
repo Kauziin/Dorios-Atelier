@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:block": {
         "description": {
-            "identifier": "utilitycraft:chiseled_dripstone",
+            "identifier": "dorios_atelier:chiseled_dripstone",
             "menu_category": {
                 "category": "construction"
             }

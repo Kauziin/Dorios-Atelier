@@ -2,24 +2,24 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:craft_dripstone_bricks"
+            "identifier": "dorios_atelier:craft_dripstone_bricks"
         },
         "tags": [
             "crafting_table"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:polished_dripstone",
+                "item": "dorios_atelier:polished_dripstone",
                 "count": 4
             }
         ],
         "result": {
-            "item": "utilitycraft:dripstone_bricks",
+            "item": "dorios_atelier:dripstone_bricks",
             "count": 4
         },
         "unlock": [
             {
-                "item": "utilitycraft:polished_dripstone"
+                "item": "dorios_atelier:polished_dripstone"
             }
         ]
     }

@@ -45,43 +45,45 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
+BP_ROOT = ROOT / "BP"
+RP_ROOT = ROOT / "RP"
 
 FORCE_INCLUDE_IDS: list[str] = []
 FORCE_EXCLUDE_IDS: list[str] = []
 
 REPORT_PATH = ROOT / "tools/generated/uniform_variant_targets.json"
 
-ENTIRE_BLOCKS_DIR = ROOT / "Data/blocks/decorative/entire_blocks"
-SLABS_DIR = ROOT / "Data/blocks/decorative/slabs"
-STAIRS_DIR = ROOT / "Data/blocks/decorative/stairs"
-UNIQUE_STAIRS_DIR = ROOT / "Data/blocks/decorative/unique_stairs"
-CULLING_DIR = ROOT / "Assets/block_culling"
-STONECUTTER_DIR = ROOT / "Data/recipes/stonecutter"
+ENTIRE_BLOCKS_DIR = BP_ROOT / "blocks/decorative/entire_blocks"
+SLABS_DIR = BP_ROOT / "blocks/decorative/slabs"
+STAIRS_DIR = BP_ROOT / "blocks/decorative/stairs"
+UNIQUE_STAIRS_DIR = BP_ROOT / "blocks/decorative/unique_stairs"
+CULLING_DIR = RP_ROOT / "block_culling"
+STONECUTTER_DIR = BP_ROOT / "recipes/stonecutter"
 
-ASSETS_BLOCKS_PATH = ROOT / "Assets/blocks.json"
-CATALOG_PATH = ROOT / "Data/item_catalog/crafting_item_catalog.json"
-STAIRS_SCRIPT_PATH = ROOT / "Data/scripts/stairs.js"
+ASSETS_BLOCKS_PATH = RP_ROOT / "blocks.json"
+CATALOG_PATH = BP_ROOT / "item_catalog/crafting_item_catalog.json"
+STAIRS_SCRIPT_PATH = BP_ROOT / "scripts/stairs.js"
 
 SLAB_TEMPLATE_PATH = SLABS_DIR / "andesite_tiles_slab.json"
-STAIRS_TEMPLATE_PATH = STAIRS_DIR / "andesite_tiles_stairs.json"
-THREE_STEP_STAIRS_TEMPLATE_PATH = UNIQUE_STAIRS_DIR / "andesite_tiles_three_steps_stairs.json"
-VERTICAL_SLAB_TEMPLATE_PATH = ROOT / "Data/blocks/decorative/vertical_slabs/andesite_tiles_vertical_slab.json"
+STAIRS_TEMPLATE_PATH = STAIRS_DIR / "andesite_tiles_str.json"
+THREE_STEP_STAIRS_TEMPLATE_PATH = UNIQUE_STAIRS_DIR / "andesite_tiles_tss.json"
+VERTICAL_SLAB_TEMPLATE_PATH = BP_ROOT / "blocks/decorative/vertical_slabs/andesite_tiles_vslab.json"
 ENTIRE_BLOCK_TEMPLATE_NAME = "andesite_bricks.json"
 SLAB_CULLING_TEMPLATE_PATH = CULLING_DIR / "andesite_tiles_slab.json"
-STAIRS_CULLING_TEMPLATE_PATH = CULLING_DIR / "andesite_tiles_stairs.json"
-THREE_STEP_STAIRS_CULLING_TEMPLATE_PATH = CULLING_DIR / "andesite_tiles_three_steps_stairs.json"
+STAIRS_CULLING_TEMPLATE_PATH = CULLING_DIR / "andesite_tiles_str.json"
+THREE_STEP_STAIRS_CULLING_TEMPLATE_PATH = CULLING_DIR / "andesite_tiles_tss.json"
 
 SLAB_GROUP_NAME = "minecraft:itemGroup.name.slab"
 STAIRS_GROUP_NAME = "minecraft:itemGroup.name.stairs"
-VERTICAL_SLABS_GROUP_NAME = "dorios:itemGroup.name.verticalSlabs"
-THREE_STEP_STAIRS_GROUP_NAME = "dorios:itemGroup.name.threeStepStairs"
-STONEWORK_GROUP_NAME = "dorios:itemGroup.name.stoneBricks"
+VERTICAL_SLABS_GROUP_NAME = "dorios_atelier:itemGroup.name.verticalSlabs"
+THREE_STEP_STAIRS_GROUP_NAME = "dorios_atelier:itemGroup.name.threeStepStairs"
+STONEWORK_GROUP_NAME = "dorios_atelier:itemGroup.name.stoneBricks"
 
 LANG_NAME_MAX_CHARS = 32
 LANG_FILES: dict[str, Path] = {
-    "en_US": ROOT / "Assets/texts/en_US.lang",
-    "pt_BR": ROOT / "Assets/texts/pt_BR.lang",
-    "es_MX": ROOT / "Assets/texts/es_MX.lang",
+    "en_US": RP_ROOT / "texts/en_US.lang",
+    "pt_BR": RP_ROOT / "texts/pt_BR.lang",
+    "es_MX": RP_ROOT / "texts/es_MX.lang",
 }
 
 VARIANT_SUFFIXES = (
@@ -90,6 +92,17 @@ VARIANT_SUFFIXES = (
     "stairs",
     "slab",
 )
+
+VARIANT_FILE_SUFFIXES = {
+    "three_steps_stairs": "tss",
+    "vertical_slab": "vslab",
+    "stairs": "str",
+    "slab": "slab",
+}
+
+
+def variant_filename(base_name: str, variant_suffix: str) -> str:
+    return f"{base_name}_{VARIANT_FILE_SUFFIXES[variant_suffix]}.json"
 
 MATERIAL_TOKEN_PRIORITY = (
     "blackstone",
@@ -279,8 +292,8 @@ def load_vanilla_pt_name_map(vanilla_list_path: Path) -> dict[str, str]:
 
 
 def collect_variant_base_names() -> set[str]:
-    suffixes = tuple(f"_{suffix}" for suffix in VARIANT_SUFFIXES)
-    variant_directories = (SLABS_DIR, STAIRS_DIR, UNIQUE_STAIRS_DIR, ROOT / "Data/blocks/decorative/vertical_slabs")
+    suffixes = tuple(f"_{suffix}" for suffix in VARIANT_FILE_SUFFIXES.values())
+    variant_directories = (SLABS_DIR, STAIRS_DIR, UNIQUE_STAIRS_DIR, BP_ROOT / "blocks/decorative/vertical_slabs")
 
     names: set[str] = set()
     for directory in variant_directories:
@@ -295,11 +308,11 @@ def collect_variant_base_names() -> set[str]:
 
 def resolve_texture_key_for_base(base_name: str, assets_data: dict[str, Any]) -> str | None:
     candidates = (
-        f"utilitycraft:{base_name}",
-        f"utilitycraft:{base_name}_slab",
-        f"utilitycraft:{base_name}_stairs",
-        f"utilitycraft:{base_name}_three_steps_stairs",
-        f"utilitycraft:{base_name}_vertical_slab",
+        f"dorios_atelier:{base_name}",
+        f"dorios_atelier:{base_name}_slab",
+        f"dorios_atelier:{base_name}_stairs",
+        f"dorios_atelier:{base_name}_three_steps_stairs",
+        f"dorios_atelier:{base_name}_vertical_slab",
     )
 
     for candidate in candidates:
@@ -330,7 +343,7 @@ def texture_key_has_local_file(texture_key: str, terrain_texture_data: dict[str,
 
 def detect_vanilla_bases_with_local_textures(vanilla_base_names: set[str]) -> set[str]:
     assets_data = read_json(ASSETS_BLOCKS_PATH)
-    terrain_texture_data = read_json(ROOT / "Assets/textures/terrain_texture.json").get("texture_data", {})
+    terrain_texture_data = read_json(RP_ROOT / "textures/terrain_texture.json").get("texture_data", {})
     variant_bases = collect_variant_base_names()
 
     kept: set[str] = set()
@@ -477,7 +490,7 @@ def remove_vanilla_entire_blocks(vanilla_base_names: set[str], dry_run: bool) ->
     for block_path in iter_entire_block_files():
         payload = read_json(block_path)
         identifier = payload.get("minecraft:block", {}).get("description", {}).get("identifier")
-        if not isinstance(identifier, str) or not identifier.startswith("utilitycraft:"):
+        if not isinstance(identifier, str) or not identifier.startswith("dorios_atelier:"):
             continue
 
         base_name = identifier.split(":", 1)[1]
@@ -509,7 +522,7 @@ def ensure_vanilla_entire_blocks_exist(base_names: set[str], dry_run: bool) -> i
 
         payload = build_entire_block_from_template(
             template=template,
-            identifier=f"utilitycraft:{base_name}",
+            identifier=f"dorios_atelier:{base_name}",
             texture=texture_key,
         )
         target_path = build_entire_block_target_path(base_name)
@@ -574,7 +587,7 @@ def rewrite_stonecutter_recipes_to_vanilla_bases(
         changed = False
 
         parsed_result_variant = None
-        if result_item.startswith("utilitycraft:"):
+        if result_item.startswith("dorios_atelier:"):
             parsed_result_variant = split_variant_item_name(result_item.split(":", 1)[1])
 
         if parsed_result_variant is not None:
@@ -589,7 +602,7 @@ def rewrite_stonecutter_recipes_to_vanilla_bases(
                     recipe["unlock"] = [{"item": vanilla_base_item}]
                     changed = True
             elif base_name in keep_utilitycraft_base_names:
-                custom_base_item = f"utilitycraft:{base_name}"
+                custom_base_item = f"dorios_atelier:{base_name}"
                 if recipe.get("ingredients") != [{"item": custom_base_item}]:
                     recipe["ingredients"] = [{"item": custom_base_item}]
                     changed = True
@@ -598,7 +611,7 @@ def rewrite_stonecutter_recipes_to_vanilla_bases(
                     recipe["unlock"] = [{"item": custom_base_item}]
                     changed = True
 
-        if ingredient_item.startswith("utilitycraft:"):
+        if ingredient_item.startswith("dorios_atelier:"):
             parsed_ingredient_variant = split_variant_item_name(ingredient_item.split(":", 1)[1])
             if parsed_ingredient_variant is not None:
                 base_name, _variant_suffix = parsed_ingredient_variant
@@ -609,7 +622,7 @@ def rewrite_stonecutter_recipes_to_vanilla_bases(
                         changed = True
                         rewritten_reverse += 1
                 elif base_name in keep_utilitycraft_base_names:
-                    custom_base_item = f"utilitycraft:{base_name}"
+                    custom_base_item = f"dorios_atelier:{base_name}"
                     if recipe.get("result", {}).get("item") != custom_base_item:
                         recipe.setdefault("result", {})["item"] = custom_base_item
                         changed = True
@@ -686,7 +699,7 @@ def import_vanilla_compatible_blocks(
 
     for vanilla_id in vanilla_ids:
         vanilla_name = vanilla_id.split(":", 1)[1]
-        custom_id = f"utilitycraft:{vanilla_name}"
+        custom_id = f"dorios_atelier:{vanilla_name}"
         custom_path = build_entire_block_target_path(vanilla_name)
 
         vanilla_entry = vanilla_blocks.get(vanilla_name)
@@ -758,12 +771,12 @@ def find_targets(include_non_stone: bool) -> list[TargetBlock]:
             continue
 
         base_name = identifier.split(":", 1)[1]
-        slab_path = SLABS_DIR / f"{base_name}_slab.json"
-        stairs_path = STAIRS_DIR / f"{base_name}_stairs.json"
+        slab_path = SLABS_DIR / variant_filename(base_name, "slab")
+        stairs_path = STAIRS_DIR / variant_filename(base_name, "stairs")
         has_slab = slab_path.exists()
         has_stairs = stairs_path.exists()
-        has_three_steps_stairs = (UNIQUE_STAIRS_DIR / f"{base_name}_three_steps_stairs.json").exists()
-        has_vertical_slab = (ROOT / "Data/blocks/decorative/vertical_slabs" / f"{base_name}_vertical_slab.json").exists()
+        has_three_steps_stairs = (UNIQUE_STAIRS_DIR / variant_filename(base_name, "three_steps_stairs")).exists()
+        has_vertical_slab = (BP_ROOT / "blocks/decorative/vertical_slabs" / variant_filename(base_name, "vertical_slab")).exists()
 
         if has_slab and has_stairs and has_three_steps_stairs and has_vertical_slab and identifier not in FORCE_INCLUDE_IDS:
             continue
@@ -816,8 +829,8 @@ def generate_slab_block(template: dict[str, Any], target: TargetBlock) -> dict[s
     block = data["minecraft:block"]
     components = block["components"]
 
-    block["description"]["identifier"] = f"utilitycraft:{target.base_name}_slab"
-    components["minecraft:geometry"]["culling"] = f"utilitycraft:culling.{target.base_name}_slab"
+    block["description"]["identifier"] = f"dorios_atelier:{target.base_name}_slab"
+    components["minecraft:geometry"]["culling"] = f"dorios_atelier:culling.{target.base_name}_slab"
     components["minecraft:material_instances"]["*"]["texture"] = target.texture
 
     apply_source_behavior(components, target.source_components)
@@ -829,8 +842,8 @@ def generate_stairs_block(template: dict[str, Any], target: TargetBlock) -> dict
     block = data["minecraft:block"]
     components = block["components"]
 
-    block["description"]["identifier"] = f"utilitycraft:{target.base_name}_stairs"
-    components["minecraft:geometry"]["culling"] = f"utilitycraft:culling.{target.base_name}_stairs"
+    block["description"]["identifier"] = f"dorios_atelier:{target.base_name}_stairs"
+    components["minecraft:geometry"]["culling"] = f"dorios_atelier:culling.{target.base_name}_stairs"
     components["minecraft:material_instances"]["*"]["texture"] = target.texture
 
     apply_source_behavior(components, target.source_components)
@@ -842,8 +855,8 @@ def generate_three_steps_stairs_block(template: dict[str, Any], target: TargetBl
     block = data["minecraft:block"]
     components = block["components"]
 
-    block["description"]["identifier"] = f"utilitycraft:{target.base_name}_three_steps_stairs"
-    components["minecraft:geometry"]["culling"] = f"utilitycraft:culling.{target.base_name}_three_steps_stairs"
+    block["description"]["identifier"] = f"dorios_atelier:{target.base_name}_three_steps_stairs"
+    components["minecraft:geometry"]["culling"] = f"dorios_atelier:culling.{target.base_name}_three_steps_stairs"
     components["minecraft:material_instances"]["*"]["texture"] = target.texture
 
     apply_source_behavior(components, target.source_components)
@@ -855,7 +868,7 @@ def generate_vertical_slab_block(template: dict[str, Any], target: TargetBlock) 
     block = data["minecraft:block"]
     components = block["components"]
 
-    block["description"]["identifier"] = f"utilitycraft:{target.base_name}_vertical_slab"
+    block["description"]["identifier"] = f"dorios_atelier:{target.base_name}_vertical_slab"
     components["minecraft:material_instances"]["*"]["texture"] = target.texture
 
     apply_source_behavior(components, target.source_components)
@@ -864,30 +877,30 @@ def generate_vertical_slab_block(template: dict[str, Any], target: TargetBlock) 
 
 def generate_slab_culling(template: dict[str, Any], base_name: str) -> dict[str, Any]:
     data = copy.deepcopy(template)
-    data["minecraft:block_culling_rules"]["description"]["identifier"] = f"utilitycraft:culling.{base_name}_slab"
+    data["minecraft:block_culling_rules"]["description"]["identifier"] = f"dorios_atelier:culling.{base_name}_slab"
     return data
 
 
 def generate_stairs_culling(template: dict[str, Any], base_name: str) -> dict[str, Any]:
     data = copy.deepcopy(template)
-    data["minecraft:block_culling_rules"]["description"]["identifier"] = f"utilitycraft:culling.{base_name}_stairs"
+    data["minecraft:block_culling_rules"]["description"]["identifier"] = f"dorios_atelier:culling.{base_name}_stairs"
     return data
 
 
 def generate_three_steps_stairs_culling(template: dict[str, Any], base_name: str) -> dict[str, Any]:
     data = copy.deepcopy(template)
-    data["minecraft:block_culling_rules"]["description"]["identifier"] = f"utilitycraft:culling.{base_name}_three_steps_stairs"
+    data["minecraft:block_culling_rules"]["description"]["identifier"] = f"dorios_atelier:culling.{base_name}_three_steps_stairs"
     return data
 
 
 def make_stonecutter_recipe(base_name: str, variant_suffix: str, result_count: int) -> dict[str, Any]:
-    source_id = f"utilitycraft:{base_name}"
-    result_id = f"utilitycraft:{base_name}_{variant_suffix}"
+    source_id = f"dorios_atelier:{base_name}"
+    result_id = f"dorios_atelier:{base_name}_{variant_suffix}"
     return {
         "format_version": "1.21.100",
         "minecraft:recipe_shapeless": {
             "description": {
-                "identifier": f"utilitycraft:sc_{base_name}_{variant_suffix}_from_{base_name}"
+                "identifier": f"dorios_atelier:sc_{base_name}_{variant_suffix}_from_{base_name}"
             },
             "tags": ["stonecutter"],
             "ingredients": [{"item": source_id}],
@@ -969,7 +982,7 @@ def collect_decorative_block_identifiers() -> list[str]:
         SLABS_DIR,
         STAIRS_DIR,
         UNIQUE_STAIRS_DIR,
-        ROOT / "Data/blocks/decorative/vertical_slabs",
+        BP_ROOT / "blocks/decorative/vertical_slabs",
     )
 
     identifiers: set[str] = set()
@@ -981,14 +994,14 @@ def collect_decorative_block_identifiers() -> list[str]:
         for path in json_paths:
             payload = read_json(path)
             identifier = payload.get("minecraft:block", {}).get("description", {}).get("identifier")
-            if isinstance(identifier, str) and identifier.startswith("utilitycraft:"):
+            if isinstance(identifier, str) and identifier.startswith("dorios_atelier:"):
                 identifiers.add(identifier)
 
     return sorted(identifiers)
 
 
 def update_block_localization_names(dry_run: bool) -> tuple[int, int]:
-    tile_line_pattern = re.compile(r"^(tile\.utilitycraft:([a-z0-9_]+)\.name)=(.*)$")
+    tile_line_pattern = re.compile(r"^(tile\.dorios_atelier:([a-z0-9_]+)\.name)=(.*)$")
     block_identifiers = collect_decorative_block_identifiers()
     vanilla_pt_name_map = load_vanilla_pt_name_map(ROOT / "tools/vanilla_blocks_list.md")
 
@@ -1042,7 +1055,7 @@ def update_block_localization_names(dry_run: bool) -> tuple[int, int]:
             )
 
             wrapped_name = wrap_label_lines(generated_name)
-            updated_lines.append(f"tile.utilitycraft:{block_name}.name={wrapped_name}")
+            updated_lines.append(f"tile.dorios_atelier:{block_name}.name={wrapped_name}")
             existing_names[block_name] = generated_name
             created_missing_entries += 1
 
@@ -1066,7 +1079,7 @@ def make_reverse_stonecutter_recipe(base_item_id: str, variant_item_id: str, var
         "format_version": "1.21.100",
         "minecraft:recipe_shapeless": {
             "description": {
-                "identifier": f"utilitycraft:sc_{base_name}_from_{variant_name}"
+                "identifier": f"dorios_atelier:sc_{base_name}_from_{variant_name}"
             },
             "tags": ["stonecutter"],
             "ingredients": ingredients,
@@ -1102,7 +1115,7 @@ def create_reverse_variant_recipes(dry_run: bool) -> tuple[int, int]:
         if not isinstance(ingredient_item, str):
             continue
 
-        if not result_item.startswith("utilitycraft:"):
+        if not result_item.startswith("dorios_atelier:"):
             continue
 
         result_name = result_item.split(":", 1)[1]
@@ -1115,7 +1128,7 @@ def create_reverse_variant_recipes(dry_run: bool) -> tuple[int, int]:
         if ingredient_item == f"minecraft:{base_name}":
             base_item_id = f"minecraft:{base_name}"
         else:
-            base_item_id = f"utilitycraft:{base_name}"
+            base_item_id = f"dorios_atelier:{base_name}"
         variant_item_id = result_item
 
         reverse_file_name = f"{base_name}_from_{result_name}.json"
@@ -1140,10 +1153,10 @@ def update_assets_blocks(targets: list[TargetBlock], dry_run: bool) -> tuple[int
     created_vertical_slab_entries = 0
 
     for target in targets:
-        slab_id = f"utilitycraft:{target.base_name}_slab"
-        stairs_id = f"utilitycraft:{target.base_name}_stairs"
-        three_steps_stairs_id = f"utilitycraft:{target.base_name}_three_steps_stairs"
-        vertical_slab_id = f"utilitycraft:{target.base_name}_vertical_slab"
+        slab_id = f"dorios_atelier:{target.base_name}_slab"
+        stairs_id = f"dorios_atelier:{target.base_name}_stairs"
+        three_steps_stairs_id = f"dorios_atelier:{target.base_name}_three_steps_stairs"
+        vertical_slab_id = f"dorios_atelier:{target.base_name}_vertical_slab"
 
         if slab_id not in data:
             data[slab_id] = {"sound": target.sound, "textures": target.texture}
@@ -1267,61 +1280,72 @@ def collect_identifiers_from_dir(directory: Path) -> list[str]:
     return identifiers
 
 
-def update_crafting_catalog(dry_run: bool) -> tuple[int, int, int, int]:
+def update_crafting_catalog(dry_run: bool) -> tuple[int, int, int, int, int, int]:
     data = read_json(CATALOG_PATH)
     categories = data["minecraft:crafting_items_catalog"]["categories"]
     construction = next(category for category in categories if category["category_name"] == "construction")
     groups = construction["groups"]
+    valid_stonework_names = {STONEWORK_GROUP_NAME, "dorios_atelier:itemGroup.name.stoneBricks"}
     stonework_group = next(
         (
             group
             for group in groups
-            if group.get("group_identifier", {}).get("name") == STONEWORK_GROUP_NAME
+            if group.get("group_identifier", {}).get("name") in valid_stonework_names
         ),
         None,
     )
     stonework_items = stonework_group.get("items", []) if isinstance(stonework_group, dict) else []
     material_order = build_material_order(stonework_items)
 
-    filtered_groups: list[dict[str, Any]] = []
     removed_slab_groups = 0
     removed_stairs_groups = 0
 
-    for group in groups:
-        group_name = group.get("group_identifier", {}).get("name")
-        if group_name == SLAB_GROUP_NAME:
-            removed_slab_groups += 1
-            continue
-        if group_name == STAIRS_GROUP_NAME:
-            removed_stairs_groups += 1
-            continue
-        filtered_groups.append(group)
-
-    construction["groups"] = filtered_groups
-
-    vertical_slab_ids = collect_identifiers_from_dir(ROOT / "Data/blocks/decorative/vertical_slabs")
+    slab_ids = collect_identifiers_from_dir(SLABS_DIR)
+    stairs_ids = collect_identifiers_from_dir(STAIRS_DIR)
+    vertical_slab_ids = collect_identifiers_from_dir(BP_ROOT / "blocks/decorative/vertical_slabs")
     three_step_stairs_ids = collect_identifiers_from_dir(UNIQUE_STAIRS_DIR)
+    ordered_slab_ids = sort_variant_items_by_material(slab_ids, material_order)
+    ordered_stairs_ids = sort_variant_items_by_material(stairs_ids, material_order)
     ordered_vertical_slab_ids = sort_variant_items_by_material(vertical_slab_ids, material_order)
     ordered_three_step_stairs_ids = sort_variant_items_by_material(three_step_stairs_ids, material_order)
 
     catalog_updates = 0
     catalog_updates += sync_or_create_group_items(
         construction["groups"],
+        SLAB_GROUP_NAME,
+        "dorios_atelier:andesite_tiles_slab",
+        ordered_slab_ids,
+    )
+    catalog_updates += sync_or_create_group_items(
+        construction["groups"],
+        STAIRS_GROUP_NAME,
+        "dorios_atelier:andesite_tiles_stairs",
+        ordered_stairs_ids,
+    )
+    catalog_updates += sync_or_create_group_items(
+        construction["groups"],
         VERTICAL_SLABS_GROUP_NAME,
-        "utilitycraft:andesite_tiles_vertical_slab",
+        "dorios_atelier:andesite_tiles_vertical_slab",
         ordered_vertical_slab_ids,
     )
     catalog_updates += sync_or_create_group_items(
         construction["groups"],
         THREE_STEP_STAIRS_GROUP_NAME,
-        "utilitycraft:andesite_tiles_three_steps_stairs",
+        "dorios_atelier:andesite_tiles_three_steps_stairs",
         ordered_three_step_stairs_ids,
     )
 
     if not dry_run and (removed_slab_groups or removed_stairs_groups or catalog_updates):
         write_json(CATALOG_PATH, data)
 
-    return removed_slab_groups, removed_stairs_groups, len(vertical_slab_ids), len(three_step_stairs_ids)
+    return (
+        removed_slab_groups,
+        removed_stairs_groups,
+        len(slab_ids),
+        len(stairs_ids),
+        len(vertical_slab_ids),
+        len(three_step_stairs_ids),
+    )
 
 
 def update_stairs_script(dry_run: bool) -> int:
@@ -1385,17 +1409,17 @@ def run_generation(targets: list[TargetBlock], dry_run: bool) -> dict[str, int]:
     created_vertical_slab_recipes = 0
 
     for target in targets:
-        slab_block_path = SLABS_DIR / f"{target.base_name}_slab.json"
-        stairs_block_path = STAIRS_DIR / f"{target.base_name}_stairs.json"
-        three_step_stairs_block_path = UNIQUE_STAIRS_DIR / f"{target.base_name}_three_steps_stairs.json"
-        vertical_slab_block_path = ROOT / "Data/blocks/decorative/vertical_slabs" / f"{target.base_name}_vertical_slab.json"
-        slab_culling_path = CULLING_DIR / f"{target.base_name}_slab.json"
-        stairs_culling_path = CULLING_DIR / f"{target.base_name}_stairs.json"
-        three_step_stairs_culling_path = CULLING_DIR / f"{target.base_name}_three_steps_stairs.json"
+        slab_block_path = SLABS_DIR / variant_filename(target.base_name, "slab")
+        stairs_block_path = STAIRS_DIR / variant_filename(target.base_name, "stairs")
+        three_step_stairs_block_path = UNIQUE_STAIRS_DIR / variant_filename(target.base_name, "three_steps_stairs")
+        vertical_slab_block_path = BP_ROOT / "blocks/decorative/vertical_slabs" / variant_filename(target.base_name, "vertical_slab")
+        slab_culling_path = CULLING_DIR / variant_filename(target.base_name, "slab")
+        stairs_culling_path = CULLING_DIR / variant_filename(target.base_name, "stairs")
+        three_step_stairs_culling_path = CULLING_DIR / variant_filename(target.base_name, "three_steps_stairs")
         slab_recipe_path = STONECUTTER_DIR / f"{target.base_name}_slab_from_{target.base_name}.json"
-        stairs_recipe_path = STONECUTTER_DIR / f"{target.base_name}_stairs_from_{target.base_name}.json"
-        three_step_stairs_recipe_path = STONECUTTER_DIR / f"{target.base_name}_three_steps_stairs_from_{target.base_name}.json"
-        vertical_slab_recipe_path = STONECUTTER_DIR / f"{target.base_name}_vertical_slab_from_{target.base_name}.json"
+        stairs_recipe_path = STONECUTTER_DIR / f"{target.base_name}_str_from_{target.base_name}.json"
+        three_step_stairs_recipe_path = STONECUTTER_DIR / f"{target.base_name}_tss_from_{target.base_name}.json"
+        vertical_slab_recipe_path = STONECUTTER_DIR / f"{target.base_name}_vslab_from_{target.base_name}.json"
 
         if not slab_block_path.exists():
             if not dry_run:
@@ -1466,6 +1490,8 @@ def run_generation(targets: list[TargetBlock], dry_run: bool) -> dict[str, int]:
     (
         removed_vanilla_slab_groups,
         removed_vanilla_stairs_groups,
+        catalog_slab_items,
+        catalog_stairs_items,
         catalog_vertical_slab_items,
         catalog_three_step_stairs_items,
     ) = update_crafting_catalog(dry_run)
@@ -1492,6 +1518,8 @@ def run_generation(targets: list[TargetBlock], dry_run: bool) -> dict[str, int]:
         "assets_vertical_slab_entries": assets_vertical_slab_entries,
         "removed_vanilla_slab_groups": removed_vanilla_slab_groups,
         "removed_vanilla_stairs_groups": removed_vanilla_stairs_groups,
+        "catalog_slab_items": catalog_slab_items,
+        "catalog_stairs_items": catalog_stairs_items,
         "catalog_vertical_slab_items": catalog_vertical_slab_items,
         "catalog_three_step_stairs_items": catalog_three_step_stairs_items,
         "tracked_stairs_ids": tracked_stairs_ids,

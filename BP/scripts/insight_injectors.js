@@ -69,7 +69,7 @@ function findEntryForBlockId(blockId) {
  * Derives a friendly display name from a block identifier.
  * Strips the namespace and replaces underscores with spaces, capitalizing each word.
  *
- * Example: "utilitycraft:andesite_bricks" → "Andesite Bricks"
+ * Example: "dorios_atelier:andesite_bricks" → "Andesite Bricks"
  */
 function blockIdToDisplayName(blockId) {
     const raw = stripNamespace(blockId);

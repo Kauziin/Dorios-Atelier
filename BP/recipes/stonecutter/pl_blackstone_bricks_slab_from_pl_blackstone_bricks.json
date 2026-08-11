@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "dorios_atelier:sc_polished_blackstone_bricks_slab_from_polished_blackstone_bricks"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:polished_blackstone_bricks"
+            }
+        ],
+        "result": {
+            "item": "dorios_atelier:polished_blackstone_bricks_slab",
+            "count": 2
+        },
+        "unlock": [
+            {
+                "item": "minecraft:polished_blackstone_bricks"
+            }
+        ]
+    }
+}

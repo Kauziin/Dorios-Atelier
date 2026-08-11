@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:block": {
         "description": {
-            "identifier": "utilitycraft:carved_basalt",
+            "identifier": "dorios_atelier:carved_basalt",
             "menu_category": {
                 "category": "construction"
             }

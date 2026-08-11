@@ -2,7 +2,7 @@
   "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
-      "identifier": "utilitycraft:wooden_glove",
+      "identifier": "dorios_atelier:wooden_glove",
       "menu_category": {
         "category": "equipment"
       }
@@ -11,13 +11,13 @@
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:icon": "utilitycraft_wooden_glove",
-      "utilitycraft:glove": {
+      "dorios_atelier:glove": {
         "max_distance": 8
       },
       "minecraft:allow_off_hand": true,
       "minecraft:tags": {
         "tags": [
-          "utilitycraft:is_glove"
+          "dorios_atelier:is_glove"
         ]
       }
     }

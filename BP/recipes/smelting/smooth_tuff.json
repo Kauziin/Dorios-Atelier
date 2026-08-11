@@ -2,14 +2,14 @@
     "format_version": "1.20.80",
     "minecraft:recipe_furnace": {
         "description": {
-            "identifier": "utilitycraft:smelt_smooth_tuff"
+            "identifier": "dorios_atelier:smelt_smooth_tuff"
         },
         "tags": [
             "furnace",
             "blast_furnace"
         ],
         "input": "minecraft:tuff",
-        "output": "utilitycraft:smooth_tuff",
+        "output": "dorios_atelier:smooth_tuff",
         "cookingtime": 200,
         "experience": 0.1
     }

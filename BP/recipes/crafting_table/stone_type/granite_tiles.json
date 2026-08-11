@@ -2,24 +2,24 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:craft_granite_tiles"
+            "identifier": "dorios_atelier:craft_granite_tiles"
         },
         "tags": [
             "crafting_table"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:granite_bricks",
+                "item": "dorios_atelier:granite_bricks",
                 "count": 4
             }
         ],
         "result": {
-            "item": "utilitycraft:granite_tiles",
+            "item": "dorios_atelier:granite_tiles",
             "count": 4
         },
         "unlock": [
             {
-                "item": "utilitycraft:granite_bricks"
+                "item": "dorios_atelier:granite_bricks"
             }
         ]
     }

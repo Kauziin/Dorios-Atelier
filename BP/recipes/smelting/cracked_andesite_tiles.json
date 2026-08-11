@@ -2,14 +2,14 @@
     "format_version": "1.20.80",
     "minecraft:recipe_furnace": {
         "description": {
-            "identifier": "utilitycraft:smelt_cracked_andesite_tiles"
+            "identifier": "dorios_atelier:smelt_cracked_andesite_tiles"
         },
         "tags": [
             "furnace",
             "blast_furnace"
         ],
-        "input": "utilitycraft:andesite_tiles",
-        "output": "utilitycraft:cracked_andesite_tiles",
+        "input": "dorios_atelier:andesite_tiles",
+        "output": "dorios_atelier:cracked_andesite_tiles",
         "cookingtime": 200,
         "experience": 0.1
     }

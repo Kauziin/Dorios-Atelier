@@ -2,14 +2,14 @@
     "format_version": "1.20.80",
     "minecraft:recipe_furnace": {
         "description": {
-            "identifier": "utilitycraft:smelt_cracked_calcite_bricks"
+            "identifier": "dorios_atelier:smelt_cracked_calcite_bricks"
         },
         "tags": [
             "furnace",
             "blast_furnace"
         ],
-        "input": "utilitycraft:calcite_bricks",
-        "output": "utilitycraft:cracked_calcite_bricks",
+        "input": "dorios_atelier:calcite_bricks",
+        "output": "dorios_atelier:cracked_calcite_bricks",
         "cookingtime": 200,
         "experience": 0.1
     }

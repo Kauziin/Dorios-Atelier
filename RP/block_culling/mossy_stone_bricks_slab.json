@@ -2,7 +2,7 @@
     "format_version": "1.21.80",
     "minecraft:block_culling_rules": {
         "description": {
-            "identifier": "utilitycraft:culling.mossy_stone_bricks_slab"
+            "identifier": "dorios_atelier:culling.mossy_stone_bricks_slab"
         },
         "rules": [
             {

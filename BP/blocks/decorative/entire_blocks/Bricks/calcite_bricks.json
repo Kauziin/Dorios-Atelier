@@ -2,7 +2,7 @@
     "format_version": "1.21.100",
     "minecraft:block": {
         "description": {
-            "identifier": "utilitycraft:calcite_bricks",
+            "identifier": "dorios_atelier:calcite_bricks",
             "menu_category": {
                 "category": "construction"
             }

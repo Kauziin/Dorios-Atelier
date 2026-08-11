@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "dorios_atelier:sc_mud_bricks_vertical_slab_from_mud_bricks"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:mud_bricks"
+            }
+        ],
+        "result": {
+            "item": "dorios_atelier:mud_bricks_vertical_slab",
+            "count": 2
+        },
+        "unlock": [
+            {
+                "item": "minecraft:mud_bricks"
+            }
+        ]
+    }
+}

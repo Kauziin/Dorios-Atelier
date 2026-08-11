@@ -2,24 +2,24 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:craft_chiseled_obsidian"
+            "identifier": "dorios_atelier:craft_chiseled_obsidian"
         },
         "tags": [
             "crafting_table"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:obsidian_tiles",
+                "item": "dorios_atelier:obsidian_tiles",
                 "count": 4
             }
         ],
         "result": {
-            "item": "utilitycraft:chiseled_obsidian",
+            "item": "dorios_atelier:chiseled_obsidian",
             "count": 4
         },
         "unlock": [
             {
-                "item": "utilitycraft:obsidian_tiles"
+                "item": "dorios_atelier:obsidian_tiles"
             }
         ]
     }

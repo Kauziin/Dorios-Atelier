@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sanded_oak_wood"
+            "identifier": "dorios_atelier:sanded_oak_wood"
         },
         "tags": [
             "crafting_table"
@@ -14,7 +14,7 @@
             }
         ],
         "result": {
-            "item": "utilitycraft:sanded_oak_wood",
+            "item": "dorios_atelier:sanded_oak_wood",
             "count": 4
         },
         "unlock": [

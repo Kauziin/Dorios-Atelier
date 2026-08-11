@@ -2,14 +2,14 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:craft_chiseled_tuff"
+            "identifier": "dorios_atelier:craft_chiseled_tuff"
         },
         "tags": [
             "crafting_table"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:tuff_tiles",
+                "item": "dorios_atelier:tuff_tiles",
                 "count": 4
             }
         ],
@@ -19,7 +19,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:tuff_tiles"
+                "item": "dorios_atelier:tuff_tiles"
             }
         ]
     }

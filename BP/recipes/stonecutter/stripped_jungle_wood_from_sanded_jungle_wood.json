@@ -2,11 +2,11 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_stripped_jungle_wood_from_sanded_jungle_wood"
+            "identifier": "dorios_atelier:sc_stripped_jungle_wood_from_sanded_jungle_wood"
         },
         "tags": ["stonecutter"],
-        "ingredients": [{ "item": "utilitycraft:sanded_jungle_wood" }],
+        "ingredients": [{ "item": "dorios_atelier:sanded_jungle_wood" }],
         "result": { "item": "minecraft:stripped_jungle_wood", "count": 1 },
-        "unlock": [{ "item": "utilitycraft:sanded_jungle_wood" }]
+        "unlock": [{ "item": "dorios_atelier:sanded_jungle_wood" }]
     }
 }

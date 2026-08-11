@@ -2,7 +2,7 @@
     "format_version": "1.21.100",
     "minecraft:block": {
         "description": {
-            "identifier": "utilitycraft:tuff_tiles",
+            "identifier": "dorios_atelier:tuff_tiles",
             "menu_category": {
                 "category": "construction"
             }

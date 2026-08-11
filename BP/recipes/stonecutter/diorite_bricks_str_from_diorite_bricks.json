@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "dorios_atelier:sc_diorite_bricks_stairs_from_diorite_bricks"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "dorios_atelier:diorite_bricks"
+            }
+        ],
+        "result": {
+            "item": "dorios_atelier:diorite_bricks_stairs",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "dorios_atelier:diorite_bricks"
+            }
+        ]
+    }
+}

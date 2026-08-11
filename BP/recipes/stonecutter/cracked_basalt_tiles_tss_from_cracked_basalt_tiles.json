@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "dorios_atelier:sc_cracked_basalt_tiles_three_steps_stairs_from_cracked_basalt_tiles"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "dorios_atelier:cracked_basalt_tiles"
+            }
+        ],
+        "result": {
+            "item": "dorios_atelier:cracked_basalt_tiles_three_steps_stairs",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "dorios_atelier:cracked_basalt_tiles"
+            }
+        ]
+    }
+}

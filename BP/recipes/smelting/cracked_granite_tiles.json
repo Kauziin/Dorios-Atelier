@@ -2,14 +2,14 @@
     "format_version": "1.20.80",
     "minecraft:recipe_furnace": {
         "description": {
-            "identifier": "utilitycraft:smelt_cracked_granite_tiles"
+            "identifier": "dorios_atelier:smelt_cracked_granite_tiles"
         },
         "tags": [
             "furnace",
             "blast_furnace"
         ],
-        "input": "utilitycraft:granite_tiles",
-        "output": "utilitycraft:cracked_granite_tiles",
+        "input": "dorios_atelier:granite_tiles",
+        "output": "dorios_atelier:cracked_granite_tiles",
         "cookingtime": 200,
         "experience": 0.1
     }

@@ -2,14 +2,14 @@
     "format_version": "1.20.80",
     "minecraft:recipe_furnace": {
         "description": {
-            "identifier": "utilitycraft:smelt_cracked_diorite_bricks"
+            "identifier": "dorios_atelier:smelt_cracked_diorite_bricks"
         },
         "tags": [
             "furnace",
             "blast_furnace"
         ],
-        "input": "utilitycraft:diorite_bricks",
-        "output": "utilitycraft:cracked_diorite_bricks",
+        "input": "dorios_atelier:diorite_bricks",
+        "output": "dorios_atelier:cracked_diorite_bricks",
         "cookingtime": 200,
         "experience": 0.1
     }

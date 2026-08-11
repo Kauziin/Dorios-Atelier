@@ -2,26 +2,26 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_andesite_bricks_from_andesite_bricks_slab"
+            "identifier": "dorios_atelier:sc_andesite_bricks_from_andesite_bricks_slab"
         },
         "tags": [
             "stonecutter"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:andesite_bricks_slab"
+                "item": "dorios_atelier:andesite_bricks_slab"
             },
             {
-                "item": "utilitycraft:andesite_bricks_slab"
+                "item": "dorios_atelier:andesite_bricks_slab"
             }
         ],
         "result": {
-            "item": "utilitycraft:andesite_bricks",
+            "item": "dorios_atelier:andesite_bricks",
             "count": 1
         },
         "unlock": [
             {
-                "item": "utilitycraft:andesite_bricks_slab"
+                "item": "dorios_atelier:andesite_bricks_slab"
             }
         ]
     }

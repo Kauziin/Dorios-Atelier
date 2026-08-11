@@ -1,93 +1,515 @@
 {
-	"num_mip_levels": 4,
-	"padding": 8,
-	"resource_pack_name": "Dorios' Atelier",
-  "texture_name": "atlas.terrain",
-  "texture_data": {
-    "utilitycraft_andesite_bricks": { "textures": "textures/blocks/stones/andesite_bricks" },
-    "utilitycraft_andesite_tiles": { "textures": "textures/blocks/stones/andesite_tiles" },
-    "utilitycraft_basalt_bricks": { "textures": "textures/blocks/stones/basalt_bricks" },
-    "utilitycraft_basalt_tiles": { "textures": "textures/blocks/stones/basalt_tiles" },
-    "utilitycraft_blackstone_tiles": { "textures": "textures/blocks/stones/blackstone_tiles" },
-    "utilitycraft_calcite_bricks": { "textures": "textures/blocks/stones/calcite_bricks" },
-    "utilitycraft_calcite_tiles": { "textures": "textures/blocks/stones/calcite_tiles" },
-    "utilitycraft_carved_basalt_top": { "textures": "textures/blocks/stones/carved_basalt_top" },
-    "utilitycraft_carved_basalt_side": { "textures": "textures/blocks/stones/carved_basalt_side" },
-    "utilitycraft_chiseled_andesite_top": { "textures": "textures/blocks/stones/chiseled_andesite_top" },
-    "utilitycraft_chiseled_andesite_side": { "textures": "textures/blocks/stones/chiseled_andesite_side" },
-    "utilitycraft_chiseled_andesite_bricks_top": { "textures": "textures/blocks/stones/chiseled_andesite_bricks_top" },
-    "utilitycraft_chiseled_andesite_bricks_side": { "textures": "textures/blocks/stones/chiseled_andesite_bricks_side" },
-    "utilitycraft_chiseled_basalt_top": { "textures": "textures/blocks/stones/chiseled_basalt_top" },
-    "utilitycraft_chiseled_basalt_side": { "textures": "textures/blocks/stones/chiseled_basalt_side" },
-    "utilitycraft_chiseled_blackstone_top": { "textures": "textures/blocks/stones/chiseled_blackstone_top" },
-    "utilitycraft_chiseled_blackstone_side": { "textures": "textures/blocks/stones/chiseled_blackstone_side" },
-    "utilitycraft_chiseled_calcite_top": { "textures": "textures/blocks/stones/chiseled_calcite_top" },
-    "utilitycraft_chiseled_calcite_side": { "textures": "textures/blocks/stones/chiseled_calcite_side" },
-    "utilitycraft_chiseled_calcite_bricks_top": { "textures": "textures/blocks/stones/chiseled_calcite_bricks_top" },
-    "utilitycraft_chiseled_calcite_bricks_side": { "textures": "textures/blocks/stones/chiseled_calcite_bricks_side" },
-    "utilitycraft_chiseled_diorite_top": { "textures": "textures/blocks/stones/chiseled_diorite_top" },
-    "utilitycraft_chiseled_diorite_side": { "textures": "textures/blocks/stones/chiseled_diorite_side" },
-    "utilitycraft_chiseled_diorite_bricks_top": { "textures": "textures/blocks/stones/chiseled_diorite_bricks_top" },
-    "utilitycraft_chiseled_diorite_bricks_side": { "textures": "textures/blocks/stones/chiseled_diorite_bricks_side" },
-    "utilitycraft_chiseled_dripstone_top": { "textures": "textures/blocks/stones/chiseled_dripstone_top" },
-    "utilitycraft_chiseled_dripstone_side": { "textures": "textures/blocks/stones/chiseled_dripstone_side" },
-    "utilitycraft_chiseled_dripstone_bricks_top": { "textures": "textures/blocks/stones/chiseled_dripstone_bricks_top" },
-    "utilitycraft_chiseled_dripstone_bricks_side": { "textures": "textures/blocks/stones/chiseled_dripstone_bricks_side" },
-    "utilitycraft_chiseled_granite_top": { "textures": "textures/blocks/stones/chiseled_granite_top" },
-    "utilitycraft_chiseled_granite_side": { "textures": "textures/blocks/stones/chiseled_granite_side" },
-    "utilitycraft_chiseled_granite_bricks_top": { "textures": "textures/blocks/stones/chiseled_granite_bricks_top" },
-    "utilitycraft_chiseled_granite_bricks_side": { "textures": "textures/blocks/stones/chiseled_granite_bricks_side" },
-    "utilitycraft_chiseled_obsidian_top": { "textures": "textures/blocks/stones/chiseled_obsidian_top" },
-    "utilitycraft_chiseled_obsidian_side": { "textures": "textures/blocks/stones/chiseled_obsidian_side" },
-    "utilitycraft_cracked_andesite_bricks": { "textures": "textures/blocks/stones/cracked_andesite_bricks" },
-    "utilitycraft_cracked_andesite_tiles": { "textures": "textures/blocks/stones/cracked_andesite_tiles" },
-    "utilitycraft_cracked_basalt_bricks": { "textures": "textures/blocks/stones/cracked_basalt_bricks" },
-    "utilitycraft_cracked_basalt_tiles": { "textures": "textures/blocks/stones/cracked_basalt_tiles" },
-    "utilitycraft_cracked_blackstone_tiles": { "textures": "textures/blocks/stones/cracked_blackstone_tiles" },
-    "utilitycraft_cracked_calcite_bricks": { "textures": "textures/blocks/stones/cracked_calcite_bricks" },
-    "utilitycraft_cracked_calcite_tiles": { "textures": "textures/blocks/stones/cracked_calcite_tiles" },
-    "utilitycraft_cracked_diorite_bricks": { "textures": "textures/blocks/stones/cracked_diorite_bricks" },
-    "utilitycraft_cracked_diorite_tiles": { "textures": "textures/blocks/stones/cracked_diorite_tiles" },
-    "utilitycraft_cracked_dripstone_bricks": { "textures": "textures/blocks/stones/cracked_dripstone_bricks" },
-    "utilitycraft_cracked_dripstone_tiles": { "textures": "textures/blocks/stones/cracked_dripstone_tiles" },
-    "utilitycraft_cracked_granite_bricks": { "textures": "textures/blocks/stones/cracked_granite_bricks" },
-    "utilitycraft_cracked_granite_tiles": { "textures": "textures/blocks/stones/cracked_granite_tiles" },
-    "utilitycraft_cracked_tuff_bricks": { "textures": "textures/blocks/stones/cracked_tuff_bricks" },
-    "utilitycraft_cracked_tuff_tiles": { "textures": "textures/blocks/stones/cracked_tuff_tiles" },
-    "utilitycraft_diorite_bricks": { "textures": "textures/blocks/stones/diorite_bricks" },
-    "utilitycraft_diorite_tiles": { "textures": "textures/blocks/stones/diorite_tiles" },
-    "utilitycraft_dripstone_bricks": { "textures": "textures/blocks/stones/dripstone_bricks" },
-    "utilitycraft_dripstone_tiles": { "textures": "textures/blocks/stones/dripstone_tiles" },
-    "utilitycraft_glowing_obsidian": { "textures": "textures/blocks/stones/glowing_obsidian" },
-    "utilitycraft_granite_bricks": { "textures": "textures/blocks/stones/granite_bricks" },
-    "utilitycraft_granite_tiles": { "textures": "textures/blocks/stones/granite_tiles" },
-    "utilitycraft_obsidian_bricks": { "textures": "textures/blocks/stones/obsidian_bricks" },
-    "utilitycraft_obsidian_pillar_top": { "textures": "textures/blocks/stones/obsidian_pillar_top" },
-    "utilitycraft_obsidian_pillar_side": { "textures": "textures/blocks/stones/obsidian_pillar_side" },
-    "utilitycraft_obsidian_tiles": { "textures": "textures/blocks/stones/obsidian_tiles" },
-    "utilitycraft_polished_calcite": { "textures": "textures/blocks/stones/polished_calcite" },
-    "utilitycraft_polished_dripstone": { "textures": "textures/blocks/stones/polished_dripstone" },
-    "utilitycraft_polished_obsidian": { "textures": "textures/blocks/stones/polished_obsidian" },
-    "utilitycraft_sanded_acacia_wood": { "textures": "textures/blocks/woods/sanded_acacia_wood" },
-    "utilitycraft_sanded_bamboo_wood": { "textures": "textures/blocks/woods/sanded_bamboo_wood" },
-    "utilitycraft_sanded_birch_wood": { "textures": "textures/blocks/woods/sanded_birch_wood" },
-    "utilitycraft_sanded_cherry_wood": { "textures": "textures/blocks/woods/sanded_cherry_wood" },
-    "utilitycraft_sanded_crimson_wood": { "textures": "textures/blocks/woods/sanded_crimson_wood" },
-    "utilitycraft_sanded_dark_oak_wood": { "textures": "textures/blocks/woods/sanded_dark_oak_wood" },
-    "utilitycraft_sanded_jungle_wood": { "textures": "textures/blocks/woods/sanded_jungle_wood" },
-    "utilitycraft_sanded_mangrove_wood": { "textures": "textures/blocks/woods/sanded_mangrove_wood" },
-    "utilitycraft_sanded_oak_wood": { "textures": "textures/blocks/woods/sanded_oak_wood" },
-    "utilitycraft_sanded_pale_oak_wood": { "textures": "textures/blocks/woods/sanded_pale_oak_wood" },
-    "utilitycraft_sanded_spruce_wood": { "textures": "textures/blocks/woods/sanded_spruce_wood" },
-    "utilitycraft_sanded_warped_wood": { "textures": "textures/blocks/woods/sanded_warped_wood" },
-    "utilitycraft_smooth_andesite": { "textures": "textures/blocks/stones/smooth_andesite" },
-    "utilitycraft_smooth_blackstone": { "textures": "textures/blocks/stones/smooth_blackstone" },
-    "utilitycraft_smooth_calcite": { "textures": "textures/blocks/stones/smooth_calcite" },
-    "utilitycraft_smooth_diorite": { "textures": "textures/blocks/stones/smooth_diorite" },
-    "utilitycraft_smooth_dripstone": { "textures": "textures/blocks/stones/smooth_dripstone" },
-    "utilitycraft_smooth_granite": { "textures": "textures/blocks/stones/smooth_granite" },
-    "utilitycraft_smooth_tuff": { "textures": "textures/blocks/stones/smooth_tuff" },
-    "utilitycraft_tuff_tiles": { "textures": "textures/blocks/stones/tuff_tiles" },
-    "utilitycraft_snowy_grass_block": { "textures": "textures/blocks/grass_block/snowy_grass_block" }
-  }
+    "num_mip_levels": 4,
+    "padding": 8,
+    "resource_pack_name": "Dorios' Atelier",
+    "texture_name": "atlas.terrain",
+    "texture_data": {
+        "utilitycraft_andesite_bricks": {
+            "textures": "textures/blocks/stones/andesite_bricks"
+        },
+        "utilitycraft_andesite_tiles": {
+            "textures": "textures/blocks/stones/andesite_tiles"
+        },
+        "utilitycraft_basalt_bricks": {
+            "textures": "textures/blocks/stones/basalt_bricks"
+        },
+        "utilitycraft_basalt_tiles": {
+            "textures": "textures/blocks/stones/basalt_tiles"
+        },
+        "utilitycraft_blackstone_tiles": {
+            "textures": "textures/blocks/stones/blackstone_tiles"
+        },
+        "utilitycraft_calcite_bricks": {
+            "textures": "textures/blocks/stones/calcite_bricks"
+        },
+        "utilitycraft_calcite_tiles": {
+            "textures": "textures/blocks/stones/calcite_tiles"
+        },
+        "utilitycraft_carved_basalt_top": {
+            "textures": "textures/blocks/stones/carved_basalt_top"
+        },
+        "utilitycraft_carved_basalt_side": {
+            "textures": "textures/blocks/stones/carved_basalt_side"
+        },
+        "utilitycraft_chiseled_andesite_top": {
+            "textures": "textures/blocks/stones/chiseled_andesite_top"
+        },
+        "utilitycraft_chiseled_andesite_side": {
+            "textures": "textures/blocks/stones/chiseled_andesite_side"
+        },
+        "utilitycraft_chiseled_andesite_bricks_top": {
+            "textures": "textures/blocks/stones/chiseled_andesite_bricks_top"
+        },
+        "utilitycraft_chiseled_andesite_bricks_side": {
+            "textures": "textures/blocks/stones/chiseled_andesite_bricks_side"
+        },
+        "utilitycraft_chiseled_basalt_top": {
+            "textures": "textures/blocks/stones/chiseled_basalt_top"
+        },
+        "utilitycraft_chiseled_basalt_side": {
+            "textures": "textures/blocks/stones/chiseled_basalt_side"
+        },
+        "utilitycraft_chiseled_blackstone_top": {
+            "textures": "textures/blocks/stones/chiseled_blackstone_top"
+        },
+        "utilitycraft_chiseled_blackstone_side": {
+            "textures": "textures/blocks/stones/chiseled_blackstone_side"
+        },
+        "utilitycraft_chiseled_calcite_top": {
+            "textures": "textures/blocks/stones/chiseled_calcite_top"
+        },
+        "utilitycraft_chiseled_calcite_side": {
+            "textures": "textures/blocks/stones/chiseled_calcite_side"
+        },
+        "utilitycraft_chiseled_calcite_bricks_top": {
+            "textures": "textures/blocks/stones/chiseled_calcite_bricks_top"
+        },
+        "utilitycraft_chiseled_calcite_bricks_side": {
+            "textures": "textures/blocks/stones/chiseled_calcite_bricks_side"
+        },
+        "utilitycraft_chiseled_diorite_top": {
+            "textures": "textures/blocks/stones/chiseled_diorite_top"
+        },
+        "utilitycraft_chiseled_diorite_side": {
+            "textures": "textures/blocks/stones/chiseled_diorite_side"
+        },
+        "utilitycraft_chiseled_diorite_bricks_top": {
+            "textures": "textures/blocks/stones/chiseled_diorite_bricks_top"
+        },
+        "utilitycraft_chiseled_diorite_bricks_side": {
+            "textures": "textures/blocks/stones/chiseled_diorite_bricks_side"
+        },
+        "utilitycraft_chiseled_dripstone_top": {
+            "textures": "textures/blocks/stones/chiseled_dripstone_top"
+        },
+        "utilitycraft_chiseled_dripstone_side": {
+            "textures": "textures/blocks/stones/chiseled_dripstone_side"
+        },
+        "utilitycraft_chiseled_dripstone_bricks_top": {
+            "textures": "textures/blocks/stones/chiseled_dripstone_bricks_top"
+        },
+        "utilitycraft_chiseled_dripstone_bricks_side": {
+            "textures": "textures/blocks/stones/chiseled_dripstone_bricks_side"
+        },
+        "utilitycraft_chiseled_granite_top": {
+            "textures": "textures/blocks/stones/chiseled_granite_top"
+        },
+        "utilitycraft_chiseled_granite_side": {
+            "textures": "textures/blocks/stones/chiseled_granite_side"
+        },
+        "utilitycraft_chiseled_granite_bricks_top": {
+            "textures": "textures/blocks/stones/chiseled_granite_bricks_top"
+        },
+        "utilitycraft_chiseled_granite_bricks_side": {
+            "textures": "textures/blocks/stones/chiseled_granite_bricks_side"
+        },
+        "utilitycraft_chiseled_obsidian_top": {
+            "textures": "textures/blocks/stones/chiseled_obsidian_top"
+        },
+        "utilitycraft_chiseled_obsidian_side": {
+            "textures": "textures/blocks/stones/chiseled_obsidian_side"
+        },
+        "utilitycraft_cracked_andesite_bricks": {
+            "textures": "textures/blocks/stones/cracked_andesite_bricks"
+        },
+        "utilitycraft_cracked_andesite_tiles": {
+            "textures": "textures/blocks/stones/cracked_andesite_tiles"
+        },
+        "utilitycraft_cracked_basalt_bricks": {
+            "textures": "textures/blocks/stones/cracked_basalt_bricks"
+        },
+        "utilitycraft_cracked_basalt_tiles": {
+            "textures": "textures/blocks/stones/cracked_basalt_tiles"
+        },
+        "utilitycraft_cracked_blackstone_tiles": {
+            "textures": "textures/blocks/stones/cracked_blackstone_tiles"
+        },
+        "utilitycraft_cracked_calcite_bricks": {
+            "textures": "textures/blocks/stones/cracked_calcite_bricks"
+        },
+        "utilitycraft_cracked_calcite_tiles": {
+            "textures": "textures/blocks/stones/cracked_calcite_tiles"
+        },
+        "utilitycraft_cracked_diorite_bricks": {
+            "textures": "textures/blocks/stones/cracked_diorite_bricks"
+        },
+        "utilitycraft_cracked_diorite_tiles": {
+            "textures": "textures/blocks/stones/cracked_diorite_tiles"
+        },
+        "utilitycraft_cracked_dripstone_bricks": {
+            "textures": "textures/blocks/stones/cracked_dripstone_bricks"
+        },
+        "utilitycraft_cracked_dripstone_tiles": {
+            "textures": "textures/blocks/stones/cracked_dripstone_tiles"
+        },
+        "utilitycraft_cracked_granite_bricks": {
+            "textures": "textures/blocks/stones/cracked_granite_bricks"
+        },
+        "utilitycraft_cracked_granite_tiles": {
+            "textures": "textures/blocks/stones/cracked_granite_tiles"
+        },
+        "utilitycraft_cracked_tuff_bricks": {
+            "textures": "textures/blocks/stones/cracked_tuff_bricks"
+        },
+        "utilitycraft_cracked_tuff_tiles": {
+            "textures": "textures/blocks/stones/cracked_tuff_tiles"
+        },
+        "utilitycraft_diorite_bricks": {
+            "textures": "textures/blocks/stones/diorite_bricks"
+        },
+        "utilitycraft_diorite_tiles": {
+            "textures": "textures/blocks/stones/diorite_tiles"
+        },
+        "utilitycraft_dripstone_bricks": {
+            "textures": "textures/blocks/stones/dripstone_bricks"
+        },
+        "utilitycraft_dripstone_tiles": {
+            "textures": "textures/blocks/stones/dripstone_tiles"
+        },
+        "utilitycraft_glowing_obsidian": {
+            "textures": "textures/blocks/stones/glowing_obsidian"
+        },
+        "utilitycraft_granite_bricks": {
+            "textures": "textures/blocks/stones/granite_bricks"
+        },
+        "utilitycraft_granite_tiles": {
+            "textures": "textures/blocks/stones/granite_tiles"
+        },
+        "utilitycraft_obsidian_bricks": {
+            "textures": "textures/blocks/stones/obsidian_bricks"
+        },
+        "utilitycraft_obsidian_pillar_top": {
+            "textures": "textures/blocks/stones/obsidian_pillar_top"
+        },
+        "utilitycraft_obsidian_pillar_side": {
+            "textures": "textures/blocks/stones/obsidian_pillar_side"
+        },
+        "utilitycraft_obsidian_tiles": {
+            "textures": "textures/blocks/stones/obsidian_tiles"
+        },
+        "utilitycraft_polished_calcite": {
+            "textures": "textures/blocks/stones/polished_calcite"
+        },
+        "utilitycraft_polished_dripstone": {
+            "textures": "textures/blocks/stones/polished_dripstone"
+        },
+        "utilitycraft_polished_obsidian": {
+            "textures": "textures/blocks/stones/polished_obsidian"
+        },
+        "utilitycraft_sanded_acacia_wood": {
+            "textures": "textures/blocks/woods/sanded_acacia_wood"
+        },
+        "utilitycraft_sanded_bamboo_wood": {
+            "textures": "textures/blocks/woods/sanded_bamboo_wood"
+        },
+        "utilitycraft_sanded_birch_wood": {
+            "textures": "textures/blocks/woods/sanded_birch_wood"
+        },
+        "utilitycraft_sanded_cherry_wood": {
+            "textures": "textures/blocks/woods/sanded_cherry_wood"
+        },
+        "utilitycraft_sanded_crimson_wood": {
+            "textures": "textures/blocks/woods/sanded_crimson_wood"
+        },
+        "utilitycraft_sanded_dark_oak_wood": {
+            "textures": "textures/blocks/woods/sanded_dark_oak_wood"
+        },
+        "utilitycraft_sanded_jungle_wood": {
+            "textures": "textures/blocks/woods/sanded_jungle_wood"
+        },
+        "utilitycraft_sanded_mangrove_wood": {
+            "textures": "textures/blocks/woods/sanded_mangrove_wood"
+        },
+        "utilitycraft_sanded_oak_wood": {
+            "textures": "textures/blocks/woods/sanded_oak_wood"
+        },
+        "utilitycraft_sanded_pale_oak_wood": {
+            "textures": "textures/blocks/woods/sanded_pale_oak_wood"
+        },
+        "utilitycraft_sanded_spruce_wood": {
+            "textures": "textures/blocks/woods/sanded_spruce_wood"
+        },
+        "utilitycraft_sanded_warped_wood": {
+            "textures": "textures/blocks/woods/sanded_warped_wood"
+        },
+        "utilitycraft_smooth_andesite": {
+            "textures": "textures/blocks/stones/smooth_andesite"
+        },
+        "utilitycraft_smooth_blackstone": {
+            "textures": "textures/blocks/stones/smooth_blackstone"
+        },
+        "utilitycraft_smooth_calcite": {
+            "textures": "textures/blocks/stones/smooth_calcite"
+        },
+        "utilitycraft_smooth_diorite": {
+            "textures": "textures/blocks/stones/smooth_diorite"
+        },
+        "utilitycraft_smooth_dripstone": {
+            "textures": "textures/blocks/stones/smooth_dripstone"
+        },
+        "utilitycraft_smooth_granite": {
+            "textures": "textures/blocks/stones/smooth_granite"
+        },
+        "utilitycraft_smooth_tuff": {
+            "textures": "textures/blocks/stones/smooth_tuff"
+        },
+        "utilitycraft_tuff_tiles": {
+            "textures": "textures/blocks/stones/tuff_tiles"
+        },
+        "utilitycraft_snowy_grass_block": {
+            "textures": "textures/blocks/grass_block/snowy_grass_block"
+        },
+        "dorios_atelier_black_broadline_glass": {
+            "textures": "textures/blocks/glass/black_broadline_glass"
+        },
+        "dorios_atelier_black_clean_glass": {
+            "textures": "textures/blocks/glass/black_clean_glass"
+        },
+        "dorios_atelier_black_hitch_cross_glass": {
+            "textures": "textures/blocks/glass/black_hitch_cross_glass"
+        },
+        "dorios_atelier_black_stained_glass": {
+            "textures": "textures/blocks/glass/black_stained_glass"
+        },
+        "dorios_atelier_black_tempered_glass": {
+            "textures": "textures/blocks/glass/black_tempered_glass"
+        },
+        "dorios_atelier_blue_broadline_glass": {
+            "textures": "textures/blocks/glass/blue_broadline_glass"
+        },
+        "dorios_atelier_blue_clean_glass": {
+            "textures": "textures/blocks/glass/blue_clean_glass"
+        },
+        "dorios_atelier_blue_hitch_cross_glass": {
+            "textures": "textures/blocks/glass/blue_hitch_cross_glass"
+        },
+        "dorios_atelier_blue_stained_glass": {
+            "textures": "textures/blocks/glass/blue_stained_glass"
+        },
+        "dorios_atelier_blue_tempered_glass": {
+            "textures": "textures/blocks/glass/blue_tempered_glass"
+        },
+        "dorios_atelier_broadline_glass": {
+            "textures": "textures/blocks/glass/broadline_glass"
+        },
+        "dorios_atelier_brown_broadline_glass": {
+            "textures": "textures/blocks/glass/brown_broadline_glass"
+        },
+        "dorios_atelier_brown_clear_glass": {
+            "textures": "textures/blocks/glass/brown_clear_glass"
+        },
+        "dorios_atelier_brown_hitch_cross_glass": {
+            "textures": "textures/blocks/glass/brown_hitch_cross_glass"
+        },
+        "dorios_atelier_brown_stained_glass": {
+            "textures": "textures/blocks/glass/brown_stained_glass"
+        },
+        "dorios_atelier_brown_tempered_glass": {
+            "textures": "textures/blocks/glass/brown_tempered_glass"
+        },
+        "dorios_atelier_clean_glass": {
+            "textures": "textures/blocks/glass/clean_glass"
+        },
+        "dorios_atelier_cyan_broadline_glass": {
+            "textures": "textures/blocks/glass/cyan_broadline_glass"
+        },
+        "dorios_atelier_cyan_clean_glass": {
+            "textures": "textures/blocks/glass/cyan_clean_glass"
+        },
+        "dorios_atelier_cyan_hitch_cross_glass": {
+            "textures": "textures/blocks/glass/cyan_hitch_cross_glass"
+        },
+        "dorios_atelier_cyan_stained_glass": {
+            "textures": "textures/blocks/glass/cyan_stained_glass"
+        },
+        "dorios_atelier_cyan_tempered_glass": {
+            "textures": "textures/blocks/glass/cyan_tempered_glass"
+        },
+        "dorios_atelier_gray_broadline_glass": {
+            "textures": "textures/blocks/glass/gray_broadline_glass"
+        },
+        "dorios_atelier_gray_clean_glass": {
+            "textures": "textures/blocks/glass/gray_clean_glass"
+        },
+        "dorios_atelier_gray_hitch_cross_glass": {
+            "textures": "textures/blocks/glass/gray_hitch_cross_glass"
+        },
+        "dorios_atelier_gray_stained_glass": {
+            "textures": "textures/blocks/glass/gray_stained_glass"
+        },
+        "dorios_atelier_gray_tempered_glass": {
+            "textures": "textures/blocks/glass/gray_tempered_glass"
+        },
+        "dorios_atelier_green_broadline_glass": {
+            "textures": "textures/blocks/glass/green_broadline_glass"
+        },
+        "dorios_atelier_green_clean_glass": {
+            "textures": "textures/blocks/glass/green_clean_glass"
+        },
+        "dorios_atelier_green_hitch_cross_glass": {
+            "textures": "textures/blocks/glass/green_hitch_cross_glass"
+        },
+        "dorios_atelier_green_stained_glass": {
+            "textures": "textures/blocks/glass/green_stained_glass"
+        },
+        "dorios_atelier_green_tempered_glass": {
+            "textures": "textures/blocks/glass/green_tempered_glass"
+        },
+        "dorios_atelier_hitch_cross_glass": {
+            "textures": "textures/blocks/glass/hitch_cross_glass"
+        },
+        "dorios_atelier_light_blue_broadline_glass": {
+            "textures": "textures/blocks/glass/light_blue_broadline_glass"
+        },
+        "dorios_atelier_light_blue_clean_glass": {
+            "textures": "textures/blocks/glass/light_blue_clean_glass"
+        },
+        "dorios_atelier_light_blue_hitch_cross_glass": {
+            "textures": "textures/blocks/glass/light_blue_hitch_cross_glass"
+        },
+        "dorios_atelier_light_blue_stained_glass": {
+            "textures": "textures/blocks/glass/light_blue_stained_glass"
+        },
+        "dorios_atelier_light_blue_tempered_glass": {
+            "textures": "textures/blocks/glass/light_blue_tempered_glass"
+        },
+        "dorios_atelier_lima_broadline_glass": {
+            "textures": "textures/blocks/glass/lima_broadline_glass"
+        },
+        "dorios_atelier_lima_clean_glass": {
+            "textures": "textures/blocks/glass/lima_clean_glass"
+        },
+        "dorios_atelier_lima_hitch_cross_glass": {
+            "textures": "textures/blocks/glass/lima_hitch_cross_glass"
+        },
+        "dorios_atelier_lima_stained_glass": {
+            "textures": "textures/blocks/glass/lima_stained_glass"
+        },
+        "dorios_atelier_lima_tempered_glass": {
+            "textures": "textures/blocks/glass/lima_tempered_glass"
+        },
+        "dorios_atelier_magenta_broadline_glass": {
+            "textures": "textures/blocks/glass/magenta_broadline_glass"
+        },
+        "dorios_atelier_magenta_clean_glass": {
+            "textures": "textures/blocks/glass/magenta_clean_glass"
+        },
+        "dorios_atelier_magenta_hitch_cross_glass": {
+            "textures": "textures/blocks/glass/magenta_hitch_cross_glass"
+        },
+        "dorios_atelier_magenta_stained_glass": {
+            "textures": "textures/blocks/glass/magenta_stained_glass"
+        },
+        "dorios_atelier_magenta_tempered_glass": {
+            "textures": "textures/blocks/glass/magenta_tempered_glass"
+        },
+        "dorios_atelier_orange_broadline_glass": {
+            "textures": "textures/blocks/glass/orange_broadline_glass"
+        },
+        "dorios_atelier_orange_clean_glass": {
+            "textures": "textures/blocks/glass/orange_clean_glass"
+        },
+        "dorios_atelier_orange_hitch_cross_glass": {
+            "textures": "textures/blocks/glass/orange_hitch_cross_glass"
+        },
+        "dorios_atelier_orange_stained_glass": {
+            "textures": "textures/blocks/glass/orange_stained_glass"
+        },
+        "dorios_atelier_orange_tempered_glass": {
+            "textures": "textures/blocks/glass/orange_tempered_glass"
+        },
+        "dorios_atelier_pink_broadline_glass": {
+            "textures": "textures/blocks/glass/pink_broadline_glass"
+        },
+        "dorios_atelier_pink_clean_glass": {
+            "textures": "textures/blocks/glass/pink_clean_glass"
+        },
+        "dorios_atelier_pink_hitch_cross_glass": {
+            "textures": "textures/blocks/glass/pink_hitch_cross_glass"
+        },
+        "dorios_atelier_pink_stained_glass": {
+            "textures": "textures/blocks/glass/pink_stained_glass"
+        },
+        "dorios_atelier_pink_tempered_glass": {
+            "textures": "textures/blocks/glass/pink_tempered_glass"
+        },
+        "dorios_atelier_purple_broadline_glass": {
+            "textures": "textures/blocks/glass/purple_broadline_glass"
+        },
+        "dorios_atelier_purple_clean_glass": {
+            "textures": "textures/blocks/glass/purple_clean_glass"
+        },
+        "dorios_atelier_purple_hitch_cross_glass": {
+            "textures": "textures/blocks/glass/purple_hitch_cross_glass"
+        },
+        "dorios_atelier_purple_stained_glass": {
+            "textures": "textures/blocks/glass/purple_stained_glass"
+        },
+        "dorios_atelier_purple_tempered_glass": {
+            "textures": "textures/blocks/glass/purple_tempered_glass"
+        },
+        "dorios_atelier_red_broadline_glass": {
+            "textures": "textures/blocks/glass/red_broadline_glass"
+        },
+        "dorios_atelier_red_clean_glass": {
+            "textures": "textures/blocks/glass/red_clean_glass"
+        },
+        "dorios_atelier_red_hitch_cross_glass": {
+            "textures": "textures/blocks/glass/red_hitch_cross_glass"
+        },
+        "dorios_atelier_red_stained_glass": {
+            "textures": "textures/blocks/glass/red_stained_glass"
+        },
+        "dorios_atelier_red_tempered_glass": {
+            "textures": "textures/blocks/glass/red_tempered_glass"
+        },
+        "dorios_atelier_silver_broadline_glass": {
+            "textures": "textures/blocks/glass/silver_broadline_glass"
+        },
+        "dorios_atelier_silver_clean_glass": {
+            "textures": "textures/blocks/glass/silver_clean_glass"
+        },
+        "dorios_atelier_silver_hitch_cross_glass": {
+            "textures": "textures/blocks/glass/silver_hitch_cross_glass"
+        },
+        "dorios_atelier_silver_stained_glass": {
+            "textures": "textures/blocks/glass/silver_stained_glass"
+        },
+        "dorios_atelier_silver_tempered_glass": {
+            "textures": "textures/blocks/glass/silver_tempered_glass"
+        },
+        "dorios_atelier_tempered_glass": {
+            "textures": "textures/blocks/glass/tempered_glass"
+        },
+        "dorios_atelier_white_broadline_glass": {
+            "textures": "textures/blocks/glass/white_broadline_glass"
+        },
+        "dorios_atelier_white_clean_glass": {
+            "textures": "textures/blocks/glass/white_clean_glass"
+        },
+        "dorios_atelier_white_hitch_cross_glass": {
+            "textures": "textures/blocks/glass/white_hitch_cross_glass"
+        },
+        "dorios_atelier_white_stained_glass": {
+            "textures": "textures/blocks/glass/white_stained_glass"
+        },
+        "dorios_atelier_white_tempered_glass": {
+            "textures": "textures/blocks/glass/white_tempered_glass"
+        },
+        "dorios_atelier_yellow_broadline_glass": {
+            "textures": "textures/blocks/glass/yellow_broadline_glass"
+        },
+        "dorios_atelier_yellow_clean_glass": {
+            "textures": "textures/blocks/glass/yellow_clean_glass"
+        },
+        "dorios_atelier_yellow_hitch_cross_glass": {
+            "textures": "textures/blocks/glass/yellow_hitch_cross_glass"
+        },
+        "dorios_atelier_yellow_stained_glass": {
+            "textures": "textures/blocks/glass/yellow_stained_glass"
+        },
+        "dorios_atelier_yellow_tempered_glass": {
+            "textures": "textures/blocks/glass/yellow_tempered_glass"
+        }
+    }
 }

@@ -2,26 +2,26 @@
     "format_version": "1.21.100",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:sc_basalt_tiles_from_basalt_tiles_slab"
+            "identifier": "dorios_atelier:sc_basalt_tiles_from_basalt_tiles_slab"
         },
         "tags": [
             "stonecutter"
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:basalt_tiles_slab"
+                "item": "dorios_atelier:basalt_tiles_slab"
             },
             {
-                "item": "utilitycraft:basalt_tiles_slab"
+                "item": "dorios_atelier:basalt_tiles_slab"
             }
         ],
         "result": {
-            "item": "utilitycraft:basalt_tiles",
+            "item": "dorios_atelier:basalt_tiles",
             "count": 1
         },
         "unlock": [
             {
-                "item": "utilitycraft:basalt_tiles_slab"
+                "item": "dorios_atelier:basalt_tiles_slab"
             }
         ]
     }
