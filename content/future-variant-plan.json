@@ -1,0 +1,569 @@
+{
+  "schemaVersion": 1,
+  "status": "planned_textures_missing",
+  "implementationGate": {
+    "generateGameplayFiles": false,
+    "requirements": [
+      "all full-block textures approved",
+      "texture atlas keys assigned",
+      "recipe yields reviewed",
+      "family status changed to ready"
+    ]
+  },
+  "globalRules": {
+    "newFullBlockShapes": [
+      "slab",
+      "stairs",
+      "vertical_slab",
+      "wall"
+    ],
+    "forbiddenShapes": [
+      "three_step_stairs"
+    ],
+    "vanillaCollisionPolicy": "reuse_vanilla_and_generate_only_missing_shapes",
+    "geometryPolicy": "inherit_blocks_with_traits",
+    "placementPolicy": "native_block_traits",
+    "recipePolicy": "one explicit recipe per subtype plus one reset recipe to the family raw material",
+    "solidBlockPolicy": "redstone_conductor"
+  },
+  "families": [
+    {
+      "id": "hardened_netherrack",
+      "label": "Netherrack Endurecida",
+      "status": "planned_textures_missing",
+      "source": "minecraft:netherrack",
+      "resetTarget": "minecraft:netherrack",
+      "entryRecipe": {
+        "type": "shaped_2x2",
+        "ingredients": {
+          "minecraft:netherrack": 4
+        },
+        "result": {
+          "dorios_atelier:hardened_netherrack": 2
+        }
+      },
+      "progression": [
+        "minecraft:netherrack -> dorios_atelier:hardened_netherrack",
+        "dorios_atelier:hardened_netherrack -> dorios_atelier:polished_hardened_netherrack",
+        "dorios_atelier:polished_hardened_netherrack -> dorios_atelier:hardened_netherrack_bricks",
+        "dorios_atelier:hardened_netherrack_bricks -> dorios_atelier:hardened_netherrack_tiles",
+        "dorios_atelier:hardened_netherrack_bricks -> dorios_atelier:chiseled_hardened_netherrack",
+        "dorios_atelier:hardened_netherrack_bricks -> dorios_atelier:cracked_hardened_netherrack_bricks",
+        "dorios_atelier:hardened_netherrack_tiles -> dorios_atelier:cracked_hardened_netherrack_tiles"
+      ],
+      "newFullBlocks": [
+        "dorios_atelier:hardened_netherrack",
+        "dorios_atelier:polished_hardened_netherrack",
+        "dorios_atelier:hardened_netherrack_bricks",
+        "dorios_atelier:hardened_netherrack_tiles",
+        "dorios_atelier:chiseled_hardened_netherrack",
+        "dorios_atelier:cracked_hardened_netherrack_bricks",
+        "dorios_atelier:cracked_hardened_netherrack_tiles"
+      ],
+      "shapeCompletion": [
+        {
+          "base": "minecraft:netherrack",
+          "keepAtelier": [
+            "slab",
+            "stairs",
+            "vertical_slab"
+          ],
+          "createLater": [
+            "wall"
+          ]
+        }
+      ],
+      "notes": [
+        "The hardened entry recipe is deliberately lossy: four netherrack produce two hardened blocks.",
+        "A hardened block can reset to two netherrack; all decorative forms reset through the hardened base without net duplication."
+      ]
+    },
+    {
+      "id": "dirt",
+      "label": "Terra",
+      "status": "planned_textures_missing",
+      "source": "minecraft:dirt",
+      "resetTarget": "minecraft:dirt",
+      "progression": [
+        "minecraft:dirt -> dorios_atelier:packed_dirt",
+        "dorios_atelier:packed_dirt -> dorios_atelier:smooth_dirt",
+        "dorios_atelier:packed_dirt -> dorios_atelier:cut_dirt",
+        "dorios_atelier:cut_dirt -> dorios_atelier:dirt_bricks",
+        "dorios_atelier:dirt_bricks -> dorios_atelier:dirt_tiles",
+        "dorios_atelier:cut_dirt -> dorios_atelier:chiseled_dirt"
+      ],
+      "newFullBlocks": [
+        "dorios_atelier:packed_dirt",
+        "dorios_atelier:smooth_dirt",
+        "dorios_atelier:cut_dirt",
+        "dorios_atelier:dirt_bricks",
+        "dorios_atelier:dirt_tiles",
+        "dorios_atelier:chiseled_dirt"
+      ],
+      "shapeCompletion": [],
+      "notes": [
+        "This is an independent progression, not part of the stone-family transformation cycle.",
+        "Raw dirt receives no geometric variants; construction shapes begin at packed dirt.",
+        "Packed and decorative dirt blocks are structural and do not inherit grass spreading."
+      ]
+    },
+    {
+      "id": "sand",
+      "label": "Areia",
+      "status": "planned_textures_missing",
+      "source": "minecraft:sand",
+      "resetTarget": "minecraft:sand",
+      "progression": [
+        "minecraft:sand -> dorios_atelier:packed_sand",
+        "dorios_atelier:packed_sand -> dorios_atelier:smooth_sand",
+        "dorios_atelier:packed_sand -> dorios_atelier:cut_sand",
+        "dorios_atelier:cut_sand -> dorios_atelier:sand_bricks",
+        "dorios_atelier:sand_bricks -> dorios_atelier:sand_tiles",
+        "dorios_atelier:cut_sand -> dorios_atelier:chiseled_sand"
+      ],
+      "newFullBlocks": [
+        "dorios_atelier:packed_sand",
+        "dorios_atelier:smooth_sand",
+        "dorios_atelier:cut_sand",
+        "dorios_atelier:sand_bricks",
+        "dorios_atelier:sand_tiles",
+        "dorios_atelier:chiseled_sand"
+      ],
+      "shapeCompletion": [],
+      "notes": [
+        "This mirrors the dirt progression while remaining separate from sandstone.",
+        "Do not use a 2x2 sand recipe because it collides conceptually and ergonomically with vanilla sandstone.",
+        "Packed and decorative forms are structural; only raw sand keeps falling-block behavior.",
+        "A red-sand mirror is intentionally deferred until its palette is approved."
+      ]
+    },
+    {
+      "id": "sandstone",
+      "label": "Arenito",
+      "status": "planned_textures_missing",
+      "source": "minecraft:sandstone",
+      "resetTarget": "minecraft:sandstone",
+      "progression": [
+        "Use the existing vanilla sandstone, smooth sandstone, cut sandstone and chiseled sandstone full blocks.",
+        "Mirror the same shape completion for red sandstone."
+      ],
+      "newFullBlocks": [],
+      "shapeCompletion": [
+        {
+          "base": "minecraft:sandstone",
+          "reuseVanilla": [
+            "slab",
+            "stairs",
+            "wall"
+          ],
+          "createLater": [
+            "vertical_slab"
+          ]
+        },
+        {
+          "base": "minecraft:smooth_sandstone",
+          "reuseVanilla": [
+            "slab",
+            "stairs"
+          ],
+          "createLater": [
+            "vertical_slab",
+            "wall"
+          ]
+        },
+        {
+          "base": "minecraft:cut_sandstone",
+          "reuseVanilla": [
+            "slab"
+          ],
+          "createLater": [
+            "stairs",
+            "vertical_slab",
+            "wall"
+          ]
+        },
+        {
+          "base": "minecraft:chiseled_sandstone",
+          "reuseVanilla": [],
+          "createLater": [
+            "slab",
+            "stairs",
+            "vertical_slab",
+            "wall"
+          ]
+        },
+        {
+          "base": "minecraft:red_sandstone",
+          "reuseVanilla": [
+            "slab",
+            "stairs",
+            "wall"
+          ],
+          "createLater": [
+            "vertical_slab"
+          ]
+        },
+        {
+          "base": "minecraft:smooth_red_sandstone",
+          "reuseVanilla": [
+            "slab",
+            "stairs"
+          ],
+          "createLater": [
+            "vertical_slab",
+            "wall"
+          ]
+        },
+        {
+          "base": "minecraft:cut_red_sandstone",
+          "reuseVanilla": [
+            "slab"
+          ],
+          "createLater": [
+            "stairs",
+            "vertical_slab",
+            "wall"
+          ]
+        },
+        {
+          "base": "minecraft:chiseled_red_sandstone",
+          "reuseVanilla": [],
+          "createLater": [
+            "slab",
+            "stairs",
+            "vertical_slab",
+            "wall"
+          ]
+        }
+      ],
+      "notes": [
+        "No custom copy is created where Bedrock already supplies the shape.",
+        "Red sandstone is included as the palette mirror of the same family."
+      ]
+    },
+    {
+      "id": "deepslate",
+      "label": "Ardosiabissal",
+      "status": "planned_textures_missing",
+      "source": "minecraft:deepslate",
+      "resetTarget": "minecraft:deepslate",
+      "progression": [
+        "Keep the vanilla cobbled, polished, brick and tile progression.",
+        "Complete raw, chiseled and cracked shapes without duplicating vanilla shapes."
+      ],
+      "newFullBlocks": [],
+      "shapeCompletion": [
+        {
+          "base": "minecraft:deepslate",
+          "reuseVanilla": [],
+          "createLater": [
+            "slab",
+            "stairs",
+            "vertical_slab",
+            "wall"
+          ]
+        },
+        {
+          "base": "minecraft:cobbled_deepslate",
+          "reuseVanilla": [
+            "slab",
+            "stairs",
+            "wall"
+          ],
+          "keepAtelier": [
+            "vertical_slab"
+          ],
+          "createLater": []
+        },
+        {
+          "base": "minecraft:polished_deepslate",
+          "reuseVanilla": [
+            "slab",
+            "stairs",
+            "wall"
+          ],
+          "keepAtelier": [
+            "vertical_slab"
+          ],
+          "createLater": []
+        },
+        {
+          "base": "minecraft:deepslate_bricks",
+          "reuseVanilla": [
+            "slab",
+            "stairs",
+            "wall"
+          ],
+          "keepAtelier": [
+            "vertical_slab"
+          ],
+          "createLater": []
+        },
+        {
+          "base": "minecraft:deepslate_tiles",
+          "reuseVanilla": [
+            "slab",
+            "stairs",
+            "wall"
+          ],
+          "keepAtelier": [
+            "vertical_slab"
+          ],
+          "createLater": []
+        },
+        {
+          "base": "minecraft:chiseled_deepslate",
+          "reuseVanilla": [],
+          "keepAtelier": [
+            "slab",
+            "stairs",
+            "vertical_slab"
+          ],
+          "createLater": [
+            "wall"
+          ]
+        },
+        {
+          "base": "minecraft:cracked_deepslate_bricks",
+          "reuseVanilla": [],
+          "keepAtelier": [
+            "slab",
+            "stairs",
+            "vertical_slab"
+          ],
+          "createLater": [
+            "wall"
+          ]
+        },
+        {
+          "base": "minecraft:cracked_deepslate_tiles",
+          "reuseVanilla": [],
+          "keepAtelier": [
+            "slab",
+            "stairs",
+            "vertical_slab"
+          ],
+          "createLater": [
+            "wall"
+          ]
+        }
+      ],
+      "notes": [
+        "Reinforced deepslate, ores and infested deepslate are explicitly outside this decorative family."
+      ]
+    },
+    {
+      "id": "prismarine",
+      "label": "Prismarinho",
+      "status": "planned_textures_missing",
+      "source": "minecraft:prismarine",
+      "resetTarget": "minecraft:prismarine",
+      "progression": [
+        "minecraft:prismarine -> dorios_atelier:polished_prismarine",
+        "dorios_atelier:polished_prismarine -> dorios_atelier:cut_prismarine",
+        "minecraft:prismarine_bricks -> dorios_atelier:prismarine_tiles",
+        "dorios_atelier:cut_prismarine -> dorios_atelier:chiseled_prismarine",
+        "minecraft:prismarine_bricks -> dorios_atelier:cracked_prismarine_bricks",
+        "dorios_atelier:prismarine_tiles -> dorios_atelier:cracked_prismarine_tiles"
+      ],
+      "newFullBlocks": [
+        "dorios_atelier:polished_prismarine",
+        "dorios_atelier:cut_prismarine",
+        "dorios_atelier:prismarine_tiles",
+        "dorios_atelier:chiseled_prismarine",
+        "dorios_atelier:cracked_prismarine_bricks",
+        "dorios_atelier:cracked_prismarine_tiles"
+      ],
+      "shapeCompletion": [
+        {
+          "base": "minecraft:prismarine",
+          "reuseVanilla": [
+            "slab",
+            "stairs",
+            "wall"
+          ],
+          "keepAtelier": [
+            "vertical_slab"
+          ],
+          "createLater": []
+        },
+        {
+          "base": "minecraft:prismarine_bricks",
+          "reuseVanilla": [
+            "slab",
+            "stairs"
+          ],
+          "keepAtelier": [
+            "vertical_slab"
+          ],
+          "createLater": [
+            "wall"
+          ]
+        }
+      ],
+      "notes": [
+        "Vanilla prismarine bricks remain the brick stage; no duplicate full block is planned."
+      ]
+    },
+    {
+      "id": "dark_prismarine",
+      "label": "Prismarinho Escuro",
+      "status": "planned_textures_missing",
+      "source": "minecraft:dark_prismarine",
+      "resetTarget": "minecraft:dark_prismarine",
+      "progression": [
+        "minecraft:dark_prismarine -> dorios_atelier:polished_dark_prismarine",
+        "dorios_atelier:polished_dark_prismarine -> dorios_atelier:dark_prismarine_bricks",
+        "dorios_atelier:dark_prismarine_bricks -> dorios_atelier:dark_prismarine_tiles",
+        "dorios_atelier:polished_dark_prismarine -> dorios_atelier:chiseled_dark_prismarine",
+        "dorios_atelier:dark_prismarine_bricks -> dorios_atelier:cracked_dark_prismarine_bricks",
+        "dorios_atelier:dark_prismarine_tiles -> dorios_atelier:cracked_dark_prismarine_tiles"
+      ],
+      "newFullBlocks": [
+        "dorios_atelier:polished_dark_prismarine",
+        "dorios_atelier:dark_prismarine_bricks",
+        "dorios_atelier:dark_prismarine_tiles",
+        "dorios_atelier:chiseled_dark_prismarine",
+        "dorios_atelier:cracked_dark_prismarine_bricks",
+        "dorios_atelier:cracked_dark_prismarine_tiles"
+      ],
+      "shapeCompletion": [
+        {
+          "base": "minecraft:dark_prismarine",
+          "reuseVanilla": [
+            "slab",
+            "stairs"
+          ],
+          "keepAtelier": [
+            "vertical_slab"
+          ],
+          "createLater": [
+            "wall"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "purpur",
+      "label": "Bloco de Púrpura",
+      "status": "planned_textures_missing",
+      "source": "minecraft:purpur_block",
+      "resetTarget": "minecraft:purpur_block",
+      "progression": [
+        "minecraft:purpur_block -> dorios_atelier:purpur_bricks",
+        "dorios_atelier:purpur_bricks -> dorios_atelier:purpur_tiles",
+        "minecraft:purpur_block -> dorios_atelier:chiseled_purpur",
+        "dorios_atelier:purpur_bricks -> dorios_atelier:cracked_purpur_bricks",
+        "dorios_atelier:purpur_tiles -> dorios_atelier:cracked_purpur_tiles"
+      ],
+      "newFullBlocks": [
+        "dorios_atelier:purpur_bricks",
+        "dorios_atelier:purpur_tiles",
+        "dorios_atelier:chiseled_purpur",
+        "dorios_atelier:cracked_purpur_bricks",
+        "dorios_atelier:cracked_purpur_tiles"
+      ],
+      "shapeCompletion": [
+        {
+          "base": "minecraft:purpur_block",
+          "reuseVanilla": [
+            "slab",
+            "stairs"
+          ],
+          "keepAtelier": [
+            "vertical_slab"
+          ],
+          "createLater": [
+            "wall"
+          ]
+        }
+      ],
+      "notes": [
+        "Vanilla purpur pillar remains the pillar stage and is not duplicated."
+      ]
+    },
+    {
+      "id": "sulfur",
+      "label": "Bloco de Enxofre",
+      "status": "planned_textures_missing",
+      "source": "minecraft:sulfur",
+      "resetTarget": "minecraft:sulfur",
+      "progression": [
+        "minecraft:sulfur -> dorios_atelier:polished_sulfur",
+        "dorios_atelier:polished_sulfur -> dorios_atelier:cut_sulfur",
+        "dorios_atelier:cut_sulfur -> dorios_atelier:sulfur_bricks",
+        "dorios_atelier:sulfur_bricks -> dorios_atelier:sulfur_tiles",
+        "dorios_atelier:cut_sulfur -> dorios_atelier:chiseled_sulfur",
+        "dorios_atelier:sulfur_bricks -> dorios_atelier:cracked_sulfur_bricks",
+        "dorios_atelier:sulfur_tiles -> dorios_atelier:cracked_sulfur_tiles"
+      ],
+      "newFullBlocks": [
+        "dorios_atelier:polished_sulfur",
+        "dorios_atelier:cut_sulfur",
+        "dorios_atelier:sulfur_bricks",
+        "dorios_atelier:sulfur_tiles",
+        "dorios_atelier:chiseled_sulfur",
+        "dorios_atelier:cracked_sulfur_bricks",
+        "dorios_atelier:cracked_sulfur_tiles"
+      ],
+      "shapeCompletion": [
+        {
+          "base": "minecraft:sulfur",
+          "reuseVanilla": [],
+          "createLater": [
+            "slab",
+            "stairs",
+            "vertical_slab",
+            "wall"
+          ]
+        }
+      ],
+      "notes": [
+        "The source identifier is confirmed by the local 1.26.45 UtilityCraft recipe configuration, but is newer than the installed vanilla-data 1.26.1 catalog.",
+        "Do not infer light emission, damage or other chemistry-specific behavior from the source until the source block components are inspected."
+      ]
+    },
+    {
+      "id": "cinnabar",
+      "label": "Bloco de Cinábrio",
+      "status": "planned_textures_missing",
+      "source": "minecraft:cinnabar",
+      "resetTarget": "minecraft:cinnabar",
+      "progression": [
+        "minecraft:cinnabar -> dorios_atelier:polished_cinnabar",
+        "dorios_atelier:polished_cinnabar -> dorios_atelier:cut_cinnabar",
+        "dorios_atelier:cut_cinnabar -> dorios_atelier:cinnabar_bricks",
+        "dorios_atelier:cinnabar_bricks -> dorios_atelier:cinnabar_tiles",
+        "dorios_atelier:cut_cinnabar -> dorios_atelier:chiseled_cinnabar",
+        "dorios_atelier:cinnabar_bricks -> dorios_atelier:cracked_cinnabar_bricks",
+        "dorios_atelier:cinnabar_tiles -> dorios_atelier:cracked_cinnabar_tiles"
+      ],
+      "newFullBlocks": [
+        "dorios_atelier:polished_cinnabar",
+        "dorios_atelier:cut_cinnabar",
+        "dorios_atelier:cinnabar_bricks",
+        "dorios_atelier:cinnabar_tiles",
+        "dorios_atelier:chiseled_cinnabar",
+        "dorios_atelier:cracked_cinnabar_bricks",
+        "dorios_atelier:cracked_cinnabar_tiles"
+      ],
+      "shapeCompletion": [
+        {
+          "base": "minecraft:cinnabar",
+          "reuseVanilla": [],
+          "createLater": [
+            "slab",
+            "stairs",
+            "vertical_slab",
+            "wall"
+          ]
+        }
+      ],
+      "notes": [
+        "The source identifier is confirmed by the local 1.26.45 UtilityCraft recipe configuration, but is newer than the installed vanilla-data 1.26.1 catalog.",
+        "Mining, sound and material properties must be inherited from the final source block definition rather than guessed."
+      ]
+    }
+  ]
+}

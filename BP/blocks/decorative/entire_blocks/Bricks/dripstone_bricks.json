@@ -1,30 +1,34 @@
 {
-    "format_version": "1.21.100",
-    "minecraft:block": {
-        "description": {
-            "identifier": "dorios_atelier:dripstone_bricks",
-            "menu_category": {
-                "category": "construction"
-            }
-        },
-        "components": {
-            "minecraft:geometry": "minecraft:geometry.full_block",
-            "minecraft:light_dampening": 15,
-            "minecraft:light_emission": 0,
-            "minecraft:material_instances": {
-                "*": {
-                    "texture": "utilitycraft_dripstone_bricks",
-                    "render_method": "opaque",
-                    "ambient_occlusion": true,
-                    "face_dimming": true
-                }
-            },
-            "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 1.5
-            },
-            "tag:minecraft:is_pickaxe_item_destructible": {},
-            "tag:minecraft:stone_tier_destructible": {},
-            "tag:stone": {}
+  "format_version": "1.26.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "dorios_atelier:dripstone_bricks",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:light_dampening": 15,
+      "minecraft:light_emission": 0,
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "utilitycraft_dripstone_bricks",
+          "render_method": "opaque",
+          "ambient_occlusion": true,
+          "face_dimming": true
         }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.5
+      },
+      "tag:minecraft:is_pickaxe_item_destructible": {},
+      "tag:minecraft:stone_tier_destructible": {},
+      "tag:stone": {},
+      "minecraft:redstone_conductivity": {
+        "allows_wire_to_step_down": true,
+        "redstone_conductor": true
+      }
     }
+  }
 }

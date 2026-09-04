@@ -39,6 +39,7 @@ const GLOVE_MAX_DISTANCE = new Map([
 ])
 
 const GLOVE_PLACE_SOUND = 'item.armor.equip_leather'
+const GLOVE_USE_ANIMATION = 'animation.player.first_person.attack_rotation_item'
 
 const getEquipment = (player, slot) => {
 	const equippable = player.getComponent?.('minecraft:equippable')
@@ -84,12 +85,38 @@ const consumeItem = (player, typeId) => {
 	return false
 }
 
-const LOCAL_REPLACEABLE_MAP = new Map([
-	['plants', [
+// Script API does not expose the data-driven minecraft:replaceable component.
+// Keep the runtime lookup explicit and grouped so new vanilla blocks are easy to audit.
+const REPLACEABLE_BLOCK_GROUPS = new Map([
+	['air', [
+		'minecraft:air'
+	]],
+	['liquid', [
+		'minecraft:water',
+		'minecraft:flowing_water',
+		'minecraft:lava',
+		'minecraft:flowing_lava'
+	]],
+	['small_plants', [
 		'minecraft:short_grass',
-		'minecraft:tallgrass',
+		'minecraft:tall_grass',
 		'minecraft:fern',
+		'minecraft:large_fern',
 		'minecraft:deadbush',
+		'minecraft:short_dry_grass',
+		'minecraft:tall_dry_grass',
+		'minecraft:nether_sprouts',
+		'minecraft:crimson_roots',
+		'minecraft:warped_roots',
+		'minecraft:brown_mushroom',
+		'minecraft:red_mushroom',
+		'minecraft:crimson_fungus',
+		'minecraft:warped_fungus',
+		'minecraft:bush',
+		'minecraft:firefly_bush',
+		'minecraft:leaf_litter'
+	]],
+	['flowers', [
 		'minecraft:dandelion',
 		'minecraft:poppy',
 		'minecraft:blue_orchid',
@@ -103,9 +130,69 @@ const LOCAL_REPLACEABLE_MAP = new Map([
 		'minecraft:cornflower',
 		'minecraft:lily_of_the_valley',
 		'minecraft:wither_rose',
-		'minecraft:pink_petals'
+		'minecraft:torchflower',
+		'minecraft:open_eyeblossom',
+		'minecraft:closed_eyeblossom',
+		'minecraft:cactus_flower',
+		'minecraft:pink_petals',
+		'minecraft:wildflowers'
 	]],
-	['snowLayer', ['minecraft:snow_layer']],
+	['tall_flowers', [
+		'minecraft:sunflower',
+		'minecraft:lilac',
+		'minecraft:rose_bush',
+		'minecraft:peony',
+		'minecraft:pitcher_plant'
+	]],
+	['vines', [
+		'minecraft:vine',
+		'minecraft:weeping_vines',
+		'minecraft:twisting_vines',
+		'minecraft:cave_vines',
+		'minecraft:cave_vines_body_with_berries',
+		'minecraft:cave_vines_head_with_berries',
+		'minecraft:pale_hanging_moss',
+		'minecraft:hanging_roots',
+		'minecraft:glow_lichen',
+		'minecraft:sculk_vein'
+	]],
+	['aquatic_plants', [
+		'minecraft:seagrass',
+		'minecraft:kelp',
+		'minecraft:sea_pickle',
+		'minecraft:waterlily'
+	]],
+	['saplings', [
+		'minecraft:acacia_sapling',
+		'minecraft:birch_sapling',
+		'minecraft:cherry_sapling',
+		'minecraft:dark_oak_sapling',
+		'minecraft:jungle_sapling',
+		'minecraft:oak_sapling',
+		'minecraft:pale_oak_sapling',
+		'minecraft:spruce_sapling',
+		'minecraft:bamboo_sapling',
+		'minecraft:mangrove_propagule'
+	]],
+	['crops', [
+		'minecraft:wheat',
+		'minecraft:carrots',
+		'minecraft:potatoes',
+		'minecraft:beetroot',
+		'minecraft:nether_wart',
+		'minecraft:torchflower_crop',
+		'minecraft:pitcher_crop',
+		'minecraft:pumpkin_stem',
+		'minecraft:melon_stem',
+		'minecraft:sweet_berry_bush',
+		'minecraft:reeds',
+		'minecraft:bamboo'
+	]],
+	['surface_layers', [
+		'minecraft:snow_layer',
+		'minecraft:fire',
+		'minecraft:soul_fire'
+	]],
 	['carpet', [
 		'minecraft:white_carpet',
 		'minecraft:light_gray_carpet',
@@ -123,21 +210,22 @@ const LOCAL_REPLACEABLE_MAP = new Map([
 		'minecraft:purple_carpet',
 		'minecraft:magenta_carpet',
 		'minecraft:pink_carpet',
-		'minecraft:moss_carpet'
+		'minecraft:moss_carpet',
+		'minecraft:pale_moss_carpet'
 	]]
 ])
 
-const LOCAL_REPLACEABLE_BLOCKS = new Set([...LOCAL_REPLACEABLE_MAP.values()].flat())
-const hasReplaceableComponent = block => {
-	try {
-		return Boolean(block?.getComponent?.('minecraft:replaceable'))
-	} catch {
-		return false
-	}
-}
+const REPLACEABLE_BLOCKS = new Map(
+	[...REPLACEABLE_BLOCK_GROUPS.entries()]
+		.flatMap(([group, typeIds]) => typeIds.map(typeId => [typeId, group]))
+)
 
-const shouldDropBeforePlace = block =>
-	Boolean(block) && (LOCAL_REPLACEABLE_BLOCKS.has(block.typeId) || hasReplaceableComponent(block))
+const isReplaceable = block => Boolean(block) && REPLACEABLE_BLOCKS.has(block.typeId)
+
+const shouldDropBeforePlace = block => {
+	const group = REPLACEABLE_BLOCKS.get(block?.typeId)
+	return Boolean(group && group !== 'air' && group !== 'liquid')
+}
 
 const breakBlockWithDrops = block => {
 	if (!block?.dimension?.runCommand) return false
@@ -163,7 +251,11 @@ const handleGlovePlacement = event => {
 	if (!offhand || !GLOVE_OFFHAND_IDS.has(offhand.typeId)) return false
 
 	const maxDistance = GLOVE_MAX_DISTANCE.get(offhand.typeId) ?? 8
-	const hit = player.getBlockFromViewDirection?.({ maxDistance })
+	const hit = player.getBlockFromViewDirection?.({
+		maxDistance,
+		includeLiquidBlocks: true,
+		includePassableBlocks: true
+	})
 	if (!hit?.block) return false
 
 	const offset = FACE_OFFSETS[hit.face]
@@ -172,14 +264,19 @@ const handleGlovePlacement = event => {
 	const distance = distanceBetween(player.location, hit.block.location)
 	if (distance < MIN_RANGE || distance > maxDistance) return false
 
-	const targetPos = {
-		x: hit.block.location.x + offset.x,
-		y: hit.block.location.y + offset.y,
-		z: hit.block.location.z + offset.z
-	}
+	// Passable blocks and liquids are the actual destination; solid blocks place
+	// against the selected face. The raycast guarantees the nearest liquid wins.
+	const targetPos = isReplaceable(hit.block)
+		? { ...hit.block.location }
+		: {
+			x: hit.block.location.x + offset.x,
+			y: hit.block.location.y + offset.y,
+			z: hit.block.location.z + offset.z
+		}
 
 	const targetBlock = hit.block.dimension.getBlock(targetPos)
 	if (!targetBlock || targetBlock.typeId === itemStack.typeId) return false
+	if (!isReplaceable(targetBlock)) return false
 
 	let permutation
 	try {
@@ -188,9 +285,9 @@ const handleGlovePlacement = event => {
 		return false
 	}
 
-    if (shouldDropBeforePlace(targetBlock)) {
+	if (shouldDropBeforePlace(targetBlock)) {
 		if (!breakBlockWithDrops(targetBlock)) return false
-    }
+	}
 
 	const placementBlock = hit.block.dimension.getBlock(targetPos)
 	if (!placementBlock) return false
@@ -200,6 +297,10 @@ const handleGlovePlacement = event => {
 	} catch {
 		return false
 	}
+
+	try {
+		player.playAnimation?.(GLOVE_USE_ANIMATION)
+	} catch {}
 
 	try {
 		const location = { x: targetPos.x + 0.5, y: targetPos.y + 0.5, z: targetPos.z + 0.5 }

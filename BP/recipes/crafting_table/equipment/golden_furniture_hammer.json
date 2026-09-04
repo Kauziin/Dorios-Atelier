@@ -1,0 +1,32 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "dorios_atelier:craft_golden_furniture_hammer"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "MMM",
+      "MSM",
+      " S "
+    ],
+    "key": {
+      "M": {
+        "item": "minecraft:gold_ingot"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "dorios_atelier:golden_furniture_hammer"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:gold_ingot"
+      }
+    ]
+  }
+}

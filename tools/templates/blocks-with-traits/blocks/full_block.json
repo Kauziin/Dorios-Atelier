@@ -1,0 +1,41 @@
+{
+	"format_version": "1.26.10",
+	"minecraft:block": {
+		"description": {
+			"identifier": "custom:blue_stone_bricks",
+            "menu_category": {
+                "category": "construction"
+            }
+		},
+		"components": {
+            "tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:geometry": {
+				"identifier": "minecraft:geometry.full_block"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "blue_stone_brick",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:map_color": "#436eb0",
+            "minecraft:collision_box": true,
+            "minecraft:selection_box": true,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 20
+			},
+			"minecraft:light_dampening": 15,
+            "minecraft:flammable": false,
+            "minecraft:precipitation_interactions": {
+                "precipitation_behavior": "obstruct_rain_accumulate_snow"
+            },
+            "minecraft:redstone_conductivity": {
+                "allows_wire_to_step_down": true,
+                "redstone_conductor": true
+            }
+		}
+	}
+}

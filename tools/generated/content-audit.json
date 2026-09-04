@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "summary": {
+    "blockFiles": 395,
+    "uniqueBlockIdentifiers": 395,
+    "duplicateBlockIdentifiers": 0,
+    "conflictingBlockIdentifiers": 0,
+    "recipeFiles": 687,
+    "uniqueRecipeIdentifiers": 687,
+    "duplicateRecipeIdentifiers": 0,
+    "cullingFiles": 5,
+    "uniqueCullingIdentifiers": 5,
+    "uniqueCullingStructures": 5,
+    "parseErrors": 0
+  },
+  "formatVersions": {
+    "blocks": {
+      "1.21.100": 84,
+      "1.26.10": 311
+    },
+    "recipes": {
+      "1.20.80": 100,
+      "1.21.100": 587
+    },
+    "culling": {
+      "1.21.80": 5
+    }
+  },
+  "duplicateBlocks": [],
+  "duplicateRecipes": [],
+  "duplicateCulling": [],
+  "cullingStructures": [
+    {
+      "count": 1,
+      "identifiers": [
+        "dorios_atelier:custom_glass"
+      ],
+      "files": [
+        "RP/block_culling/custom_glass.json"
+      ]
+    },
+    {
+      "count": 1,
+      "identifiers": [
+        "dorios_atelier:slab_culling"
+      ],
+      "files": [
+        "RP/block_culling/slab_culling.json"
+      ]
+    },
+    {
+      "count": 1,
+      "identifiers": [
+        "dorios_atelier:stairs_down_culling"
+      ],
+      "files": [
+        "RP/block_culling/stairs_down_culling.json"
+      ]
+    },
+    {
+      "count": 1,
+      "identifiers": [
+        "dorios_atelier:stairs_up_culling"
+      ],
+      "files": [
+        "RP/block_culling/stairs_up_culling.json"
+      ]
+    },
+    {
+      "count": 1,
+      "identifiers": [
+        "dorios_atelier:vertical_slab_culling"
+      ],
+      "files": [
+        "RP/block_culling/vertical_slab_culling.json"
+      ]
+    }
+  ],
+  "parseErrors": []
+}

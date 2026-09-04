@@ -10,7 +10,7 @@
     "components": {
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
-      "minecraft:icon": "utilitycraft_stone_chisel",
+      "minecraft:icon": "utilitycraft_stone_furniture_hammer",
       "dorios_atelier:furniture_hammer": {},
       "minecraft:durability": {
         "max_durability": 131
@@ -19,13 +19,13 @@
         "destroy_speeds": [
           {
             "block": {
-              "tags": "query.any_tag('dorios_atelier:breakable_by_cutter')"
+              "tags": "q.any_tag('dorios_atelier:breakable_by_cutter')"
             },
             "speed": 5
           },
           {
             "block": {
-              "tags": "query.any_tag('glass')"
+              "tags": "q.any_tag('glass')"
             },
             "speed": 7
           },

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "dorios_atelier:sc_diorite_tiles_from_diorite_tiles_wall"
+    },
+    "tags": [
+      "stonecutter"
+    ],
+    "ingredients": [
+      {
+        "item": "dorios_atelier:diorite_tiles_wall"
+      }
+    ],
+    "result": {
+      "item": "dorios_atelier:diorite_tiles",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "dorios_atelier:diorite_tiles_wall"
+      }
+    ]
+  }
+}

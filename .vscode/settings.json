@@ -1,0 +1,28 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["/BP/blocks/**/*.json"],
+      "url": "./node_modules/@minecraft/bedrock-schemas/schemas/bp/blocks/index.schema.json"
+    },
+    {
+      "fileMatch": ["/BP/items/**/*.json"],
+      "url": "./node_modules/@minecraft/bedrock-schemas/schemas/bp/items/index.schema.json"
+    },
+    {
+      "fileMatch": ["/BP/recipes/**/*.json"],
+      "url": "./node_modules/@minecraft/bedrock-schemas/schemas/bp/recipes/index.schema.json"
+    },
+    {
+      "fileMatch": ["/RP/block_culling/**/*.json"],
+      "url": "./node_modules/@minecraft/bedrock-schemas/schemas/rp/block_culling/index.schema.json"
+    },
+    {
+      "fileMatch": ["/RP/textures/terrain_texture.json"],
+      "url": "./node_modules/@minecraft/bedrock-schemas/schemas/rp/textures/terrain_texture.schema.json"
+    },
+    {
+      "fileMatch": ["/RP/textures/item_texture.json"],
+      "url": "./node_modules/@minecraft/bedrock-schemas/schemas/rp/textures/item_texture.schema.json"
+    }
+  ]
+}

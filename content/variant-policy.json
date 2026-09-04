@@ -1,0 +1,936 @@
+{
+    "$schema": "./variant-policy.schema.json",
+    "schemaVersion": 1,
+    "decisionValues": [
+        "pending",
+        "generate",
+        "skip",
+        "use_vanilla"
+    ],
+    "materials": [
+        {
+            "base": "andesite",
+            "source": "minecraft:andesite",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "andesite_bricks",
+            "source": "dorios_atelier:andesite_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "andesite_tiles",
+            "source": "dorios_atelier:andesite_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "basalt_bricks",
+            "source": "dorios_atelier:basalt_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "basalt_tiles",
+            "source": "dorios_atelier:basalt_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "blackstone_tiles",
+            "source": "dorios_atelier:blackstone_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "calcite",
+            "source": "minecraft:calcite",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "calcite_bricks",
+            "source": "dorios_atelier:calcite_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "calcite_tiles",
+            "source": "dorios_atelier:calcite_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "chiseled_deepslate",
+            "source": "minecraft:chiseled_deepslate",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "chiseled_nether_bricks",
+            "source": "minecraft:chiseled_nether_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "chiseled_polished_blackstone",
+            "source": "minecraft:chiseled_polished_blackstone",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "chiseled_stone_bricks",
+            "source": "minecraft:chiseled_stone_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cobbled_deepslate",
+            "source": "minecraft:cobbled_deepslate",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cobblestone",
+            "source": "minecraft:cobblestone",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_andesite_bricks",
+            "source": "dorios_atelier:cracked_andesite_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_andesite_tiles",
+            "source": "dorios_atelier:cracked_andesite_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_basalt_bricks",
+            "source": "dorios_atelier:cracked_basalt_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_basalt_tiles",
+            "source": "dorios_atelier:cracked_basalt_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_blackstone_tiles",
+            "source": "dorios_atelier:cracked_blackstone_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_calcite_bricks",
+            "source": "dorios_atelier:cracked_calcite_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_calcite_tiles",
+            "source": "dorios_atelier:cracked_calcite_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_deepslate_bricks",
+            "source": "minecraft:cracked_deepslate_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_deepslate_tiles",
+            "source": "minecraft:cracked_deepslate_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_diorite_bricks",
+            "source": "dorios_atelier:cracked_diorite_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_diorite_tiles",
+            "source": "dorios_atelier:cracked_diorite_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_dripstone_bricks",
+            "source": "dorios_atelier:cracked_dripstone_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_dripstone_tiles",
+            "source": "dorios_atelier:cracked_dripstone_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_granite_bricks",
+            "source": "dorios_atelier:cracked_granite_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_granite_tiles",
+            "source": "dorios_atelier:cracked_granite_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_nether_bricks",
+            "source": "minecraft:cracked_nether_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_polished_blackstone_bricks",
+            "source": "minecraft:cracked_polished_blackstone_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_stone_bricks",
+            "source": "minecraft:cracked_stone_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_tuff_bricks",
+            "source": "dorios_atelier:cracked_tuff_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "cracked_tuff_tiles",
+            "source": "dorios_atelier:cracked_tuff_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "dark_prismarine",
+            "source": "minecraft:dark_prismarine",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "deepslate_bricks",
+            "source": "minecraft:deepslate_bricks",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "deepslate_tiles",
+            "source": "minecraft:deepslate_tiles",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "diorite",
+            "source": "minecraft:diorite",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "diorite_bricks",
+            "source": "dorios_atelier:diorite_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "diorite_tiles",
+            "source": "dorios_atelier:diorite_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "dripstone_bricks",
+            "source": "dorios_atelier:dripstone_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "dripstone_tiles",
+            "source": "dorios_atelier:dripstone_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "gilded_blackstone",
+            "source": "minecraft:gilded_blackstone",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "glowing_obsidian",
+            "source": "dorios_atelier:glowing_obsidian",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "granite",
+            "source": "minecraft:granite",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "granite_bricks",
+            "source": "dorios_atelier:granite_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "granite_tiles",
+            "source": "dorios_atelier:granite_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "mossy_cobblestone",
+            "source": "minecraft:mossy_cobblestone",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "mossy_stone_bricks",
+            "source": "minecraft:mossy_stone_bricks",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "mud_bricks",
+            "source": "minecraft:mud_bricks",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "netherrack",
+            "source": "minecraft:netherrack",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "obsidian_bricks",
+            "source": "dorios_atelier:obsidian_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "obsidian_tiles",
+            "source": "dorios_atelier:obsidian_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "packed_mud",
+            "source": "minecraft:packed_mud",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "polished_andesite",
+            "source": "minecraft:polished_andesite",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "polished_blackstone",
+            "source": "minecraft:polished_blackstone",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "polished_blackstone_bricks",
+            "source": "minecraft:polished_blackstone_bricks",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "polished_calcite",
+            "source": "dorios_atelier:polished_calcite",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "polished_deepslate",
+            "source": "minecraft:polished_deepslate",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "polished_diorite",
+            "source": "minecraft:polished_diorite",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "polished_dripstone",
+            "source": "dorios_atelier:polished_dripstone",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "polished_granite",
+            "source": "minecraft:polished_granite",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "polished_obsidian",
+            "source": "dorios_atelier:polished_obsidian",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "polished_tuff",
+            "source": "minecraft:polished_tuff",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "prismarine",
+            "source": "minecraft:prismarine",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "prismarine_bricks",
+            "source": "minecraft:prismarine_bricks",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "purpur_block",
+            "source": "minecraft:purpur_block",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "quartz_bricks",
+            "source": "minecraft:quartz_bricks",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "smooth_andesite",
+            "source": "dorios_atelier:smooth_andesite",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "smooth_basalt",
+            "source": "minecraft:smooth_basalt",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "smooth_blackstone",
+            "source": "dorios_atelier:smooth_blackstone",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "smooth_calcite",
+            "source": "dorios_atelier:smooth_calcite",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "smooth_diorite",
+            "source": "dorios_atelier:smooth_diorite",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "smooth_dripstone",
+            "source": "dorios_atelier:smooth_dripstone",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "smooth_granite",
+            "source": "dorios_atelier:smooth_granite",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "smooth_quartz",
+            "source": "minecraft:smooth_quartz",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "smooth_stone",
+            "source": "minecraft:smooth_stone",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "smooth_tuff",
+            "source": "dorios_atelier:smooth_tuff",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        },
+        {
+            "base": "stone",
+            "source": "minecraft:stone",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "stone_bricks",
+            "source": "minecraft:stone_bricks",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "tuff",
+            "source": "minecraft:tuff",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "tuff_bricks",
+            "source": "minecraft:tuff_bricks",
+            "variants": {
+                "slab": "use_vanilla",
+                "stairs": "use_vanilla",
+                "vertical_slab": "generate",
+                "wall": "skip"
+            },
+            "notes": ""
+        },
+        {
+            "base": "tuff_tiles",
+            "source": "dorios_atelier:tuff_tiles",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": ""
+        }
+    ]
+}

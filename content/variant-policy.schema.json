@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Dorios' Atelier variant policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "materials"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": 1 },
+    "decisionValues": {
+      "type": "array",
+      "items": { "enum": ["pending", "generate", "skip", "use_vanilla"] }
+    },
+    "materials": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["base", "source", "variants", "notes"],
+        "properties": {
+          "base": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+          "source": { "type": ["string", "null"], "pattern": "^[a-z0-9_.-]+:[a-z0-9_./-]+$" },
+          "variants": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["slab", "stairs", "vertical_slab", "wall"],
+            "properties": {
+              "slab": { "$ref": "#/definitions/decision" },
+              "stairs": { "$ref": "#/definitions/decision" },
+              "vertical_slab": { "$ref": "#/definitions/decision" },
+              "wall": { "$ref": "#/definitions/decision" }
+            }
+          },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "decision": {
+      "enum": ["pending", "generate", "skip", "use_vanilla"]
+    }
+  }
+}

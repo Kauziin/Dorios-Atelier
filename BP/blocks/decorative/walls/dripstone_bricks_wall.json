@@ -1,0 +1,1075 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "dorios_atelier:dripstone_bricks_wall",
+      "menu_category": {
+        "category": "construction",
+        "group": "dorios_atelier:itemGroup.name.walls"
+      },
+      "traits": {
+        "minecraft:connection": {
+          "enabled_states": [
+            "minecraft:cardinal_connections"
+          ]
+        }
+      }
+    },
+    "components": {
+      "tag:minecraft:has_fence_connections": {},
+      "tag:minecraft:is_pickaxe_item_destructible": {},
+      "minecraft:geometry": {
+        "identifier": "geometry.wall",
+        "bone_visibility": {
+          "north": false,
+          "east": false,
+          "south": false,
+          "west": false,
+          "north-south": false,
+          "east-west": false
+        }
+      },
+      "minecraft:support": {
+        "shape": "fence"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "utilitycraft_dripstone_bricks",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "geometry.wall_icon"
+        },
+        "material_instances": {
+          "*": {
+            "texture": "utilitycraft_dripstone_bricks",
+            "render_method": "opaque"
+          }
+        }
+      },
+      "minecraft:collision_box": {
+        "origin": [
+          -4,
+          0,
+          -4
+        ],
+        "size": [
+          8,
+          24,
+          8
+        ]
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -4,
+          0,
+          -4
+        ],
+        "size": [
+          8,
+          16,
+          8
+        ]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 20
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "only_fences"
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:flammable": false,
+      "minecraft:liquid_detection": {
+        "can_contain_liquid": true,
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "on_liquid_touches": "no_reaction"
+          }
+        ],
+        "use_liquid_clipping": true
+      },
+      "minecraft:precipitation_interactions": {
+        "precipitation_behavior": "none"
+      },
+      "minecraft:redstone_conductivity": {
+        "allows_wire_to_step_down": false,
+        "redstone_conductor": false
+      },
+      "minecraft:light_emission": 0,
+      "tag:minecraft:stone_tier_destructible": {},
+      "tag:stone": {}
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wall",
+            "bone_visibility": {
+              "north": true,
+              "east": true,
+              "south": true,
+              "west": true,
+              "north-south": false,
+              "east-west": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -4,
+                0,
+                -4
+              ],
+              "size": [
+                8,
+                24,
+                8
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                0,
+                -8
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -3
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                0,
+                4
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            },
+            {
+              "origin": [
+                4,
+                0,
+                -3
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wall",
+            "bone_visibility": {
+              "north": true,
+              "east": true,
+              "south": true,
+              "west": false,
+              "north-south": false,
+              "east-west": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -4,
+                0,
+                -4
+              ],
+              "size": [
+                8,
+                24,
+                8
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                0,
+                -8
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -3
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                0,
+                4
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              12,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wall",
+            "bone_visibility": {
+              "north": true,
+              "east": true,
+              "south": false,
+              "west": true,
+              "north-south": false,
+              "east-west": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -4,
+                0,
+                -4
+              ],
+              "size": [
+                8,
+                24,
+                8
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                0,
+                -8
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -3
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            },
+            {
+              "origin": [
+                4,
+                0,
+                -3
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              12
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wall",
+            "bone_visibility": {
+              "north": true,
+              "east": true,
+              "south": false,
+              "west": false,
+              "north-south": false,
+              "east-west": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -4,
+                0,
+                -4
+              ],
+              "size": [
+                8,
+                24,
+                8
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                0,
+                -8
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -3
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wall",
+            "bone_visibility": {
+              "north": true,
+              "east": false,
+              "south": true,
+              "west": true,
+              "north-south": false,
+              "east-west": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -4,
+                0,
+                -4
+              ],
+              "size": [
+                8,
+                24,
+                8
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                0,
+                -8
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                0,
+                4
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            },
+            {
+              "origin": [
+                4,
+                0,
+                -3
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -8
+            ],
+            "size": [
+              12,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wall",
+            "bone_visibility": {
+              "north": true,
+              "east": false,
+              "south": true,
+              "west": false,
+              "north-south": true,
+              "east-west": false,
+              "post": false
+            }
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -3,
+              0,
+              -8
+            ],
+            "size": [
+              6,
+              24,
+              16
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -3,
+              0,
+              -8
+            ],
+            "size": [
+              6,
+              13,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wall",
+            "bone_visibility": {
+              "north": true,
+              "east": false,
+              "south": false,
+              "west": true,
+              "north-south": false,
+              "east-west": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -4,
+                0,
+                -4
+              ],
+              "size": [
+                8,
+                24,
+                8
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                0,
+                -8
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            },
+            {
+              "origin": [
+                4,
+                0,
+                -3
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -8
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wall",
+            "bone_visibility": {
+              "north": true,
+              "east": false,
+              "south": false,
+              "west": false,
+              "north-south": false,
+              "east-west": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -4,
+                0,
+                -4
+              ],
+              "size": [
+                8,
+                24,
+                8
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                0,
+                -8
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              16,
+              12
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wall",
+            "bone_visibility": {
+              "north": false,
+              "east": true,
+              "south": true,
+              "west": true,
+              "north-south": false,
+              "east-west": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -4,
+                0,
+                -4
+              ],
+              "size": [
+                8,
+                24,
+                8
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -3
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                0,
+                4
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            },
+            {
+              "origin": [
+                4,
+                0,
+                -3
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -4
+            ],
+            "size": [
+              16,
+              16,
+              12
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wall",
+            "bone_visibility": {
+              "north": false,
+              "east": true,
+              "south": true,
+              "west": false,
+              "north-south": false,
+              "east-west": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -4,
+                0,
+                -4
+              ],
+              "size": [
+                8,
+                24,
+                8
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -3
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                0,
+                4
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -4
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wall",
+            "bone_visibility": {
+              "north": false,
+              "east": false,
+              "south": false,
+              "west": false,
+              "north-south": false,
+              "east-west": true,
+              "post": false
+            }
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              0,
+              -3
+            ],
+            "size": [
+              16,
+              24,
+              6
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -3
+            ],
+            "size": [
+              16,
+              13,
+              6
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!query.block_state('minecraft:connection_north') && query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wall",
+            "bone_visibility": {
+              "north": false,
+              "east": true,
+              "south": false,
+              "west": false,
+              "north-south": false,
+              "east-west": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -4,
+                0,
+                -4
+              ],
+              "size": [
+                8,
+                24,
+                8
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -3
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -4
+            ],
+            "size": [
+              12,
+              16,
+              8
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wall",
+            "bone_visibility": {
+              "north": false,
+              "east": false,
+              "south": true,
+              "west": true,
+              "north-south": false,
+              "east-west": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -4,
+                0,
+                -4
+              ],
+              "size": [
+                8,
+                24,
+                8
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                0,
+                4
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            },
+            {
+              "origin": [
+                4,
+                0,
+                -3
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -4
+            ],
+            "size": [
+              12,
+              16,
+              12
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_east') && query.block_state('minecraft:connection_south') && !query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wall",
+            "bone_visibility": {
+              "north": false,
+              "east": false,
+              "south": true,
+              "west": false,
+              "north-south": false,
+              "east-west": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -4,
+                0,
+                -4
+              ],
+              "size": [
+                8,
+                24,
+                8
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                0,
+                4
+              ],
+              "size": [
+                6,
+                24,
+                4
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -4
+            ],
+            "size": [
+              8,
+              16,
+              12
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!query.block_state('minecraft:connection_north') && !query.block_state('minecraft:connection_east') && !query.block_state('minecraft:connection_south') && query.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.wall",
+            "bone_visibility": {
+              "north": false,
+              "east": false,
+              "south": false,
+              "west": true,
+              "north-south": false,
+              "east-west": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -4,
+                0,
+                -4
+              ],
+              "size": [
+                8,
+                24,
+                8
+              ]
+            },
+            {
+              "origin": [
+                4,
+                0,
+                -3
+              ],
+              "size": [
+                4,
+                24,
+                6
+              ]
+            }
+          ],
+          "minecraft:selection_box": {
+            "origin": [
+              -4,
+              0,
+              -4
+            ],
+            "size": [
+              12,
+              16,
+              8
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

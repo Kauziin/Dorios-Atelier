@@ -1,11 +1,11 @@
 // chisel.js
 import { system, world } from "@minecraft/server";
 import { MATERIAL_CYCLES, BLOCK_ALIAS } from "./variants.js";
-import { readToolLockFromItem, registerToolLockResolver } from "./tool_lock_memory.js";
-import { playToolMaterialSound, soundConfig } from "./sound_config.js";
+import { readToolLockFromItem, registerToolLockResolver } from "./toolMemory.js";
+import { playToolMaterialSound, soundConfig } from "./soundConfig.js";
 
 const TOOL_NAMESPACES = ["dorios_atelier", "utilitycraft"];
-const CHISEL_COMPONENT_IDS = TOOL_NAMESPACES.map((namespace) => `${namespace}:chisel`);
+const CHISEL_COMPONENT_ID = "dorios_atelier:chisel";
 const CHISEL_ID_SUFFIX = "_chisel";
 const CHISEL_LOCK_KIND = "chisel";
 
@@ -361,11 +361,9 @@ system.beforeEvents.startup.subscribe((initEvent) => {
     },
   };
 
-  for (const componentId of CHISEL_COMPONENT_IDS) {
-    try {
-      initEvent.itemComponentRegistry.registerCustomComponent(componentId, handlers);
-    } catch (_) {}
-  }
+  try {
+    initEvent.itemComponentRegistry.registerCustomComponent(CHISEL_COMPONENT_ID, handlers);
+  } catch (_) {}
 });
 
 world?.beforeEvents?.itemComponentBeforeDurabilityDamage?.subscribe?.((event) => {

@@ -1,113 +1,1012 @@
 {
-    "format_version": "1.26.0",
-    "minecraft:block": {
-        "description": {
-            "identifier": "dorios_atelier:cracked_deepslate_tiles_vertical_slab",
-            "menu_category": {
-                "category": "construction"
-            },
-            "traits": {
-                "minecraft:placement_direction": {
-                    "enabled_states": [
-                        "minecraft:cardinal_direction"
-                    ]
-                }
-            }
-        },
+  "format_version": "1.26.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "dorios_atelier:cracked_deepslate_tiles_vertical_slab",
+      "menu_category": {
+        "category": "construction"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [
+            "minecraft:corner_and_cardinal_direction"
+          ]
+        }
+      }
+    },
+    "components": {
+      "tag:minecraft:is_pickaxe_item_destructible": {},
+      "minecraft:geometry": {
+        "identifier": "geometry.vertical_slab",
+        "culling": "dorios_atelier:vertical_slab_culling"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "cracked_deepslate_tiles",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:collision_box": true,
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 20
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:flammable": false,
+      "minecraft:liquid_detection": {
+        "can_contain_liquid": true,
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "on_liquid_touches": "no_reaction"
+          }
+        ],
+        "use_liquid_clipping": true
+      },
+      "minecraft:precipitation_interactions": {
+        "precipitation_behavior": "obstruct_rain"
+      },
+      "minecraft:redstone_conductivity": {
+        "allows_wire_to_step_down": false,
+        "redstone_conductor": false
+      },
+      "minecraft:support": {
+        "shape": "stair"
+      },
+      "minecraft:light_emission": 0,
+      "tag:minecraft:stone_tier_destructible": {},
+      "tag:stone": {}
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:corner') == 'none'",
         "components": {
-            "minecraft:geometry": {
-                "identifier": "geometry.dorios_atelier_vertical_slabs"
-            },
-            "minecraft:material_instances": {
-                "*": {
-                    "texture": "cracked_deepslate_tiles",
-                    "render_method": "opaque",
-                    "ambient_occlusion": true,
-                    "face_dimming": true
-                }
-            },
-            "minecraft:collision_box": {
-                "origin": [
-                    -8,
-                    0,
-                    0
-                ],
-                "size": [
-                    16,
-                    16,
-                    8
-                ]
-            },
-            "minecraft:selection_box": {
-                "origin": [
-                    -8,
-                    0,
-                    0
-                ],
-                "size": [
-                    16,
-                    16,
-                    8
-                ]
-            },
-            "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 1.5
-            },
-            "minecraft:light_dampening": 0,
-            "minecraft:light_emission": 0,
-            "tag:minecraft:is_pickaxe_item_destructible": {},
-            "tag:minecraft:stone_tier_destructible": {},
-            "tag:stone": {}
-        },
-        "permutations": [
-            {
-                "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
-                "components": {
-                    "minecraft:transformation": {
-                        "rotation": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                }
-            },
-            {
-                "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
-                "components": {
-                    "minecraft:transformation": {
-                        "rotation": [
-                            0,
-                            90,
-                            0
-                        ]
-                    }
-                }
-            },
-            {
-                "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
-                "components": {
-                    "minecraft:transformation": {
-                        "rotation": [
-                            0,
-                            180,
-                            0
-                        ]
-                    }
-                }
-            },
-            {
-                "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
-                "components": {
-                    "minecraft:transformation": {
-                        "rotation": [
-                            0,
-                            -90,
-                            0
-                        ]
-                    }
-                }
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "bone_visibility": {
+              "se": false,
+              "sw": false
             }
-        ]
-    }
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              8
+            ]
+          },
+          "minecraft:connection_rule": {
+            "accepts_connections_from": "only_fences",
+            "enabled_directions": [
+              "north"
+            ]
+          },
+          "minecraft:liquid_detection": {
+            "can_contain_liquid": true,
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "on_liquid_touches": "no_reaction"
+              }
+            ],
+            "stops_liquid_flowing_from_direction": [
+              "north"
+            ],
+            "use_liquid_clipping": true
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:corner') == 'outer_left'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "ne": false,
+              "se": false,
+              "sw": false
+            }
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              0,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              16,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              0,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              16,
+              8
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:corner') == 'outer_right'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "se": false,
+              "sw": false,
+              "nw": false
+            }
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              16,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              16,
+              8
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:corner') == 'inner_left'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "se": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -8,
+                0,
+                -8
+              ],
+              "size": [
+                16,
+                16,
+                8
+              ]
+            },
+            {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "size": [
+                8,
+                16,
+                8
+              ]
+            }
+          ],
+          "minecraft:liquid_detection": {
+            "can_contain_liquid": true,
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "on_liquid_touches": "no_reaction"
+              }
+            ],
+            "stops_liquid_flowing_from_direction": [
+              "north",
+              "west"
+            ],
+            "use_liquid_clipping": true
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:corner') == 'inner_right'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "sw": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -8,
+                0,
+                -8
+              ],
+              "size": [
+                16,
+                16,
+                8
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                0
+              ],
+              "size": [
+                8,
+                16,
+                8
+              ]
+            }
+          ],
+          "minecraft:liquid_detection": {
+            "can_contain_liquid": true,
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "on_liquid_touches": "no_reaction"
+              }
+            ],
+            "stops_liquid_flowing_from_direction": [
+              "north",
+              "east"
+            ],
+            "use_liquid_clipping": true
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:corner') == 'none'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "ne": false,
+              "nw": false
+            }
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              0,
+              0
+            ],
+            "size": [
+              16,
+              16,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              0
+            ],
+            "size": [
+              16,
+              16,
+              8
+            ]
+          },
+          "minecraft:connection_rule": {
+            "accepts_connections_from": "only_fences",
+            "enabled_directions": [
+              "south"
+            ]
+          },
+          "minecraft:liquid_detection": {
+            "can_contain_liquid": true,
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "on_liquid_touches": "no_reaction"
+              }
+            ],
+            "stops_liquid_flowing_from_direction": [
+              "south"
+            ],
+            "use_liquid_clipping": true
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:corner') == 'outer_left'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "ne": false,
+              "sw": false,
+              "nw": false
+            }
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              0,
+              0
+            ],
+            "size": [
+              8,
+              16,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              0
+            ],
+            "size": [
+              8,
+              16,
+              8
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:corner') == 'outer_right'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "ne": false,
+              "se": false,
+              "nw": false
+            }
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "size": [
+              8,
+              16,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "size": [
+              8,
+              16,
+              8
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:corner') == 'inner_left'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "nw": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -8,
+                0,
+                0
+              ],
+              "size": [
+                16,
+                16,
+                8
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -8
+              ],
+              "size": [
+                8,
+                16,
+                8
+              ]
+            }
+          ],
+          "minecraft:liquid_detection": {
+            "can_contain_liquid": true,
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "on_liquid_touches": "no_reaction"
+              }
+            ],
+            "stops_liquid_flowing_from_direction": [
+              "east",
+              "south"
+            ],
+            "use_liquid_clipping": true
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:corner') == 'inner_right'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "ne": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -8,
+                0,
+                0
+              ],
+              "size": [
+                16,
+                16,
+                8
+              ]
+            },
+            {
+              "origin": [
+                0,
+                0,
+                -8
+              ],
+              "size": [
+                8,
+                16,
+                8
+              ]
+            }
+          ],
+          "minecraft:liquid_detection": {
+            "can_contain_liquid": true,
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "on_liquid_touches": "no_reaction"
+              }
+            ],
+            "stops_liquid_flowing_from_direction": [
+              "south",
+              "west"
+            ],
+            "use_liquid_clipping": true
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:corner') == 'none'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "sw": false,
+              "nw": false
+            }
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              16,
+              16
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              16,
+              16
+            ]
+          },
+          "minecraft:connection_rule": {
+            "accepts_connections_from": "only_fences",
+            "enabled_directions": [
+              "east"
+            ]
+          },
+          "minecraft:liquid_detection": {
+            "can_contain_liquid": true,
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "on_liquid_touches": "no_reaction"
+              }
+            ],
+            "stops_liquid_flowing_from_direction": [
+              "east"
+            ],
+            "use_liquid_clipping": true
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:corner') == 'outer_left'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "se": false,
+              "sw": false,
+              "nw": false
+            }
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              16,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              16,
+              8
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:corner') == 'outer_right'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "ne": false,
+              "sw": false,
+              "nw": false
+            }
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              0,
+              0
+            ],
+            "size": [
+              8,
+              16,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              0
+            ],
+            "size": [
+              8,
+              16,
+              8
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:corner') == 'inner_left'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "sw": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -8,
+                0,
+                -8
+              ],
+              "size": [
+                8,
+                16,
+                16
+              ]
+            },
+            {
+              "origin": [
+                0,
+                0,
+                -8
+              ],
+              "size": [
+                8,
+                16,
+                8
+              ]
+            }
+          ],
+          "minecraft:liquid_detection": {
+            "can_contain_liquid": true,
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "on_liquid_touches": "no_reaction"
+              }
+            ],
+            "stops_liquid_flowing_from_direction": [
+              "north",
+              "east"
+            ],
+            "use_liquid_clipping": true
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:corner') == 'inner_right'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "nw": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                -8,
+                0,
+                -8
+              ],
+              "size": [
+                8,
+                16,
+                16
+              ]
+            },
+            {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "size": [
+                8,
+                16,
+                8
+              ]
+            }
+          ],
+          "minecraft:liquid_detection": {
+            "can_contain_liquid": true,
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "on_liquid_touches": "no_reaction"
+              }
+            ],
+            "stops_liquid_flowing_from_direction": [
+              "east",
+              "south"
+            ],
+            "use_liquid_clipping": true
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:corner') == 'none'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "ne": false,
+              "se": false
+            }
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              0,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              16,
+              16
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              0,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              16,
+              16
+            ]
+          },
+          "minecraft:connection_rule": {
+            "accepts_connections_from": "only_fences",
+            "enabled_directions": [
+              "west"
+            ]
+          },
+          "minecraft:liquid_detection": {
+            "can_contain_liquid": true,
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "on_liquid_touches": "no_reaction"
+              }
+            ],
+            "stops_liquid_flowing_from_direction": [
+              "west"
+            ],
+            "use_liquid_clipping": true
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:corner') == 'outer_left'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "ne": false,
+              "se": false,
+              "nw": false
+            }
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "size": [
+              8,
+              16,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "size": [
+              8,
+              16,
+              8
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:corner') == 'outer_right'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "ne": false,
+              "se": false,
+              "sw": false
+            }
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              0,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              16,
+              8
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              0,
+              0,
+              -8
+            ],
+            "size": [
+              8,
+              16,
+              8
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:corner') == 'inner_left'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "ne": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                0,
+                0,
+                -8
+              ],
+              "size": [
+                8,
+                16,
+                16
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                0
+              ],
+              "size": [
+                8,
+                16,
+                8
+              ]
+            }
+          ],
+          "minecraft:liquid_detection": {
+            "can_contain_liquid": true,
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "on_liquid_touches": "no_reaction"
+              }
+            ],
+            "stops_liquid_flowing_from_direction": [
+              "south",
+              "west"
+            ],
+            "use_liquid_clipping": true
+          }
+        }
+      },
+      {
+        "condition": "query.block_state ('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:corner') == 'inner_right'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.vertical_slab",
+            "culling": "dorios_atelier:vertical_slab_culling",
+            "bone_visibility": {
+              "se": false
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [
+                0,
+                0,
+                -8
+              ],
+              "size": [
+                8,
+                16,
+                16
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -8
+              ],
+              "size": [
+                8,
+                16,
+                8
+              ]
+            }
+          ],
+          "minecraft:liquid_detection": {
+            "can_contain_liquid": true,
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "on_liquid_touches": "no_reaction"
+              }
+            ],
+            "stops_liquid_flowing_from_direction": [
+              "north",
+              "west"
+            ],
+            "use_liquid_clipping": true
+          }
+        }
+      }
+    ]
+  }
 }

@@ -15,18 +15,45 @@
         "value": 12
       },
       "minecraft:durability": {
-        "max_durability": 251
+        "max_durability": 250
       },
-      "minecraft:icon": "utilitycraft_iron_chisel",
+      "minecraft:icon": "utilitycraft_iron_glass_cutter",
       "dorios_atelier:glass_cutter": {},
       "minecraft:digger": {
         "use_efficiency": true,
         "destroy_speeds": [
-            {
-                "block": {
-                    "tags": "query.any_tag( 'dorios_atelier:breakable_by_cutter' )"
-                }
-            }
+          {
+            "block": {
+              "tags": "q.any_tag('dorios_atelier:breakable_by_cutter')"
+            },
+            "speed": 8
+          },
+          {
+            "block": {
+              "tags": "q.any_tag('glass')"
+            },
+            "speed": 8
+          },
+          {
+            "block": "minecraft:glass",
+            "speed": 8
+          },
+          {
+            "block": "minecraft:glass_pane",
+            "speed": 8
+          },
+          {
+            "block": "minecraft:tinted_glass",
+            "speed": 8
+          },
+          {
+            "block": "minecraft:stained_glass",
+            "speed": 8
+          },
+          {
+            "block": "minecraft:stained_glass_pane",
+            "speed": 8
+          }
         ]
       }
     }

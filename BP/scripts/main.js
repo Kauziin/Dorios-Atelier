@@ -1,11 +1,9 @@
 import './doriosAPI/main.js'
-// import './durability.js'
-import './tool_lock_memory.js'
+import './toolMemory.js'
 import './gloves.js'
 import './chisel.js'
-import './glass_cutter.js'
-import './furniture_hammer.js'
-import './stairs.js'
+import './glassCutter.js'
+import './furnitureHammer.js'
 import './variants.js'
-import './insight_registry_injector.generated.js'
 
+// slabToBlock.js is intentionally inactive: BlocksWithTraits slabs do not use gvpa:double.

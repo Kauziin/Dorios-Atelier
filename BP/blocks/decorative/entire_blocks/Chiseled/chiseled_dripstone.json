@@ -1,20 +1,44 @@
 {
-    "format_version": "1.20.80",
-    "minecraft:block": {
-        "description": {
-            "identifier": "dorios_atelier:chiseled_dripstone",
-            "menu_category": {
-                "category": "construction"
-            }
+  "format_version": "1.26.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "dorios_atelier:chiseled_dripstone",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.6
+      },
+      "tag:minecraft:is_pickaxe_item_destructible": {},
+      "tag:minecraft:stone_tier_destructible": {},
+      "tag:stone": {},
+      "minecraft:redstone_conductivity": {
+        "allows_wire_to_step_down": true,
+        "redstone_conductor": true
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "utilitycraft_chiseled_dripstone_side",
+          "ambient_occlusion": true,
+          "face_dimming": true,
+          "render_method": "opaque"
         },
-        "components": {
-            "minecraft:geometry": "minecraft:geometry.full_block",
-            "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 1.6
-            },
-            "tag:minecraft:is_pickaxe_item_destructible": {},
-            "tag:minecraft:stone_tier_destructible": {},
-            "tag:stone": {}
+        "up": {
+          "texture": "utilitycraft_chiseled_dripstone_top",
+          "ambient_occlusion": true,
+          "face_dimming": true,
+          "render_method": "opaque"
+        },
+        "down": {
+          "texture": "utilitycraft_chiseled_dripstone_top",
+          "ambient_occlusion": true,
+          "face_dimming": true,
+          "render_method": "opaque"
         }
+      }
     }
+  }
 }

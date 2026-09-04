@@ -19,6 +19,30 @@
         "color": "terminal.ansiGreen",
         "id": "arrow-up"
       }
+    },
+    {
+      "label": "Atelier: Audit Content",
+      "type": "npm",
+      "script": "content:audit",
+      "problemMatcher": []
+    },
+    {
+      "label": "Atelier: Review Variants",
+      "type": "npm",
+      "script": "variants:audit",
+      "problemMatcher": []
+    },
+    {
+      "label": "Atelier: Preview Stone Overhaul",
+      "type": "npm",
+      "script": "content:overhaul",
+      "problemMatcher": []
+    },
+    {
+      "label": "Atelier: Check Reviewed Decisions",
+      "type": "shell",
+      "command": "npm run content:check -- --require-decisions",
+      "problemMatcher": []
     }
   ]
 }

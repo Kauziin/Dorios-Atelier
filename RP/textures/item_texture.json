@@ -1,51 +1,93 @@
 {
-    "resource_pack_name": "Dorios' Atelier",
-    "texture_name": "atlas.items",
-    "texture_data": {
-        "utilitycraft_netherite_chisel": {
-            "textures": "textures/items/netherite_chisel"
-        },
-        "utilitycraft_diamond_chisel": {
-            "textures": "textures/items/diamond_chisel"
-        },
-        "utilitycraft_iron_chisel": {
-            "textures": "textures/items/iron_chisel"
-        },
-        "utilitycraft_copper_chisel": {
-            "textures": "textures/items/copper_chisel"
-        },
-        "utilitycraft_stone_chisel": {
-            "textures": "textures/items/stone_chisel"
-        },
-        "utilitycraft_golden_chisel": {
-            "textures": "textures/items/golden_chisel"
-        },
-        "utilitycraft_wooden_chisel": {
-            "textures": "textures/items/wooden_chisel"
-        },
-        "utilitycraft_steel_chisel":{
-            "textures": "textures/items/steel_chisel"
-        },
-        "utilitycraft_wooden_glove": {
-            "textures": "textures/items/wood_gloves_item"
-        },
-        "utilitycraft_stone_glove": {
-            "textures": "textures/items/stone_gloves_item"
-        },
-        "utilitycraft_iron_glove": {
-            "textures": "textures/items/iron_gloves_item"
-        },
-        "utilitycraft_copper_glove": {
-            "textures": "textures/items/copper_gloves_item"
-        },
-        "utilitycraft_golden_glove": {
-            "textures": "textures/items/golden_gloves_item"
-        },
-        "utilitycraft_diamond_glove": {
-            "textures": "textures/items/diamond_gloves_item"
-        },
-        "utilitycraft_netherite_glove": {
-            "textures": "textures/items/netherite_gloves_item"
-        }
+  "resource_pack_name": "Dorios' Atelier",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "utilitycraft_netherite_chisel": {
+      "textures": "textures/items/netherite_chisel"
+    },
+    "utilitycraft_diamond_chisel": {
+      "textures": "textures/items/diamond_chisel"
+    },
+    "utilitycraft_iron_chisel": {
+      "textures": "textures/items/iron_chisel"
+    },
+    "utilitycraft_copper_chisel": {
+      "textures": "textures/items/copper_chisel"
+    },
+    "utilitycraft_stone_chisel": {
+      "textures": "textures/items/stone_chisel"
+    },
+    "utilitycraft_golden_chisel": {
+      "textures": "textures/items/golden_chisel"
+    },
+    "utilitycraft_wooden_chisel": {
+      "textures": "textures/items/wooden_chisel"
+    },
+    "utilitycraft_steel_chisel": {
+      "textures": "textures/items/steel_chisel"
+    },
+    "utilitycraft_wooden_glove": {
+      "textures": "textures/items/wood_gloves_item"
+    },
+    "utilitycraft_stone_glove": {
+      "textures": "textures/items/stone_gloves_item"
+    },
+    "utilitycraft_iron_glove": {
+      "textures": "textures/items/iron_gloves_item"
+    },
+    "utilitycraft_copper_glove": {
+      "textures": "textures/items/copper_gloves_item"
+    },
+    "utilitycraft_golden_glove": {
+      "textures": "textures/items/golden_gloves_item"
+    },
+    "utilitycraft_diamond_glove": {
+      "textures": "textures/items/diamond_gloves_item"
+    },
+    "utilitycraft_netherite_glove": {
+      "textures": "textures/items/netherite_gloves_item"
+    },
+    "utilitycraft_wooden_glass_cutter": {
+      "textures": "textures/items/wooden_glass_cutter"
+    },
+    "utilitycraft_wooden_furniture_hammer": {
+      "textures": "textures/items/wooden_furniture_hammer"
+    },
+    "utilitycraft_stone_glass_cutter": {
+      "textures": "textures/items/stone_glass_cutter"
+    },
+    "utilitycraft_stone_furniture_hammer": {
+      "textures": "textures/items/stone_furniture_hammer"
+    },
+    "utilitycraft_copper_glass_cutter": {
+      "textures": "textures/items/copper_glass_cutter"
+    },
+    "utilitycraft_copper_furniture_hammer": {
+      "textures": "textures/items/copper_furniture_hammer"
+    },
+    "utilitycraft_iron_glass_cutter": {
+      "textures": "textures/items/iron_glass_cutter"
+    },
+    "utilitycraft_iron_furniture_hammer": {
+      "textures": "textures/items/iron_furniture_hammer"
+    },
+    "utilitycraft_golden_glass_cutter": {
+      "textures": "textures/items/gold_glass_cutter"
+    },
+    "utilitycraft_golden_furniture_hammer": {
+      "textures": "textures/items/gold_furniture_hammer"
+    },
+    "utilitycraft_diamond_glass_cutter": {
+      "textures": "textures/items/diamond_glass_cutter"
+    },
+    "utilitycraft_diamond_furniture_hammer": {
+      "textures": "textures/items/diamond_furniture_hammer"
+    },
+    "utilitycraft_netherite_glass_cutter": {
+      "textures": "textures/items/netherite_glass_cutter"
+    },
+    "utilitycraft_netherite_furniture_hammer": {
+      "textures": "textures/items/netherite_furniture_hammer"
     }
+  }
 }

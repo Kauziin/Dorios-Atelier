@@ -1,0 +1,146 @@
+{
+    "format_version": "1.21.80",
+    "minecraft:block_culling_rules": {
+        "description": {
+            "identifier": "custom:stairs_down_culling"
+        },
+        "rules": [
+            {
+                "direction": "north",
+                "geometry_part": {
+                    "bone": "upper",
+                    "cube": 0,
+                    "face": "north"
+                }
+            },
+            {
+                "direction": "north",
+                "geometry_part": {
+                    "bone": "lower_ne",
+                    "cube": 0,
+                    "face": "north"
+                }
+            },
+            {
+                "direction": "north",
+                "geometry_part": {
+                    "bone": "lower_nw",
+                    "cube": 0,
+                    "face": "north"
+                }
+            },
+            {
+                "direction": "south",
+                "geometry_part": {
+                    "bone": "upper",
+                    "cube": 0,
+                    "face": "south"
+                }
+            },
+            {
+                "direction": "south",
+                "geometry_part": {
+                    "bone": "lower_se",
+                    "cube": 0,
+                    "face": "south"
+                }
+            },
+            {
+                "direction": "south",
+                "geometry_part": {
+                    "bone": "lower_sw",
+                    "cube": 0,
+                    "face": "south"
+                }
+            },
+            {
+                "direction": "east",
+                "geometry_part": {
+                    "bone": "upper",
+                    "cube": 0,
+                    "face": "east"
+                }
+            },
+            {
+                "direction": "east",
+                "geometry_part": {
+                    "bone": "lower_ne",
+                    "cube": 0,
+                    "face": "east"
+                }
+            },
+            {
+                "direction": "east",
+                "geometry_part": {
+                    "bone": "lower_se",
+                    "cube": 0,
+                    "face": "east"
+                }
+            },
+            {
+                "direction": "west",
+                "geometry_part": {
+                    "bone": "upper",
+                    "cube": 0,
+                    "face": "west"
+                }
+            },
+            {
+                "direction": "west",
+                "geometry_part": {
+                    "bone": "lower_sw",
+                    "cube": 0,
+                    "face": "west"
+                }
+            },
+            {
+                "direction": "west",
+                "geometry_part": {
+                    "bone": "lower_nw",
+                    "cube": 0,
+                    "face": "west"
+                }
+            },
+            {
+                "direction": "up",
+                "geometry_part": {
+                    "bone": "upper",
+                    "cube": 0,
+                    "face": "up"
+                }
+            },
+            {
+                "direction": "down",
+                "geometry_part": {
+                    "bone": "lower_ne",
+                    "cube": 0,
+                    "face": "down"
+                }
+            },
+            {
+                "direction": "down",
+                "geometry_part": {
+                    "bone": "lower_se",
+                    "cube": 0,
+                    "face": "down"
+                }
+            },
+            {
+                "direction": "down",
+                "geometry_part": {
+                    "bone": "lower_sw",
+                    "cube": 0,
+                    "face": "down"
+                }
+            },
+            {
+                "direction": "down",
+                "geometry_part": {
+                    "bone": "lower_nw",
+                    "cube": 0,
+                    "face": "down"
+                }
+            }
+        ]
+    }
+}

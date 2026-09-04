@@ -1,0 +1,25 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "dorios_atelier:sc_andesite_bricks_from_andesite_bricks_wall"
+    },
+    "tags": [
+      "stonecutter"
+    ],
+    "ingredients": [
+      {
+        "item": "dorios_atelier:andesite_bricks_wall"
+      }
+    ],
+    "result": {
+      "item": "dorios_atelier:andesite_bricks",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "dorios_atelier:andesite_bricks_wall"
+      }
+    ]
+  }
+}

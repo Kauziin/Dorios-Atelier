@@ -1,7 +1,37 @@
 {
+  "name": "dorios-atelier",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "content:audit": "node tools/audit-content.mjs",
+    "content:check": "node tools/check-content.mjs",
+    "content:overhaul": "node tools/overhaul-stone-variants.mjs",
+    "content:overhaul:apply": "node tools/overhaul-stone-variants.mjs --write",
+    "content:traits": "node tools/inherit-blocks-with-traits.mjs",
+    "content:traits:apply": "node tools/inherit-blocks-with-traits.mjs --write",
+    "content:glass": "node tools/update-glass-culling.mjs",
+    "content:glass:apply": "node tools/update-glass-culling.mjs --write",
+    "content:tools": "node tools/generate-tools.mjs",
+    "content:tools:apply": "node tools/generate-tools.mjs --write",
+    "content:locales": "node tools/normalize-localizations.mjs",
+    "content:locales:apply": "node tools/normalize-localizations.mjs --write",
+    "recipes:variants": "node tools/generate-variant-recipes.mjs",
+    "recipes:variants:apply": "node tools/generate-variant-recipes.mjs --write",
+    "content:generated:check": "node tools/inherit-blocks-with-traits.mjs --check && node tools/update-glass-culling.mjs --check && node tools/generate-tools.mjs --check && node tools/generate-variant-recipes.mjs --check && node tools/normalize-localizations.mjs --check",
+    "variants:audit": "node tools/audit-variants.mjs",
+    "variants:policy:init": "node tools/init-variant-policy.mjs",
+    "test": "node --test tools/tests/*.test.mjs"
+  },
   "dependencies": {
     "@minecraft/server": "^2.5.0",
     "@octokit/rest": "^22.0.1",
     "minecraft": "^0.0.2"
+  },
+  "devDependencies": {
+    "@minecraft/bedrock-schemas": "1.26.20-beta.21",
+    "@minecraft/vanilla-data": "1.26.1"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }

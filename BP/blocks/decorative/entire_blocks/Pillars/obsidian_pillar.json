@@ -1,21 +1,90 @@
 {
-    "format_version": "1.20.80",
-    "minecraft:block": {
-        "description": {
-            "identifier": "dorios_atelier:obsidian_pillar",
-            "menu_category": {
-                "category": "construction"
-            }
-        },
-        "components": {
-            "minecraft:geometry": "minecraft:geometry.full_block",
-            "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 40
-            },
-            "tag:minecraft:is_pickaxe_item_destructible": {},
-            "tag:stone": {},
-            "minecraft:destructible_by_explosion": false,
-            "tag:minecraft:diamond_tier_destructible": {}
+  "format_version": "1.26.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "dorios_atelier:obsidian_pillar",
+      "menu_category": {
+        "category": "construction"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
         }
-    }
+      }
+    },
+    "components": {
+      "tag:minecraft:is_pickaxe_item_destructible": {},
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:material_instances": {
+        "up": {
+          "texture": "utilitycraft_obsidian_pillar_top",
+          "render_method": "opaque"
+        },
+        "down": {
+          "texture": "utilitycraft_obsidian_pillar_top",
+          "render_method": "opaque"
+        },
+        "*": {
+          "texture": "utilitycraft_obsidian_pillar_side",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:collision_box": true,
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 40
+      },
+      "minecraft:destructible_by_explosion": false,
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "only_fences",
+        "enabled_directions": [
+          "north",
+          "south",
+          "east",
+          "west"
+        ]
+      },
+      "minecraft:light_dampening": 15,
+      "minecraft:flammable": false,
+      "minecraft:precipitation_interactions": {
+        "precipitation_behavior": "obstruct_rain_accumulate_snow"
+      },
+      "minecraft:redstone_conductivity": {
+        "allows_wire_to_step_down": true,
+        "redstone_conductor": true
+      },
+      "tag:stone": {},
+      "tag:minecraft:diamond_tier_destructible": {}
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'north' || query.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              90,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'east' || query.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              -90
+            ]
+          }
+        }
+      }
+    ]
+  }
 }

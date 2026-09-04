@@ -1,21 +1,45 @@
 {
-    "format_version": "1.20.80",
-    "minecraft:block": {
-        "description": {
-            "identifier": "dorios_atelier:snowy_grass_block",
-            "menu_category": {
-                "category": "nature"
-            }
+  "format_version": "1.26.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "dorios_atelier:snowy_grass_block",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "dorios_atelier_grass_side_snowed",
+          "ambient_occlusion": true,
+          "face_dimming": true,
+          "render_method": "opaque"
         },
-        "components": {
-            "minecraft:geometry": "minecraft:geometry.full_block",
-            "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 0.8
-            },
-            "minecraft:light_dampening": 15,
-            "minecraft:light_emission": 0,
-            "tag:minecraft:is_shovel_item_destructible": {},
-            "tag:grass": {}
+        "up": {
+          "texture": "snow",
+          "ambient_occlusion": true,
+          "face_dimming": true,
+          "render_method": "opaque"
+        },
+        "down": {
+          "texture": "dirt",
+          "ambient_occlusion": true,
+          "face_dimming": true,
+          "render_method": "opaque"
         }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.8
+      },
+      "minecraft:light_dampening": 15,
+      "minecraft:light_emission": 0,
+      "tag:minecraft:is_shovel_item_destructible": {},
+      "tag:minecraft:grass": {},
+      "minecraft:redstone_conductivity": {
+        "allows_wire_to_step_down": true,
+        "redstone_conductor": true
+      }
     }
+  }
 }

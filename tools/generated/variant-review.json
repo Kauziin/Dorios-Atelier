@@ -1,0 +1,5497 @@
+{
+  "schemaVersion": 1,
+  "decisionValues": [
+    "pending",
+    "generate",
+    "skip",
+    "use_vanilla"
+  ],
+  "summary": {
+    "baseBlocks": 84,
+    "currentDefinitions": 241,
+    "duplicateDefinitions": 0,
+    "vanillaSlabOverlaps": 27,
+    "vanillaStairsOverlaps": 26,
+    "pendingDecisions": 0,
+    "unresolvedSources": 0,
+    "policyIssues": 0
+  },
+  "policyIssues": [],
+  "rows": [
+    {
+      "base": "andesite",
+      "source": "minecraft:andesite",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:andesite_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:andesite_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:andesite_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/andesite_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:andesite_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "andesite_bricks",
+      "source": "dorios_atelier:andesite_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:andesite_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/andesite_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:andesite_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/andesite_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:andesite_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/andesite_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:andesite_bricks_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/andesite_bricks_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "andesite_tiles",
+      "source": "dorios_atelier:andesite_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:andesite_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/andesite_tiles_slab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:andesite_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/andesite_tiles_str.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:andesite_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/andesite_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:andesite_tiles_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/andesite_tiles_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "basalt_bricks",
+      "source": "dorios_atelier:basalt_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:basalt_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/basalt_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:basalt_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/basalt_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:basalt_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/basalt_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:basalt_bricks_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/basalt_bricks_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "basalt_tiles",
+      "source": "dorios_atelier:basalt_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:basalt_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/basalt_tiles_slab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:basalt_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/basalt_tiles_str.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:basalt_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/basalt_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:basalt_tiles_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/basalt_tiles_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "blackstone_tiles",
+      "source": "dorios_atelier:blackstone_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:blackstone_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/blackstone_tiles_slab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:blackstone_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/blackstone_tiles_str.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:blackstone_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/blackstone_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:blackstone_tiles_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/blackstone_tiles_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "calcite",
+      "source": "minecraft:calcite",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:calcite_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/calcite_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:calcite_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/calcite_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:calcite_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/calcite_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "calcite_bricks",
+      "source": "dorios_atelier:calcite_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:calcite_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/calcite_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:calcite_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/calcite_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:calcite_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/calcite_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:calcite_bricks_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/calcite_bricks_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "calcite_tiles",
+      "source": "dorios_atelier:calcite_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:calcite_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/calcite_tiles_slab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:calcite_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/calcite_tiles_str.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:calcite_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/calcite_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:calcite_tiles_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/calcite_tiles_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "chiseled_deepslate",
+      "source": "minecraft:chiseled_deepslate",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:chiseled_deepslate_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/ch_deepslate_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:chiseled_deepslate_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/ch_deepslate_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:chiseled_deepslate_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/ch_deepslate_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "chiseled_nether_bricks",
+      "source": "minecraft:chiseled_nether_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:chiseled_nether_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/ch_nether_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:chiseled_nether_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/ch_nether_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:chiseled_nether_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/ch_nether_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "chiseled_polished_blackstone",
+      "source": "minecraft:chiseled_polished_blackstone",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:chiseled_polished_blackstone_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/ch_pl_blackstone_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:chiseled_polished_blackstone_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/ch_pl_blackstone_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:chiseled_polished_blackstone_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/ch_pl_blackstone_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "chiseled_stone_bricks",
+      "source": "minecraft:chiseled_stone_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:chiseled_stone_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/ch_stone_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:chiseled_stone_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/ch_stone_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:chiseled_stone_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/ch_stone_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "cobbled_deepslate",
+      "source": "minecraft:cobbled_deepslate",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:cobbled_deepslate_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:cobbled_deepslate_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cobbled_deepslate_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/cobbled_deepslate_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:cobbled_deepslate_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "cobblestone",
+      "source": "minecraft:cobblestone",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:cobblestone_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:stone_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cobblestone_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/cobblestone_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:cobblestone_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "cracked_andesite_bricks",
+      "source": "dorios_atelier:cracked_andesite_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_andesite_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/cracked_andesite_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_andesite_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/cracked_andesite_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_andesite_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/cracked_andesite_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_andesite_bricks_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/cracked_andesite_bricks_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "cracked_andesite_tiles",
+      "source": "dorios_atelier:cracked_andesite_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_andesite_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/cracked_andesite_tiles_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_andesite_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/cracked_andesite_tiles_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_andesite_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/cracked_andesite_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_andesite_tiles_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/cracked_andesite_tiles_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "cracked_basalt_bricks",
+      "source": "dorios_atelier:cracked_basalt_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_basalt_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/cracked_basalt_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_basalt_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/cracked_basalt_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_basalt_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/cracked_basalt_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_basalt_bricks_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/cracked_basalt_bricks_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "cracked_basalt_tiles",
+      "source": "dorios_atelier:cracked_basalt_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_basalt_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/cracked_basalt_tiles_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_basalt_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/cracked_basalt_tiles_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_basalt_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/cracked_basalt_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_basalt_tiles_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/cracked_basalt_tiles_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "cracked_blackstone_tiles",
+      "source": "dorios_atelier:cracked_blackstone_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_blackstone_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/cracked_blackstone_tiles_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_blackstone_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/cracked_blackstone_tiles_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_blackstone_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/cracked_blackstone_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_blackstone_tiles_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/cracked_blackstone_tiles_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "cracked_calcite_bricks",
+      "source": "dorios_atelier:cracked_calcite_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_calcite_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/cracked_calcite_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_calcite_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/cracked_calcite_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_calcite_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/cracked_calcite_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_calcite_bricks_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/cracked_calcite_bricks_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "cracked_calcite_tiles",
+      "source": "dorios_atelier:cracked_calcite_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_calcite_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/cracked_calcite_tiles_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_calcite_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/cracked_calcite_tiles_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_calcite_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/cracked_calcite_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_calcite_tiles_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/cracked_calcite_tiles_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "cracked_deepslate_bricks",
+      "source": "minecraft:cracked_deepslate_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_deepslate_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/ck_deepslate_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_deepslate_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/ck_deepslate_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_deepslate_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/ck_deepslate_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "cracked_deepslate_tiles",
+      "source": "minecraft:cracked_deepslate_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_deepslate_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/ck_deepslate_tiles_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_deepslate_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/ck_deepslate_tiles_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_deepslate_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/ck_deepslate_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "cracked_diorite_bricks",
+      "source": "dorios_atelier:cracked_diorite_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_diorite_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/cracked_diorite_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_diorite_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/cracked_diorite_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_diorite_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/cracked_diorite_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_diorite_bricks_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/cracked_diorite_bricks_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "cracked_diorite_tiles",
+      "source": "dorios_atelier:cracked_diorite_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_diorite_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/cracked_diorite_tiles_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_diorite_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/cracked_diorite_tiles_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_diorite_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/cracked_diorite_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_diorite_tiles_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/cracked_diorite_tiles_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "cracked_dripstone_bricks",
+      "source": "dorios_atelier:cracked_dripstone_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_dripstone_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/cracked_dripstone_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_dripstone_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/cracked_dripstone_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_dripstone_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/cracked_dripstone_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_dripstone_bricks_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/cracked_dripstone_bricks_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "cracked_dripstone_tiles",
+      "source": "dorios_atelier:cracked_dripstone_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_dripstone_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/cracked_dripstone_tiles_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_dripstone_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/cracked_dripstone_tiles_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_dripstone_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/cracked_dripstone_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_dripstone_tiles_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/cracked_dripstone_tiles_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "cracked_granite_bricks",
+      "source": "dorios_atelier:cracked_granite_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_granite_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/cracked_granite_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_granite_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/cracked_granite_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_granite_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/cracked_granite_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_granite_bricks_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/cracked_granite_bricks_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "cracked_granite_tiles",
+      "source": "dorios_atelier:cracked_granite_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_granite_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/cracked_granite_tiles_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_granite_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/cracked_granite_tiles_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_granite_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/cracked_granite_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_granite_tiles_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/cracked_granite_tiles_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "cracked_nether_bricks",
+      "source": "minecraft:cracked_nether_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_nether_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/ck_nether_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_nether_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/ck_nether_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_nether_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/ck_nether_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "cracked_polished_blackstone_bricks",
+      "source": "minecraft:cracked_polished_blackstone_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_polished_blackstone_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/ck_pl_blackstone_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_polished_blackstone_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/ck_pl_blackstone_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_polished_blackstone_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/ck_pl_blackstone_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "cracked_stone_bricks",
+      "source": "minecraft:cracked_stone_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_stone_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/ck_stone_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_stone_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/ck_stone_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_stone_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/ck_stone_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "cracked_tuff_bricks",
+      "source": "dorios_atelier:cracked_tuff_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_tuff_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/cracked_tuff_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_tuff_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/cracked_tuff_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_tuff_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/cracked_tuff_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_tuff_bricks_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/cracked_tuff_bricks_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "cracked_tuff_tiles",
+      "source": "dorios_atelier:cracked_tuff_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_tuff_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/cracked_tuff_tiles_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_tuff_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/cracked_tuff_tiles_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_tuff_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/cracked_tuff_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:cracked_tuff_tiles_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/cracked_tuff_tiles_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "dark_prismarine",
+      "source": "minecraft:dark_prismarine",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:dark_prismarine_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:dark_prismarine_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:dark_prismarine_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/dark_prismarine_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "deepslate_bricks",
+      "source": "minecraft:deepslate_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:deepslate_brick_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:deepslate_brick_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:deepslate_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/deepslate_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:deepslate_brick_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "deepslate_tiles",
+      "source": "minecraft:deepslate_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:deepslate_tile_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:deepslate_tile_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:deepslate_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/deepslate_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:deepslate_tile_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "diorite",
+      "source": "minecraft:diorite",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:diorite_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:diorite_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:diorite_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/diorite_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:diorite_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "diorite_bricks",
+      "source": "dorios_atelier:diorite_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:diorite_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/diorite_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:diorite_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/diorite_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:diorite_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/diorite_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:diorite_bricks_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/diorite_bricks_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "diorite_tiles",
+      "source": "dorios_atelier:diorite_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:diorite_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/diorite_tiles_slab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:diorite_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/diorite_tiles_str.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:diorite_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/diorite_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:diorite_tiles_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/diorite_tiles_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "dripstone_bricks",
+      "source": "dorios_atelier:dripstone_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:dripstone_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/dripstone_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:dripstone_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/dripstone_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:dripstone_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/dripstone_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:dripstone_bricks_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/dripstone_bricks_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "dripstone_tiles",
+      "source": "dorios_atelier:dripstone_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:dripstone_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/dripstone_tiles_slab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:dripstone_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/dripstone_tiles_str.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:dripstone_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/dripstone_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:dripstone_tiles_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/dripstone_tiles_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "gilded_blackstone",
+      "source": "minecraft:gilded_blackstone",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:gilded_blackstone_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/gilded_blackstone_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:gilded_blackstone_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/gilded_blackstone_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:gilded_blackstone_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/gilded_blackstone_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "glowing_obsidian",
+      "source": "dorios_atelier:glowing_obsidian",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:glowing_obsidian_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/glowing_obsidian_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:glowing_obsidian_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/glowing_obsidian_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:glowing_obsidian_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/glowing_obsidian_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:glowing_obsidian_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/glowing_obsidian_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "granite",
+      "source": "minecraft:granite",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:granite_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:granite_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:granite_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/granite_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:granite_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "granite_bricks",
+      "source": "dorios_atelier:granite_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:granite_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/granite_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:granite_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/granite_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:granite_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/granite_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:granite_bricks_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/granite_bricks_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "granite_tiles",
+      "source": "dorios_atelier:granite_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:granite_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/granite_tiles_slab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:granite_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/granite_tiles_str.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:granite_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/granite_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:granite_tiles_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/granite_tiles_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "mossy_cobblestone",
+      "source": "minecraft:mossy_cobblestone",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:mossy_cobblestone_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:mossy_cobblestone_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:mossy_cobblestone_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/mossy_cobblestone_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:mossy_cobblestone_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "mossy_stone_bricks",
+      "source": "minecraft:mossy_stone_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:mossy_stone_brick_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:mossy_stone_brick_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:mossy_stone_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/mossy_stone_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:mossy_stone_brick_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "mud_bricks",
+      "source": "minecraft:mud_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:mud_brick_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:mud_brick_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:mud_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/mud_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:mud_brick_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "netherrack",
+      "source": "minecraft:netherrack",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:netherrack_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/netherrack_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:netherrack_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/netherrack_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:netherrack_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/netherrack_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "obsidian_bricks",
+      "source": "dorios_atelier:obsidian_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:obsidian_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/obsidian_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:obsidian_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/obsidian_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:obsidian_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/obsidian_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:obsidian_bricks_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/obsidian_bricks_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "obsidian_tiles",
+      "source": "dorios_atelier:obsidian_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:obsidian_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/obsidian_tiles_slab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:obsidian_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/obsidian_tiles_str.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:obsidian_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/obsidian_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:obsidian_tiles_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/obsidian_tiles_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "packed_mud",
+      "source": "minecraft:packed_mud",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:packed_mud_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/packed_mud_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:packed_mud_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/packed_mud_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:packed_mud_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/packed_mud_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "polished_andesite",
+      "source": "minecraft:polished_andesite",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_andesite_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_andesite_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_andesite_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/pl_andesite_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "polished_blackstone",
+      "source": "minecraft:polished_blackstone",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_blackstone_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_blackstone_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_blackstone_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/pl_blackstone_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_blackstone_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "polished_blackstone_bricks",
+      "source": "minecraft:polished_blackstone_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_blackstone_brick_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_blackstone_brick_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_blackstone_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/pl_blackstone_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_blackstone_brick_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "polished_calcite",
+      "source": "dorios_atelier:polished_calcite",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_calcite_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/polished_calcite_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_calcite_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/polished_calcite_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_calcite_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/polished_calcite_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_calcite_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/polished_calcite_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "polished_deepslate",
+      "source": "minecraft:polished_deepslate",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_deepslate_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_deepslate_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_deepslate_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/pl_deepslate_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_deepslate_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "polished_diorite",
+      "source": "minecraft:polished_diorite",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_diorite_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_diorite_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_diorite_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/pl_diorite_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "polished_dripstone",
+      "source": "dorios_atelier:polished_dripstone",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_dripstone_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/polished_dripstone_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_dripstone_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/polished_dripstone_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_dripstone_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/polished_dripstone_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_dripstone_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/polished_dripstone_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "polished_granite",
+      "source": "minecraft:polished_granite",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_granite_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_granite_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_granite_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/pl_granite_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "polished_obsidian",
+      "source": "dorios_atelier:polished_obsidian",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_obsidian_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/polished_obsidian_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_obsidian_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/polished_obsidian_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_obsidian_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/polished_obsidian_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_obsidian_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/polished_obsidian_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "polished_tuff",
+      "source": "minecraft:polished_tuff",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_tuff_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_tuff_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:polished_tuff_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/pl_tuff_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:polished_tuff_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "prismarine",
+      "source": "minecraft:prismarine",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:prismarine_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:prismarine_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:prismarine_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/prismarine_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:prismarine_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "prismarine_bricks",
+      "source": "minecraft:prismarine_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:prismarine_brick_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:prismarine_bricks_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:prismarine_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/prismarine_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "purpur_block",
+      "source": "minecraft:purpur_block",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:purpur_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:purpur_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:purpur_block_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/purpur_block_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "quartz_bricks",
+      "source": "minecraft:quartz_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:quartz_bricks_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/quartz_bricks_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:quartz_bricks_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/quartz_bricks_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:quartz_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/quartz_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "smooth_andesite",
+      "source": "dorios_atelier:smooth_andesite",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_andesite_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/smooth_andesite_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_andesite_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/smooth_andesite_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_andesite_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/smooth_andesite_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_andesite_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/smooth_andesite_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "smooth_basalt",
+      "source": "minecraft:smooth_basalt",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_basalt_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/sm_basalt_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_basalt_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/sm_basalt_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_basalt_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/sm_basalt_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "smooth_blackstone",
+      "source": "dorios_atelier:smooth_blackstone",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_blackstone_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/smooth_blackstone_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_blackstone_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/smooth_blackstone_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_blackstone_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/smooth_blackstone_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_blackstone_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/smooth_blackstone_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "smooth_calcite",
+      "source": "dorios_atelier:smooth_calcite",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_calcite_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/smooth_calcite_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_calcite_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/smooth_calcite_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_calcite_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/smooth_calcite_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_calcite_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/smooth_calcite_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "smooth_diorite",
+      "source": "dorios_atelier:smooth_diorite",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_diorite_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/smooth_diorite_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_diorite_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/smooth_diorite_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_diorite_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/smooth_diorite_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_diorite_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/smooth_diorite_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "smooth_dripstone",
+      "source": "dorios_atelier:smooth_dripstone",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_dripstone_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/smooth_dripstone_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_dripstone_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/smooth_dripstone_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_dripstone_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/smooth_dripstone_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_dripstone_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/smooth_dripstone_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "smooth_granite",
+      "source": "dorios_atelier:smooth_granite",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_granite_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/smooth_granite_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_granite_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/smooth_granite_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_granite_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/smooth_granite_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_granite_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/smooth_granite_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "smooth_quartz",
+      "source": "minecraft:smooth_quartz",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:smooth_quartz_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:smooth_quartz_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_quartz_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/sm_quartz_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "smooth_stone",
+      "source": "minecraft:smooth_stone",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:smooth_stone_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_stone_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/sm_stone_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_stone_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/sm_stone_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "smooth_tuff",
+      "source": "dorios_atelier:smooth_tuff",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_tuff_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/smooth_tuff_slab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_tuff_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/smooth_tuff_str.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_tuff_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/smooth_tuff_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:smooth_tuff_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/smooth_tuff_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    },
+    {
+      "base": "stone",
+      "source": "minecraft:stone",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:normal_stone_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:normal_stone_stairs",
+            "minecraft:stone_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:stone_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/stone_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "stone_bricks",
+      "source": "minecraft:stone_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:stone_brick_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:stone_brick_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:stone_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/stone_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:stone_brick_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "tuff",
+      "source": "minecraft:tuff",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:tuff_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:tuff_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:tuff_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/tuff_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:tuff_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "tuff_bricks",
+      "source": "minecraft:tuff_bricks",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:tuff_brick_slab"
+          ],
+          "decision": "use_vanilla"
+        },
+        "stairs": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:tuff_brick_stairs"
+          ],
+          "decision": "use_vanilla"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:tuff_bricks_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/tuff_bricks_vslab.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": false,
+            "identifier": null,
+            "definitionCount": 0,
+            "files": [],
+            "lightDampening": []
+          },
+          "vanilla": [
+            "minecraft:tuff_brick_wall"
+          ],
+          "decision": "skip"
+        }
+      }
+    },
+    {
+      "base": "tuff_tiles",
+      "source": "dorios_atelier:tuff_tiles",
+      "sourceExists": true,
+      "notes": "",
+      "variants": {
+        "slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:tuff_tiles_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/slabs/tuff_tiles_slab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "stairs": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:tuff_tiles_stairs",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/stairs/tuff_tiles_str.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "vertical_slab": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:tuff_tiles_vertical_slab",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/vertical_slabs/tuff_tiles_vslab.json"
+            ],
+            "lightDampening": [
+              null
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        },
+        "wall": {
+          "current": {
+            "present": true,
+            "identifier": "dorios_atelier:tuff_tiles_wall",
+            "definitionCount": 1,
+            "files": [
+              "BP/blocks/decorative/walls/tuff_tiles_wall.json"
+            ],
+            "lightDampening": [
+              0
+            ]
+          },
+          "vanilla": [],
+          "decision": "generate"
+        }
+      }
+    }
+  ]
+}

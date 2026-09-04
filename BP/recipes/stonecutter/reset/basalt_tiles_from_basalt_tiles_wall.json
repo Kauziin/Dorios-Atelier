@@ -1,0 +1,25 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "dorios_atelier:sc_basalt_tiles_from_basalt_tiles_wall"
+    },
+    "tags": [
+      "stonecutter"
+    ],
+    "ingredients": [
+      {
+        "item": "dorios_atelier:basalt_tiles_wall"
+      }
+    ],
+    "result": {
+      "item": "dorios_atelier:basalt_tiles",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "dorios_atelier:basalt_tiles_wall"
+      }
+    ]
+  }
+}
